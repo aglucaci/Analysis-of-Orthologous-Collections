@@ -1,0 +1,1480 @@
+{
+ "Synonymous site-posteriors":  [
+[0.4522705347603319, 0.0271708644577077, 0.7722187388865773, 0.6073253863081862, 0.7733027453575769, 0.4729005218938639, 0.141818189531993, 0.7781357584809704, 0.8608098501989512, 0.7754143788369043, 0.741703118407937, 0.597946234371542, 0.4231743042142403, 0.3253579775098763, 0.5763172666377474, 0.3958084274648723, 0.8769377180863953, 0.8826433419305972, 0.0002398938754540311, 0.4552383697368267, 0.4552383697368266, 0.8844227286605262, 0.2909831007029363, 0.8666395641343305, 0.851835284958145, 0.2647392159380798, 0.1166769996941796, 0.6069341138080009, 0.8019168637513867, 0.14263450611907, 0.2254487676900545, 0.61379589733889, 0.4361650022202131, 0.577937400955908, 0.9172934284058265, 0.02603569263534029, 0.8053888018063002, 0.8635416248360998, 0.02941318125310017, 0.05049536261535983, 0.2795240625943363, 0.4552383697368268, 0.4552383697368266, 0.802986247311127, 0.4552383697368266, 0.4552383697368267, 0.4552383697368269, 0.4552383697368269, 0.4552383697368267, 0.4552383697368268, 0.4552383697368269, 0.4552383697368267, 0.4552383697368265, 0.4552383697368267, 0.4552383697368268, 0.4552383697368269, 0.4552383697368266, 0.4552383697368267, 0.4552383697368269, 0.4552383697368269, 0.4552383697368265, 0.9215616455014651, 0.9132886689614431, 0.4552383697368268, 0.4552383697368267, 0.4552383697368267, 0.4552383697368269, 0.4552383697368265, 0.4552383697368267, 0.4552383697368266, 0.4552383697368267, 0.4552383697368267, 0.4552383697368268, 0.4552383697368269, 0.4552383697368269, 0.7599658493807169, 0.8423480455667075, 0.9901263285794631, 0.3898719195182855, 0.1466244211909199, 0.8659307158855321, 0.8434216747350735, 0.01289618303810088, 0.1816095415761117, 0.4183858381256432, 0.007580327173036139, 0.01667085956443858, 0.3275142576589286, 0.4771165755047954, 0.07967283419741221, 0.1059295249366625, 0.3017947793833324, 0.0005932517591224898, 0.2285554635759162, 0.008337023156740737, 0.004313592956674416, 0.03401853158224764, 0.08543741139024356, 0.3889280226804596, 0.1317496599576659, 0.9017898014421958, 0.09384756780228105],
+  [0.5448612657478468, 6.245460236534478e-08, 0.006456431015282442, 0.001625705535460073, 0.1951699991187075, 8.008680836877177e-06, 0.856463437210559, 7.386390706534954e-05, 0.06222982470877006, 0.2181072320630406, 0.01622681815175057, 0.3541793238238544, 0.5616001432732721, 0.652691864219003, 0.0003752918999951698, 0.0003475796572329217, 0.0951574007456954, 0.01446438379560932, 5.668101020532868e-15, 0.1699615173841378, 0.1699615173841376, 0.007547043714668067, 0.6949003332657987, 0.00605835281898669, 0.0004395240204956594, 0.7335644463772456, 0.8822784824553248, 0.001875672772135749, 0.02851493517621961, 0.8556168421794837, 0.7679792497315762, 0.3771093391216174, 0.5601246183593686, 0.0004055508663262338, 0.06128628693402163, 6.172605593010713e-09, 0.0003346187075052678, 0.002711714091292775, 2.472326069573512e-08, 0.9494031779367009, 0.7188880231215766, 0.1699615173841377, 0.1699615173841376, 0.0005667905752669556, 0.1699615173841378, 0.1699615173841376, 0.1699615173841376, 0.1699615173841376, 0.1699615173841378, 0.1699615173841375, 0.1699615173841376, 0.1699615173841377, 0.1699615173841378, 0.1699615173841377, 0.1699615173841378, 0.1699615173841376, 0.1699615173841378, 0.1699615173841378, 0.1699615173841377, 0.1699615173841376, 0.1699615173841379, 0.01412502268754988, 0.0830433682768074, 0.1699615173841378, 0.1699615173841377, 0.1699615173841377, 0.1699615173841376, 0.1699615173841378, 0.1699615173841378, 0.1699615173841379, 0.1699615173841375, 0.1699615173841376, 0.1699615173841375, 0.1699615173841376, 0.1699615173841377, 8.043166631675611e-05, 0.1470214825076396, 0.005598604172301077, 2.60286453079123e-05, 6.708211083122213e-06, 0.1224106211139808, 0.1466153544305581, 6.116654300033714e-09, 0.0001105398338753854, 4.297127267559279e-06, 2.311830358591844e-09, 1.865833007548201e-09, 0.02375235193441069, 0.1960043128759189, 2.170739356656293e-07, 2.060202428248998e-06, 4.831619281850996e-05, 3.992166416780738e-14, 0.7573711477551001, 1.154302902486592e-10, 4.854064210313507e-11, 1.526254411671692e-07, 4.710425771345324e-09, 5.533695369332975e-05, 1.812077424901156e-07, 0.005705470938615189, 2.511792481027589e-08],
+  [0.002868199491821264, 0.9728290730876898, 0.2213248300981403, 0.3910489081563538, 0.03152725552371569, 0.5270914694252992, 0.00171837325744813, 0.2217903776119642, 0.07696032509227876, 0.006478389100055033, 0.2420700634403124, 0.0478744418046036, 0.01522555251248759, 0.02195015827112074, 0.4233074414622574, 0.6038439928778948, 0.02790488116790915, 0.1028922742737934, 0.9997601061245402, 0.3748001128790355, 0.3748001128790358, 0.1080302276248058, 0.01411656603126486, 0.1273020830466829, 0.1477251910213593, 0.001696337684674634, 0.001044517850495691, 0.3911902134198633, 0.1695682010723937, 0.001748651701446294, 0.006571982578369447, 0.009094763539492777, 0.003710379420418279, 0.4216570481777657, 0.02142028466015188, 0.973964301192054, 0.1942765794861945, 0.1337466610726075, 0.9705867940236392, 0.0001014594479392687, 0.001587914284086976, 0.3748001128790356, 0.3748001128790358, 0.196446962113606, 0.3748001128790356, 0.3748001128790356, 0.3748001128790355, 0.3748001128790355, 0.3748001128790355, 0.3748001128790356, 0.3748001128790354, 0.3748001128790356, 0.3748001128790357, 0.3748001128790356, 0.3748001128790355, 0.3748001128790354, 0.3748001128790356, 0.3748001128790355, 0.3748001128790354, 0.3748001128790356, 0.3748001128790356, 0.06431333181098506, 0.003667962761749449, 0.3748001128790356, 0.3748001128790356, 0.3748001128790355, 0.3748001128790354, 0.3748001128790357, 0.3748001128790354, 0.3748001128790356, 0.3748001128790357, 0.3748001128790356, 0.3748001128790358, 0.3748001128790354, 0.3748001128790355, 0.2399537189529665, 0.01063047192565303, 0.0042750672482358, 0.6101020518364066, 0.853368870597997, 0.01165866300048714, 0.00996297083436842, 0.9871038108452448, 0.8182799185900129, 0.5816098647470892, 0.9924196705151336, 0.9833291385697285, 0.6487333904066607, 0.3268791116192858, 0.9203269487286521, 0.8940684148609092, 0.6981569044238491, 0.9994067482408375, 0.01407338866898373, 0.9916629767278289, 0.9956864069947849, 0.9659813157923111, 0.9145625838993307, 0.611016640365847, 0.8682501588345916, 0.09250472761918907, 0.9061524070797942] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution g",
+   "citation":"RELAX: Detecting Relaxed Selection in a Phylogenetic Framework (2015). Mol Biol Evol 32 (3): 820-832",
+   "contact":"spond@temple.edu",
+   "info":"RELAX (a random effects test of selection relaxation) uses a random effects branch-site model framework to test whether a set of 'Test' branches evolves under relaxed selection relative to a set of 'Reference' branches (R), as measured by the relaxation parameter (K).\n                                                Version 2.1 adds a check for stability in K estimates to try to mitigate convergence problems. \n                                                Version 3 provides support for >2 branch sets.\n                                                Version 3.1 adds LHC + Nedler-Mead initial fit phase and keyword support.\n                                                Version 3.1.1 adds some bug fixes for better convergence.\n                                                Version 4.0 adds support for synonymous rate variation.\n                                                Version 4.1 adds further support for multiple hit models.\n                                                Version 4.1.1 adds reporting for convergence diagnostics.\n                                                Version 4.5 adds support for multiple datasets for joint testing.",
+   "requirements":"in-frame codon alignment and a phylogenetic tree, with at least two groups of branches defined using the {} notation (one group can be defined as all unlabeled branches)",
+   "settings":{
+     "convergence-negative-lrt":6
+    },
+   "version":"4.5"
+  },
+ "branch attributes":{
+   "0":{
+     "NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA":{
+       "General descriptive":5.237943257271033e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3864412295053291,
+       "original name":"NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA"
+      },
+     "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.02022054884942111,
+       "MG94xREV with separate rates for branch sets":0.01996181602177238,
+       "Nucleotide GTR":0.02019940149886023,
+       "RELAX alternative":0.01967805868765789,
+       "RELAX null":0.01967779922927795,
+       "RELAX partitioned descriptive":0.01967743956334379,
+       "k (general descriptive)":0,
+       "original name":"NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "Node101":{
+       "General descriptive":0.04745546420904384,
+       "MG94xREV with separate rates for branch sets":0.04667095846479427,
+       "Nucleotide GTR":0.04613010885753631,
+       "RELAX alternative":0.049380559869042,
+       "RELAX null":0.04937989743220414,
+       "RELAX partitioned descriptive":0.04937901914308016,
+       "k (general descriptive)":0.04418637819456973
+      },
+     "Node106":{
+       "General descriptive":0.005018687608591232,
+       "MG94xREV with separate rates for branch sets":0.004986469611804721,
+       "Nucleotide GTR":0.004988927527452574,
+       "RELAX alternative":0.005029686418744696,
+       "RELAX null":0.005029554404491172,
+       "RELAX partitioned descriptive":0.005029402614082414,
+       "k (general descriptive)":0.249273398972526
+      },
+     "Node11":{
+       "General descriptive":0.00483805565686523,
+       "MG94xREV with separate rates for branch sets":0.00490488039253392,
+       "Nucleotide GTR":0.004980072253323826,
+       "RELAX alternative":0.004888241549522223,
+       "RELAX null":0.004888146547298459,
+       "RELAX partitioned descriptive":0.004888024425927113,
+       "k (general descriptive)":0.2490414210219395
+      },
+     "Node110":{
+       "General descriptive":0.001195094215638326,
+       "MG94xREV with separate rates for branch sets":0.009689073492395601,
+       "Nucleotide GTR":0.0099475593038849,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.02534606112234004
+      },
+     "Node15":{
+       "General descriptive":0.004837782659209706,
+       "MG94xREV with separate rates for branch sets":0.004888187553548189,
+       "Nucleotide GTR":0.004969893332697745,
+       "RELAX alternative":0.004858453870340393,
+       "RELAX null":0.004858216900734847,
+       "RELAX partitioned descriptive":0.004858479451769657,
+       "k (general descriptive)":0.2490532387694441
+      },
+     "Node17":{
+       "General descriptive":0.03855016545667551,
+       "MG94xREV with separate rates for branch sets":0.04172003251212115,
+       "Nucleotide GTR":0.03934507744674572,
+       "RELAX alternative":0.04324653739591671,
+       "RELAX null":0.0432443736284806,
+       "RELAX partitioned descriptive":0.04324683712274521,
+       "k (general descriptive)":0.01023526637833834
+      },
+     "Node18":{
+       "General descriptive":0.06289655061062266,
+       "MG94xREV with separate rates for branch sets":0.06306059802100407,
+       "Nucleotide GTR":0.06503824684941252,
+       "RELAX alternative":0.06849731748967899,
+       "RELAX null":0.06849644935714296,
+       "RELAX partitioned descriptive":0.06849528503771497,
+       "k (general descriptive)":0.04564104411671564
+      },
+     "Node2":{
+       "General descriptive":0.004813379757066047,
+       "MG94xREV with separate rates for branch sets":0.004385043641745927,
+       "Nucleotide GTR":0.004918266316977817,
+       "RELAX alternative":0.004805101371761862,
+       "RELAX null":0.004805042361568743,
+       "RELAX partitioned descriptive":0.004804946689427898,
+       "k (general descriptive)":0.2490341352403859
+      },
+     "Node21":{
+       "General descriptive":1e+26,
+       "MG94xREV with separate rates for branch sets":0.01794452162141516,
+       "Nucleotide GTR":0.02495110302199892,
+       "RELAX alternative":0.0218022319444775,
+       "RELAX null":0.02180145820348003,
+       "RELAX partitioned descriptive":0.02180282095510334,
+       "k (general descriptive)":44.9427701349686
+      },
+     "Node22":{
+       "General descriptive":0.0316486499001575,
+       "MG94xREV with separate rates for branch sets":0.0335296280990809,
+       "Nucleotide GTR":0.02817495044201123,
+       "RELAX alternative":0.03372926409442806,
+       "RELAX null":0.03372868748388731,
+       "RELAX partitioned descriptive":0.03372793949283763,
+       "k (general descriptive)":0.03390336153911845
+      },
+     "Node23":{
+       "General descriptive":0.07463721210171485,
+       "MG94xREV with separate rates for branch sets":0.01532369504134222,
+       "Nucleotide GTR":0.01308830793460986,
+       "RELAX alternative":0.01958623590739668,
+       "RELAX null":0.01958643007492678,
+       "RELAX partitioned descriptive":0.01958636073072827,
+       "k (general descriptive)":0.003462917148725389
+      },
+     "Node27":{
+       "General descriptive":0.01767242708965133,
+       "MG94xREV with separate rates for branch sets":0.02138195971790098,
+       "Nucleotide GTR":0.01264856516046476,
+       "RELAX alternative":0.01928811329343842,
+       "RELAX null":0.01928761985849707,
+       "RELAX partitioned descriptive":0.019289040978435,
+       "k (general descriptive)":0.2449009430252848
+      },
+     "Node28":{
+       "General descriptive":0.005619490816259657,
+       "MG94xREV with separate rates for branch sets":0.005208157976346296,
+       "Nucleotide GTR":0.004999852749215311,
+       "RELAX alternative":0.005662763565378993,
+       "RELAX null":0.005662469866249145,
+       "RELAX partitioned descriptive":0.005662748965566546,
+       "k (general descriptive)":0.2499534621849732
+      },
+     "Node30":{
+       "General descriptive":0.06979567164546513,
+       "MG94xREV with separate rates for branch sets":0.06803633680486097,
+       "Nucleotide GTR":0.06354939912559017,
+       "RELAX alternative":0.07347311307655637,
+       "RELAX null":0.07347186012106305,
+       "RELAX partitioned descriptive":0.07347044712121557,
+       "k (general descriptive)":0.07062686792038537
+      },
+     "Node33":{
+       "General descriptive":0.005260256317022077,
+       "MG94xREV with separate rates for branch sets":0.00535158180405042,
+       "Nucleotide GTR":0.00507676284372568,
+       "RELAX alternative":0.005622705881417289,
+       "RELAX null":0.005622391415472096,
+       "RELAX partitioned descriptive":0.005622657327888784,
+       "k (general descriptive)":0
+      },
+     "Node34":{
+       "General descriptive":0.01021258601949323,
+       "MG94xREV with separate rates for branch sets":0.009754685112392863,
+       "Nucleotide GTR":0.01031130949272624,
+       "RELAX alternative":0.009122039232150336,
+       "RELAX null":0.009121882995519897,
+       "RELAX partitioned descriptive":0.00912167544413417,
+       "k (general descriptive)":0.2555144951683914
+      },
+     "Node35":{
+       "General descriptive":0.06952470491294992,
+       "MG94xREV with separate rates for branch sets":0.06842914618986985,
+       "Nucleotide GTR":0.06373976171247915,
+       "RELAX alternative":0.07286632984243162,
+       "RELAX null":0.0728651612222081,
+       "RELAX partitioned descriptive":0.07286384875636547,
+       "k (general descriptive)":0.05946959908394568
+      },
+     "Node38":{
+       "General descriptive":1e+26,
+       "MG94xREV with separate rates for branch sets":0.02177319681622411,
+       "Nucleotide GTR":0.0208853966893233,
+       "RELAX alternative":0.02399466963493067,
+       "RELAX null":0.0239943783112963,
+       "RELAX partitioned descriptive":0.0239939014242384,
+       "k (general descriptive)":45.86641612464225
+      },
+     "Node39":{
+       "General descriptive":0.005758272104266346,
+       "MG94xREV with separate rates for branch sets":0.005434865661402871,
+       "Nucleotide GTR":0.005086312231827919,
+       "RELAX alternative":0.005806027446321904,
+       "RELAX null":0.00580591073470466,
+       "RELAX partitioned descriptive":0.005805751491577785,
+       "k (general descriptive)":0.2501673614263628
+      },
+     "Node4":{
+       "General descriptive":1.062489880196687e-15,
+       "MG94xREV with separate rates for branch sets":0.0004753325795127536,
+       "Nucleotide GTR":5.530657385823585e-05,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3881778819731825
+      },
+     "Node41":{
+       "General descriptive":0.01105059315977418,
+       "MG94xREV with separate rates for branch sets":0.0101027011395049,
+       "Nucleotide GTR":0.0100965307776538,
+       "RELAX alternative":0.01008190989732894,
+       "RELAX null":0.01008182787237228,
+       "RELAX partitioned descriptive":0.01008166814801744,
+       "k (general descriptive)":0.2573563399909874
+      },
+     "Node44":{
+       "General descriptive":0.005118451923473828,
+       "MG94xREV with separate rates for branch sets":0.005582906418948369,
+       "Nucleotide GTR":0.005165438264647176,
+       "RELAX alternative":0.005672385670758362,
+       "RELAX null":0.005672350488927426,
+       "RELAX partitioned descriptive":0.005672260468654931,
+       "k (general descriptive)":0
+      },
+     "Node45":{
+       "General descriptive":0.02192350069743427,
+       "MG94xREV with separate rates for branch sets":0.02278225398350863,
+       "Nucleotide GTR":0.02105322966554962,
+       "RELAX alternative":0.02365963797311268,
+       "RELAX null":0.02365922036220924,
+       "RELAX partitioned descriptive":0.02365868692079716,
+       "k (general descriptive)":0
+      },
+     "Node47":{
+       "General descriptive":1e+26,
+       "MG94xREV with separate rates for branch sets":0.01644972998794273,
+       "Nucleotide GTR":0.01509814335554106,
+       "RELAX alternative":0.01653089109570002,
+       "RELAX null":0.01653037651254689,
+       "RELAX partitioned descriptive":0.01652983679696184,
+       "k (general descriptive)":33.55303765420886
+      },
+     "Node49":{
+       "General descriptive":0.005415611522487725,
+       "MG94xREV with separate rates for branch sets":0.00552184929275834,
+       "Nucleotide GTR":0.005093277986110454,
+       "RELAX alternative":0.005916337942113575,
+       "RELAX null":0.005916165338752607,
+       "RELAX partitioned descriptive":0.005915965342349162,
+       "k (general descriptive)":0
+      },
+     "Node54":{
+       "General descriptive":0.03809868208541279,
+       "MG94xREV with separate rates for branch sets":0.03733365146430819,
+       "Nucleotide GTR":0.03593570787510302,
+       "RELAX alternative":0.03894560581785028,
+       "RELAX null":0.03894499582520729,
+       "RELAX partitioned descriptive":0.03894424094922196,
+       "k (general descriptive)":0.06597165660981992
+      },
+     "Node57":{
+       "General descriptive":0.005963705981612149,
+       "MG94xREV with separate rates for branch sets":0.002501800874249004,
+       "Nucleotide GTR":0.002328744041596402,
+       "RELAX alternative":0.004108473003786348,
+       "RELAX null":0.004108493932980204,
+       "RELAX partitioned descriptive":0.004108903148541484,
+       "k (general descriptive)":0
+      },
+     "Node58":{
+       "General descriptive":0.02114711383121025,
+       "MG94xREV with separate rates for branch sets":0.02058879212541871,
+       "Nucleotide GTR":0.01971580134007214,
+       "RELAX alternative":0.02448707647817152,
+       "RELAX null":0.02448571908529662,
+       "RELAX partitioned descriptive":0.02448695030481069,
+       "k (general descriptive)":0.1580607913713347
+      },
+     "Node59":{
+       "General descriptive":0.08460284719771795,
+       "MG94xREV with separate rates for branch sets":0.0915347143401009,
+       "Nucleotide GTR":0.08217606430596495,
+       "RELAX alternative":0.09141887333301632,
+       "RELAX null":0.09141524082355251,
+       "RELAX partitioned descriptive":0.09142105867351573,
+       "k (general descriptive)":0
+      },
+     "Node61":{
+       "General descriptive":0.01404738010881137,
+       "MG94xREV with separate rates for branch sets":0.01472955834275678,
+       "Nucleotide GTR":0.01497432567084763,
+       "RELAX alternative":0.01552627280058696,
+       "RELAX null":0.01552552639839482,
+       "RELAX partitioned descriptive":0.01552636494319564,
+       "k (general descriptive)":0.03139128043105173
+      },
+     "Node63":{
+       "General descriptive":0.0070949062750293,
+       "MG94xREV with separate rates for branch sets":0.006643905892016007,
+       "Nucleotide GTR":0.006510401516453696,
+       "RELAX alternative":0.007061086728149573,
+       "RELAX null":0.007060837892704265,
+       "RELAX partitioned descriptive":0.007061283397425864,
+       "k (general descriptive)":0.2509008857396143
+      },
+     "Node66":{
+       "General descriptive":0.02710885964121761,
+       "MG94xREV with separate rates for branch sets":0.02796582588773701,
+       "Nucleotide GTR":0.0283711530561373,
+       "RELAX alternative":0.02405469407507149,
+       "RELAX null":0.02405313649762416,
+       "RELAX partitioned descriptive":0.02405419910513412,
+       "k (general descriptive)":0.01454505634638254
+      },
+     "Node68":{
+       "General descriptive":1027.228000890956,
+       "MG94xREV with separate rates for branch sets":0.9413869098019109,
+       "Nucleotide GTR":0.5638106076624206,
+       "RELAX alternative":57.34279178644061,
+       "RELAX null":57.34314951144822,
+       "RELAX partitioned descriptive":57.3487495604687,
+       "k (general descriptive)":0.4558440174363155
+      },
+     "Node69":{
+       "General descriptive":0.6395368482603423,
+       "MG94xREV with separate rates for branch sets":2.969972869215239,
+       "Nucleotide GTR":6.022724217191208,
+       "RELAX alternative":0.1091090811537439,
+       "RELAX null":0.09460534946033716,
+       "RELAX partitioned descriptive":0.08238125752642807,
+       "k (general descriptive)":0.4030770556593702
+      },
+     "Node7":{
+       "General descriptive":0.004979250198166066,
+       "MG94xREV with separate rates for branch sets":0.004855758564648748,
+       "Nucleotide GTR":0.004960552507467692,
+       "RELAX alternative":0.004776742449533946,
+       "RELAX null":0.004776687417086947,
+       "RELAX partitioned descriptive":0.004776594594720145,
+       "k (general descriptive)":0
+      },
+     "Node78":{
+       "General descriptive":0.01788318035904132,
+       "MG94xREV with separate rates for branch sets":0.0176766309925472,
+       "Nucleotide GTR":0.01795119385687359,
+       "RELAX alternative":0.01640043565736055,
+       "RELAX null":0.01640009702561695,
+       "RELAX partitioned descriptive":0.01639966902840974,
+       "k (general descriptive)":0.08345793011502749
+      },
+     "Node79":{
+       "General descriptive":0.01645607099777497,
+       "MG94xREV with separate rates for branch sets":0.02053774247924868,
+       "Nucleotide GTR":0.01942023809154583,
+       "RELAX alternative":0.01961800190990821,
+       "RELAX null":0.01961755078874113,
+       "RELAX partitioned descriptive":0.0196170193403152,
+       "k (general descriptive)":1.959920801110136
+      },
+     "Node81":{
+       "General descriptive":0.005253033688349448,
+       "MG94xREV with separate rates for branch sets":0.005490981882770401,
+       "Nucleotide GTR":0.005055601026588209,
+       "RELAX alternative":0.005582269841676953,
+       "RELAX null":0.005582142261046299,
+       "RELAX partitioned descriptive":0.005581985181156833,
+       "k (general descriptive)":0
+      },
+     "Node84":{
+       "General descriptive":19128551946284.4,
+       "MG94xREV with separate rates for branch sets":0.012252363966425,
+       "Nucleotide GTR":0.01153407959910103,
+       "RELAX alternative":0.01387636638726258,
+       "RELAX null":0.01387628790224686,
+       "RELAX partitioned descriptive":0.01387609477592649,
+       "k (general descriptive)":9.933425867353401
+      },
+     "Node86":{
+       "General descriptive":0.005190317852916469,
+       "MG94xREV with separate rates for branch sets":0.005103200451755716,
+       "Nucleotide GTR":0.004954602890431726,
+       "RELAX alternative":0.004992780122722015,
+       "RELAX null":0.004992726460030334,
+       "RELAX partitioned descriptive":0.004992632447465839,
+       "k (general descriptive)":1.918925444303223
+      },
+     "Node92":{
+       "General descriptive":0.01042152375147748,
+       "MG94xREV with separate rates for branch sets":0.01040126108490616,
+       "Nucleotide GTR":0.009329203160301761,
+       "RELAX alternative":0.01080816164782725,
+       "RELAX null":0.01080795955325718,
+       "RELAX partitioned descriptive":0.01080769537751392,
+       "k (general descriptive)":0.05172219873963534
+      },
+     "Node93":{
+       "General descriptive":0.03244802771553403,
+       "MG94xREV with separate rates for branch sets":0.03125868971814361,
+       "Nucleotide GTR":0.03045778790905575,
+       "RELAX alternative":0.0329031683464148,
+       "RELAX null":0.03290267776357735,
+       "RELAX partitioned descriptive":0.03290203384962637,
+       "k (general descriptive)":0.1567737942080921
+      },
+     "Node97":{
+       "General descriptive":0.01262135549968932,
+       "MG94xREV with separate rates for branch sets":0.01361485968751118,
+       "Nucleotide GTR":0.01121632073851009,
+       "RELAX alternative":0.01429476277527522,
+       "RELAX null":0.01429432876886587,
+       "RELAX partitioned descriptive":0.01429386609969311,
+       "k (general descriptive)":0.0370314004442265
+      },
+     "Node99":{
+       "General descriptive":0.004916524888560441,
+       "MG94xREV with separate rates for branch sets":0.004919474338617845,
+       "Nucleotide GTR":0.005129444069756722,
+       "RELAX alternative":0.005209932095679493,
+       "RELAX null":0.005209907751952871,
+       "RELAX partitioned descriptive":0.00520982950154141,
+       "k (general descriptive)":0
+      },
+     "XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.004977145677369381,
+       "MG94xREV with separate rates for branch sets":0.004858802363324828,
+       "Nucleotide GTR":0.004960551400800019,
+       "RELAX alternative":0.004769006576325239,
+       "RELAX null":0.004768951644319779,
+       "RELAX partitioned descriptive":0.004768859213181431,
+       "k (general descriptive)":0,
+       "original name":"XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.01467220631440054,
+       "MG94xREV with separate rates for branch sets":0.01472485299530685,
+       "Nucleotide GTR":0.01499514487280299,
+       "RELAX alternative":0.01467836880501636,
+       "RELAX null":0.01467811676744078,
+       "RELAX partitioned descriptive":0.01467780078949222,
+       "k (general descriptive)":0.08664570689113088,
+       "original name":"XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.004715036044770726,
+       "MG94xREV with separate rates for branch sets":0.004796044455323996,
+       "Nucleotide GTR":0.00495546586100507,
+       "RELAX alternative":0.004720661153343502,
+       "RELAX null":0.004720602580436584,
+       "RELAX partitioned descriptive":0.004720508427019011,
+       "k (general descriptive)":0.2489461982230079,
+       "original name":"XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":5.243755591691665e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3869204080217465,
+       "original name":"XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "General descriptive":1.384221543663263e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3941873220716484,
+       "original name":"XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA"
+      },
+     "XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "General descriptive":0.008552917897893034,
+       "MG94xREV with separate rates for branch sets":0.00868224519289129,
+       "Nucleotide GTR":0.008707650412879211,
+       "RELAX alternative":0.007655943703736973,
+       "RELAX null":0.007655840574593216,
+       "RELAX partitioned descriptive":0.007655678237489592,
+       "k (general descriptive)":0,
+       "original name":"XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA"
+      },
+     "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":1.149520312137823e-07,
+       "MG94xREV with separate rates for branch sets":3.400985585455592e-08,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":2.579703512644473e-07,
+       "RELAX null":1.229599856423871e-07,
+       "RELAX partitioned descriptive":2.689909633674194e-07,
+       "k (general descriptive)":0.4030064805903236,
+       "original name":"XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":1.1522413793181e-07,
+       "MG94xREV with separate rates for branch sets":3.420848269972762e-08,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":2.545465316144439e-07,
+       "RELAX null":1.20605113466314e-07,
+       "RELAX partitioned descriptive":2.654223752162753e-07,
+       "k (general descriptive)":0.4030064805903236,
+       "original name":"XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":{
+       "General descriptive":0.1008629229388341,
+       "MG94xREV with separate rates for branch sets":0.1010612460030083,
+       "Nucleotide GTR":0.09757327339720694,
+       "RELAX alternative":0.1073812700715753,
+       "RELAX null":0.1073794643530188,
+       "RELAX partitioned descriptive":0.1073775800593979,
+       "k (general descriptive)":0.07602496165791869,
+       "original name":"XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA"
+      },
+     "XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.0194759862591612,
+       "MG94xREV with separate rates for branch sets":0.0187830064777587,
+       "Nucleotide GTR":0.01881533177739636,
+       "RELAX alternative":0.01930738649570438,
+       "RELAX null":0.01930717868750529,
+       "RELAX partitioned descriptive":0.01930683767786485,
+       "k (general descriptive)":0,
+       "original name":"XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":1.317257264929124e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3887909398768362,
+       "original name":"XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01085960585168432,
+       "MG94xREV with separate rates for branch sets":0.01081392362411703,
+       "Nucleotide GTR":0.01012869166629844,
+       "RELAX alternative":0.01109800399638762,
+       "RELAX null":0.01109780946559896,
+       "RELAX partitioned descriptive":0.01109754695255047,
+       "k (general descriptive)":0.05809868546516157,
+       "original name":"XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.008119121966478663,
+       "MG94xREV with separate rates for branch sets":0.007804772608857441,
+       "Nucleotide GTR":0.008462114337462166,
+       "RELAX alternative":0.006964444145405382,
+       "RELAX null":0.006964312647184814,
+       "RELAX partitioned descriptive":0.006964139514574494,
+       "k (general descriptive)":0,
+       "original name":"XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":5.380716295864462e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3864412242386999,
+       "original name":"XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":1026.489114010681,
+       "MG94xREV with separate rates for branch sets":0.5809172764348002,
+       "Nucleotide GTR":0.7370665423157735,
+       "RELAX alternative":98.64900957549943,
+       "RELAX null":98.65116345176465,
+       "RELAX partitioned descriptive":98.65195924406187,
+       "k (general descriptive)":0.4550730273272072,
+       "original name":"XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.04953393274026031,
+       "MG94xREV with separate rates for branch sets":0.0468585657226307,
+       "Nucleotide GTR":0.04871645184471833,
+       "RELAX alternative":0.04936566651684286,
+       "RELAX null":0.04936510786406555,
+       "RELAX partitioned descriptive":0.04936433313165073,
+       "k (general descriptive)":0.09039847547465996,
+       "original name":"XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":5.469944529363902e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.407988761708132,
+       "original name":"XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":{
+       "General descriptive":3.487572708605529,
+       "MG94xREV with separate rates for branch sets":0.1175165108288035,
+       "Nucleotide GTR":0.1094972374817993,
+       "RELAX alternative":0.1258380142596958,
+       "RELAX null":0.1258355112252259,
+       "RELAX partitioned descriptive":0.1258330211291041,
+       "k (general descriptive)":2.598009827527929,
+       "original name":"XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA"
+      },
+     "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "General descriptive":5.30029866576289e-21,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3978974013334252,
+       "original name":"XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA"
+      },
+     "XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.004987235453311087,
+       "MG94xREV with separate rates for branch sets":0.004968216436267274,
+       "Nucleotide GTR":0.004977502065540335,
+       "RELAX alternative":0.004963883634039675,
+       "RELAX null":0.004963760108339833,
+       "RELAX partitioned descriptive":0.004963615318518387,
+       "k (general descriptive)":0.2492249308028227,
+       "original name":"XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.08744647174429722,
+       "MG94xREV with separate rates for branch sets":0.08197837272370037,
+       "Nucleotide GTR":0.08431994768787138,
+       "RELAX alternative":0.09262024652094289,
+       "RELAX null":0.09261878945295846,
+       "RELAX partitioned descriptive":0.09261705537513716,
+       "k (general descriptive)":0.05045694200442706,
+       "original name":"XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA"
+      },
+     "XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "General descriptive":0.005119684341954433,
+       "MG94xREV with separate rates for branch sets":0.005139978536678253,
+       "Nucleotide GTR":0.004988823795605303,
+       "RELAX alternative":0.005233209681504874,
+       "RELAX null":0.005233141140403935,
+       "RELAX partitioned descriptive":0.005233030163788246,
+       "k (general descriptive)":0,
+       "original name":"XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA"
+      },
+     "XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.03374701681367741,
+       "MG94xREV with separate rates for branch sets":0.03212325656725065,
+       "Nucleotide GTR":0.03077356883240569,
+       "RELAX alternative":0.03350733438765449,
+       "RELAX null":0.03350677391689309,
+       "RELAX partitioned descriptive":0.03350606688126975,
+       "k (general descriptive)":0.1012295513809976,
+       "original name":"XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.004741434374552362,
+       "MG94xREV with separate rates for branch sets":0.004812089908168671,
+       "Nucleotide GTR":0.004955278683233161,
+       "RELAX alternative":0.004740614580232666,
+       "RELAX null":0.004740558800854725,
+       "RELAX partitioned descriptive":0.004740466029348874,
+       "k (general descriptive)":0.2489794195610056,
+       "original name":"XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":7.441675946052257e-08,
+       "MG94xREV with separate rates for branch sets":9.136493636738671e-09,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":2.062271003951204e-07,
+       "RELAX null":8.820893968630767e-08,
+       "RELAX partitioned descriptive":2.051733473929496e-07,
+       "k (general descriptive)":0.4030064805813213,
+       "original name":"XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.008575950811213703,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0.009599006814195113,
+       "RELAX null":0.009598835794710223,
+       "RELAX partitioned descriptive":0.009598617539629978,
+       "k (general descriptive)":0.04762093616710796,
+       "original name":"XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.004914882320396647,
+       "MG94xREV with separate rates for branch sets":0.004925956481722026,
+       "Nucleotide GTR":0.00497473895622996,
+       "RELAX alternative":0.004923536376204334,
+       "RELAX null":0.004923425315897161,
+       "RELAX partitioned descriptive":0.004923290192006911,
+       "k (general descriptive)":0.2491375115116077,
+       "original name":"XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.004844195315455407,
+       "MG94xREV with separate rates for branch sets":0.004696595050811835,
+       "Nucleotide GTR":0.004960294526967323,
+       "RELAX alternative":0.004416318332645034,
+       "RELAX null":0.004416313805022856,
+       "RELAX partitioned descriptive":0.004416269167622082,
+       "k (general descriptive)":0.2490192995097066,
+       "original name":"XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":8.200272161182978e-08,
+       "MG94xREV with separate rates for branch sets":1.294496425719742e-08,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":1.364401385591182e-07,
+       "RELAX null":2.759256175889242e-07,
+       "RELAX partitioned descriptive":1.354203432123392e-07,
+       "k (general descriptive)":0.4030064805774485,
+       "original name":"XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.06574195544523903,
+       "MG94xREV with separate rates for branch sets":0.02139495713313263,
+       "Nucleotide GTR":0.02049562571177485,
+       "RELAX alternative":0.02279998701839165,
+       "RELAX null":0.02279954572320763,
+       "RELAX partitioned descriptive":0.02279899498459098,
+       "k (general descriptive)":1.379269128539227,
+       "original name":"XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.005298821108347497,
+       "MG94xREV with separate rates for branch sets":0.005025164951309677,
+       "Nucleotide GTR":0.004970425477051902,
+       "RELAX alternative":0.005203562489446197,
+       "RELAX null":0.005203432712878265,
+       "RELAX partitioned descriptive":0.005203276162548606,
+       "k (general descriptive)":0.2496600243651023,
+       "original name":"XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":3.284548594033831e+25,
+       "MG94xREV with separate rates for branch sets":0.02650015045115287,
+       "Nucleotide GTR":0.02534372679434915,
+       "RELAX alternative":0.02720634661700709,
+       "RELAX null":0.02720585997211638,
+       "RELAX partitioned descriptive":0.02720527177383444,
+       "k (general descriptive)":16.85258984764025,
+       "original name":"XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":1.60824638733533e-20,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3866895273775143,
+       "original name":"XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":8.094689951672569e-08,
+       "MG94xREV with separate rates for branch sets":1.651069954217614e-08,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":2.645077752640805e-07,
+       "RELAX null":4.490378950476005e-07,
+       "RELAX partitioned descriptive":6.819149702621753e-07,
+       "k (general descriptive)":0.4040855900114915,
+       "original name":"XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.005174198521035373,
+       "MG94xREV with separate rates for branch sets":0.004753254389642786,
+       "Nucleotide GTR":0.005174512198930286,
+       "RELAX alternative":0.005825460673900716,
+       "RELAX null":0.0058255129716215,
+       "RELAX partitioned descriptive":0.005825486388107518,
+       "k (general descriptive)":0.2494231012583028,
+       "original name":"XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.004742162289557064,
+       "MG94xREV with separate rates for branch sets":0.0048137286390098,
+       "Nucleotide GTR":0.004960550299866947,
+       "RELAX alternative":0.004746346286760347,
+       "RELAX null":0.004746289902460342,
+       "RELAX partitioned descriptive":0.004746197151272153,
+       "k (general descriptive)":0.2489264314295237,
+       "original name":"XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.01038878485080185,
+       "MG94xREV with separate rates for branch sets":0.01253474661003329,
+       "Nucleotide GTR":0.01301970766328102,
+       "RELAX alternative":0.01159204532325931,
+       "RELAX null":0.01159191363991497,
+       "RELAX partitioned descriptive":0.01159169778454344,
+       "k (general descriptive)":0.06762568265399936,
+       "original name":"XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.005081193737042885,
+       "MG94xREV with separate rates for branch sets":0.004894576666365447,
+       "Nucleotide GTR":0.004972527676771124,
+       "RELAX alternative":0.004831970529968885,
+       "RELAX null":0.004831911434689018,
+       "RELAX partitioned descriptive":0.004831814931412021,
+       "k (general descriptive)":1.962917882914341,
+       "original name":"XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.03430585515703826,
+       "MG94xREV with separate rates for branch sets":0.03507769769576117,
+       "Nucleotide GTR":0.03154113454147551,
+       "RELAX alternative":0.03605957650588682,
+       "RELAX null":0.03605914146433386,
+       "RELAX partitioned descriptive":0.03605852820060168,
+       "k (general descriptive)":0,
+       "original name":"XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":116.8782275207901,
+       "MG94xREV with separate rates for branch sets":0.8238051350958245,
+       "Nucleotide GTR":0.6859137043703267,
+       "RELAX alternative":1.421528320882632,
+       "RELAX null":1.421456873951835,
+       "RELAX partitioned descriptive":1.421427423319048,
+       "k (general descriptive)":0.3262021202351367,
+       "original name":"XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.01573492325555513,
+       "MG94xREV with separate rates for branch sets":0.01546746705954598,
+       "Nucleotide GTR":0.01511855091993288,
+       "RELAX alternative":0.01561534221946682,
+       "RELAX null":0.01561509338661952,
+       "RELAX partitioned descriptive":0.01561475658400098,
+       "k (general descriptive)":0.09522490908897466,
+       "original name":"XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA":{
+       "General descriptive":0.005175681702450507,
+       "MG94xREV with separate rates for branch sets":0.005159889760094704,
+       "Nucleotide GTR":0.005030010588868111,
+       "RELAX alternative":0.00515616938926218,
+       "RELAX null":0.005156064402920756,
+       "RELAX partitioned descriptive":0.005155929451533469,
+       "k (general descriptive)":1.919503422002371,
+       "original name":"XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA"
+      },
+     "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.02959355129399537,
+       "MG94xREV with separate rates for branch sets":0.03012402632686477,
+       "Nucleotide GTR":0.02704493493575663,
+       "RELAX alternative":0.03199122423294732,
+       "RELAX null":0.03199052674262465,
+       "RELAX partitioned descriptive":0.03198973732067461,
+       "k (general descriptive)":0.06770331471683395,
+       "original name":"XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":5.58194630543352e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.4020922595209388,
+       "original name":"XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01047428310608903,
+       "MG94xREV with separate rates for branch sets":0.01041824549623247,
+       "Nucleotide GTR":0.01010871745299421,
+       "RELAX alternative":0.01069055582265624,
+       "RELAX null":0.01069035654809332,
+       "RELAX partitioned descriptive":0.0106901007008525,
+       "k (general descriptive)":0.05517985892792433,
+       "original name":"XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01021296948836597,
+       "MG94xREV with separate rates for branch sets":0.01016983995016408,
+       "Nucleotide GTR":0.01002232719089692,
+       "RELAX alternative":0.01030505038338639,
+       "RELAX null":0.01030486004707383,
+       "RELAX partitioned descriptive":0.01030461458330735,
+       "k (general descriptive)":0.04749311647328166,
+       "original name":"XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":3.897277419347371e-25,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.402506188635562,
+       "original name":"XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.00589309122550014,
+       "MG94xREV with separate rates for branch sets":0.006321103120197502,
+       "Nucleotide GTR":0.00578765833711597,
+       "RELAX alternative":0.006326568065211322,
+       "RELAX null":0.006326503508462674,
+       "RELAX partitioned descriptive":0.006326386866908394,
+       "k (general descriptive)":0,
+       "original name":"XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":234.7945833820935,
+       "MG94xREV with separate rates for branch sets":1.002311050955845,
+       "Nucleotide GTR":0.7637644659429356,
+       "RELAX alternative":3.875733770321317,
+       "RELAX null":3.875354135023908,
+       "RELAX partitioned descriptive":3.875014433219293,
+       "k (general descriptive)":0.3614860451175076,
+       "original name":"XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01511625569682826,
+       "MG94xREV with separate rates for branch sets":0.01516349221996874,
+       "Nucleotide GTR":0.01519018839118404,
+       "RELAX alternative":0.01514095191593885,
+       "RELAX null":0.01514074367709298,
+       "RELAX partitioned descriptive":0.01514045028726713,
+       "k (general descriptive)":0.00880938021623319,
+       "original name":"XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":8.207118348753231e-08,
+       "MG94xREV with separate rates for branch sets":1.294496425719742e-08,
+       "Nucleotide GTR":1.06931614321083e-10,
+       "RELAX alternative":2.141495954274044e-07,
+       "RELAX null":9.34041432626759e-08,
+       "RELAX partitioned descriptive":2.13051619362552e-07,
+       "k (general descriptive)":0.4040855899985867,
+       "original name":"XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01057796432863659,
+       "MG94xREV with separate rates for branch sets":0.01016785491086199,
+       "Nucleotide GTR":0.00998649486504477,
+       "RELAX alternative":0.01040781592840224,
+       "RELAX null":0.01040766216787181,
+       "RELAX partitioned descriptive":0.01040743958599246,
+       "k (general descriptive)":0.2568116261082224,
+       "original name":"XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "General descriptive":1.608055782275847e-20,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3871807353623265,
+       "original name":"XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA"
+      },
+     "XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.02656445017235019,
+       "MG94xREV with separate rates for branch sets":0.02575040639022638,
+       "Nucleotide GTR":0.0244343402705501,
+       "RELAX alternative":0.02659396474655313,
+       "RELAX null":0.02659333420326428,
+       "RELAX partitioned descriptive":0.02659265361612453,
+       "k (general descriptive)":0.07826635448574651,
+       "original name":"XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":0.03119880846884476,
+       "MG94xREV with separate rates for branch sets":0.03278689163810492,
+       "Nucleotide GTR":0.03098447721730145,
+       "RELAX alternative":0.03355669131781375,
+       "RELAX null":0.0335561469492137,
+       "RELAX partitioned descriptive":0.03355545533919815,
+       "k (general descriptive)":0.6991555625042469,
+       "original name":"XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "General descriptive":1.392346163679628e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.4019273798520706,
+       "original name":"XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA"
+      },
+     "XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":1.537133947370363e-20,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3908039677353347,
+       "original name":"XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "General descriptive":0.01550581616938679,
+       "MG94xREV with separate rates for branch sets":0.01553458379047509,
+       "Nucleotide GTR":0.0150984753542815,
+       "RELAX alternative":0.01588778088941697,
+       "RELAX null":0.01588756534715942,
+       "RELAX partitioned descriptive":0.01588725315981314,
+       "k (general descriptive)":0.01483522995526042,
+       "original name":"XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA"
+      },
+     "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":{
+       "General descriptive":1.45113037837483e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.395476627106949,
+       "original name":"XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA"
+      },
+     "XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA":{
+       "General descriptive":1.309320527793936e-16,
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "RELAX alternative":0,
+       "RELAX null":0,
+       "RELAX partitioned descriptive":0,
+       "k (general descriptive)":0.3881773956773943,
+       "original name":"XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA"
+      }
+    },
+   "attributes":{
+     "General descriptive":{
+       "attribute type":"branch length",
+       "display order":4
+      },
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "RELAX alternative":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "RELAX null":{
+       "attribute type":"branch length",
+       "display order":3
+      },
+     "RELAX partitioned descriptive":{
+       "attribute type":"branch length",
+       "display order":5
+      },
+     "k (general descriptive)":{
+       "attribute type":"branch label",
+       "display order":4
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101] 
+      ],
+     "name":"relax.filter.default"
+    }
+  },
+ "fits":{
+   "General descriptive":{
+     "AIC-c":5211.274951559874,
+     "Log Likelihood":-2365.840364814737,
+     "Rate Distributions":{
+       "Shared":{
+         "0":{
+           "omega":9.387388913935101e-13,
+           "proportion":0.5060566450892114
+          },
+         "1":{
+           "omega":3.481955609233176e-07,
+           "proportion":0.4736891793152223
+          },
+         "2":{
+           "omega":49.372527178147,
+           "proportion":0.02025417559556623
+          }
+        }
+      },
+     "display order":4,
+     "estimated parameters":231
+    },
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":5114.146677965636,
+     "Equilibrium frequencies":      [
+[0.006288319613218663],
+      [0.01490897485893464],
+      [0.03240930526723518],
+      [0.01014576741899752],
+      [0.003343885153427797],
+      [0.007928016187157858],
+      [0.0172340150281494],
+      [0.00539512669985808],
+      [0.002981599903355419],
+      [0.007069074209441291],
+      [0.01536683683340072],
+      [0.00481060458383187],
+      [0.005077973449432281],
+      [0.01203936554573008],
+      [0.0261713147206475],
+      [0.008192957856258532],
+      [0.01157900253080006],
+      [0.02745265321125714],
+      [0.05967690111074173],
+      [0.01868191724455784],
+      [0.006157265698272456],
+      [0.01459825917600549],
+      [0.03173386785355323],
+      [0.00993432101961313],
+      [0.005490171452833421],
+      [0.01301664565354971],
+      [0.02829573773736097],
+      [0.008858010736886929],
+      [0.00935033061912327],
+      [0.02216869572440228],
+      [0.04819057204848928],
+      [0.01508610973795567],
+      [0.01149891694226665],
+      [0.02726277831630147],
+      [0.05926414882619987],
+      [0.01855270470371219],
+      [0.006114679279805836],
+      [0.0144972910507664],
+      [0.03151438215288662],
+      [0.009865610788017686],
+      [0.005452198958157829],
+      [0.0129266166786771],
+      [0.02810003169069108],
+      [0.008796744751219181],
+      [0.009285659527755726],
+      [0.02201536705559991],
+      [0.04785726438109748],
+      [0.01498176741884572],
+      [0.01758319363551387],
+      [0.01196561096903405],
+      [0.003943676926412259],
+      [0.00935006230027584],
+      [0.02032527562924341],
+      [0.006362849112652828],
+      [0.008337052132993225],
+      [0.01812318218815076],
+      [0.005673481423219111],
+      [0.005988808169721897],
+      [0.01419886327814447],
+      [0.03086565634345721],
+      [0.009662526484701077] 
+      ],
+     "Log Likelihood":-2431.613338982818,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *Afrotheria*":        [
+[1.053229204060059, 1] 
+        ],
+       "non-synonymous/synonymous rate ratio for *Boreoeutheria*":        [
+[0.3113978340872155, 1] 
+        ],
+       "non-synonymous/synonymous rate ratio for *Unclassified*":        [
+[0.39328945527248, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":123
+    },
+   "Nucleotide GTR":{
+     "AIC-c":5209.400755671737,
+     "Equilibrium frequencies":      [
+[0.1997252747252747],
+      [0.257967032967033],
+      [0.3321428571428571],
+      [0.2101648351648352] 
+      ],
+     "Log Likelihood":-2478.864656727941,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.3547975464617957,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.2054060510615044,
+       "Substitution rate from nucleotide C to nucleotide G":0.3123285517172332,
+       "Substitution rate from nucleotide C to nucleotide T":1.115734671817392,
+       "Substitution rate from nucleotide G to nucleotide T":0.2245299720106421
+      },
+     "display order":0,
+     "estimated parameters":125
+    },
+   "RELAX alternative":{
+     "AIC-c":5044.616871956222,
+     "Log Likelihood":-2383.296960303309,
+     "Rate Distributions":{
+       "Afrotheria":{
+         "0":{
+           "omega":0,
+           "proportion":0.3680562320971714
+          },
+         "1":{
+           "omega":0.5432343535912467,
+           "proportion":0.6319437679028286
+          },
+         "2":{
+           "omega":1.778784911655101,
+           "proportion":0
+          }
+        },
+       "Boreoeutheria":{
+         "0":{
+           "omega":0,
+           "proportion":0.3680562320971714
+          },
+         "1":{
+           "omega":0.543204959256946,
+           "proportion":0.6319437679028286
+          },
+         "2":{
+           "omega":1.778875758585998,
+           "proportion":0
+          }
+        },
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.1699615173841376,
+           "rate":0.1228357533988972
+          },
+         "1":{
+           "proportion":0.4552383697368267,
+           "rate":0.6688766058969002
+          },
+         "2":{
+           "proportion":0.3748001128790356,
+           "rate":1.799957711211852
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":136
+    },
+   "RELAX null":{
+     "AIC-c":5042.527983025016,
+     "Log Likelihood":-2383.296958545475,
+     "Rate Distributions":{
+       "Afrotheria":{
+         "0":{
+           "omega":0,
+           "proportion":0.3680491063305086
+          },
+         "1":{
+           "omega":0.5432248848944444,
+           "proportion":0.6319508936694914
+          },
+         "2":{
+           "omega":1.479763297872356,
+           "proportion":0
+          }
+        },
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.1699866698041766,
+           "rate":0.1228524458521513
+          },
+         "1":{
+           "proportion":0.4552329386762695,
+           "rate":0.6689564603316284
+          },
+         "2":{
+           "proportion":0.374780391519554,
+           "rate":1.799949308537547
+          }
+        }
+      },
+     "display order":3,
+     "estimated parameters":135
+    },
+   "RELAX partitioned descriptive":{
+     "AIC-c":5055.071428805721,
+     "Log Likelihood":-2383.296956719263,
+     "Rate Distributions":{
+       "Afrotheria":{
+         "0":{
+           "omega":0.0007807717286003604,
+           "proportion":0.3684138110544191
+          },
+         "1":{
+           "omega":0.5966347509625692,
+           "proportion":0.6309857274242283
+          },
+         "2":{
+           "omega":1.741786273068718,
+           "proportion":0.0006004615213525819
+          }
+        },
+       "Boreoeutheria":{
+         "0":{
+           "omega":0,
+           "proportion":0.3680409782843107
+          },
+         "1":{
+           "omega":0.5432198662083906,
+           "proportion":0.6319590217156893
+          },
+         "2":{
+           "omega":1.741786273068718,
+           "proportion":0
+          }
+        }
+      },
+     "display order":5,
+     "estimated parameters":141
+    }
+  },
+ "input":{
+   "file name":"/Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas",
+   "number of sequences":62,
+   "number of sites":102,
+   "partition count":1,
+   "trees":{
+     "0":"((XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA,(NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA,XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA)Node4)Node2,(XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA,XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node11)Node7,XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA,NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA,(XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,((XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA,XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA)Node18,(((XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA,XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node23,XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA)Node22,((((XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA,XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA)Node93,XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node92,(XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA,XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node30,(((XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node35,((XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node41)Node39,((XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node49)Node47)Node45,(XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node54)Node44)Node38)Node34,(((XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA,(XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA,(XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA,(XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA,((XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA,XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA,XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA,XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA,XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA,XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA)Node69,XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA)Node68)Node66)Node63)Node61)Node59,((XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA)Node81)Node79,(XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA,(XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA,XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA,XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA)Node86)Node84)Node78)Node58,XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA)Node57)Node33)Node28,(XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA,(XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA,XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA)Node101)Node99)Node97)Node27)Node21)Node17,(XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA)Node106)Node15,(XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA)Node110)"
+    }
+  },
+ "runtime":"2.5.74",
+ "test results":{
+   "LRT":-3.515668140607886e-06,
+   "p-value":1,
+   "relaxation or intensification parameter":{
+     "Afrotheria":1,
+     "Boreoeutheria":1.000088675910565
+    }
+  },
+ "tested":{
+   "0":{
+     "NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA":"Boreoeutheria",
+     "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "Node101":"Boreoeutheria",
+     "Node106":"Boreoeutheria",
+     "Node11":"Boreoeutheria",
+     "Node110":"Boreoeutheria",
+     "Node15":"Unclassified",
+     "Node17":"Unclassified",
+     "Node18":"Boreoeutheria",
+     "Node2":"Boreoeutheria",
+     "Node21":"Unclassified",
+     "Node22":"Boreoeutheria",
+     "Node23":"Boreoeutheria",
+     "Node27":"Unclassified",
+     "Node28":"Unclassified",
+     "Node30":"Boreoeutheria",
+     "Node33":"Unclassified",
+     "Node34":"Boreoeutheria",
+     "Node35":"Boreoeutheria",
+     "Node38":"Boreoeutheria",
+     "Node39":"Boreoeutheria",
+     "Node4":"Boreoeutheria",
+     "Node41":"Boreoeutheria",
+     "Node44":"Boreoeutheria",
+     "Node45":"Boreoeutheria",
+     "Node47":"Boreoeutheria",
+     "Node49":"Boreoeutheria",
+     "Node54":"Boreoeutheria",
+     "Node57":"Unclassified",
+     "Node58":"Unclassified",
+     "Node59":"Unclassified",
+     "Node61":"Unclassified",
+     "Node63":"Unclassified",
+     "Node66":"Unclassified",
+     "Node68":"Unclassified",
+     "Node69":"Unclassified",
+     "Node7":"Boreoeutheria",
+     "Node78":"Boreoeutheria",
+     "Node79":"Boreoeutheria",
+     "Node81":"Boreoeutheria",
+     "Node84":"Boreoeutheria",
+     "Node86":"Boreoeutheria",
+     "Node92":"Boreoeutheria",
+     "Node93":"Boreoeutheria",
+     "Node97":"Boreoeutheria",
+     "Node99":"Boreoeutheria",
+     "XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"Boreoeutheria",
+     "XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"Boreoeutheria",
+     "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"Afrotheria",
+     "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"Afrotheria",
+     "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":"Boreoeutheria",
+     "XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"Boreoeutheria",
+     "XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"Boreoeutheria",
+     "XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA":"Boreoeutheria",
+     "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"Boreoeutheria",
+     "XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"Boreoeutheria",
+     "XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"Boreoeutheria",
+     "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":"Boreoeutheria",
+     "XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA":"Boreoeutheria"
+    }
+  },
+ "timers":{
+   "General descriptive model fitting":{
+     "order":2,
+     "timer":876
+    },
+   "Overall":{
+     "order":0,
+     "timer":2043
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":42
+    },
+   "RELAX alternative model fitting":{
+     "order":3,
+     "timer":1751212073
+    },
+   "RELAX null model fitting":{
+     "order":4,
+     "timer":37
+    },
+   "RELAX partitioned descriptive":{
+     "order":5,
+     "timer":37
+    }
+  }
+}
