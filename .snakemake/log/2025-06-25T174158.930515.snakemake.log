@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+all                           1
+parse_gard_alternative        1
+total                         2
+
+Select jobs to execute...
+
+[Wed Jun 25 17:41:59 2025]
+rule parse_gard_alternative:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.alt.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.gard.alt.log
+    jobid: 10
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.gard.alt.log, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.alt.fas
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-06-25T174158.930515.snakemake.log

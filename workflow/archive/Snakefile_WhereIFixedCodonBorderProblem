@@ -1,0 +1,427 @@
+"""
+Snakemake workflow for the AOC application
+Author: Alexander G. Lucaci
+"""
+
+# ============================================================================
+# Imports
+# ============================================================================
+
+import os
+import json
+import pandas as pd
+from pathlib import Path
+from Bio import SeqIO, Entrez, AlignIO, Phylo
+from ete3 import Tree, NCBITaxa
+
+# Configuration
+configfile: os.path.join("config", "config.yml")
+
+with open(os.path.join("config", "cluster.json")) as fh:
+    cluster = json.load(fh)
+
+# Base and data paths
+BASEDIR = os.getcwd()
+Email = config["Email"]
+Label = config["Label"]
+
+Nucleotide_file = os.path.join(BASEDIR, "data", Label, config["Nucleotide"])
+Protein_file    = os.path.join(BASEDIR, "data", Label, config["Protein"])
+CSV             = os.path.join(BASEDIR, "data", Label, config["CSV"])
+
+# Output directories
+OUTDIR_RESULTS = os.path.join(BASEDIR, "results")
+OUTDIR         = os.path.join(OUTDIR_RESULTS, Label)
+os.makedirs(OUTDIR_RESULTS, exist_ok=True)
+os.makedirs(OUTDIR, exist_ok=True)
+
+# HyPhy and custom scripts
+PPN = cluster["__default__"]["ppn"]
+HYPHY = "hyphy"
+HYPHYMPI = "HYPHYMPI"
+CODON_OUTPUT   = os.path.join(OUTDIR, Label)
+REMOVE_DUPS_BF = os.path.join("software", "hyphy-analyses", "remove-duplicates", "remove-duplicates.bf")
+CODONS_PY      = os.path.join("scripts", "codons.py")
+STRIKE_AMBIGS_BF = os.path.join("scripts", "strike-ambigs.bf")
+
+# =============================================================================
+# Helper Functions
+# =============================================================================
+
+def match_transcript_to_tree(tree_newick, accession):
+    t = Tree(tree_newick, format=1)
+    return next((leaf for leaf in t.get_leaf_names() if accession in leaf), None)
+
+def process_lineages(accessions, data_dict, tree_newick):
+    ncbi = NCBITaxa()
+    for idx, acc in enumerate(accessions, 1):
+        if acc in [entry["ACCESSION"] for entry in data_dict.values()]:
+            continue
+        try:
+            handle = Entrez.esummary(db="nucleotide", id=acc, rettype="gb", retmode="text", retmax=1)
+            record = next(Entrez.parse(handle))
+        except Exception:
+            time.sleep(5)
+            handle = Entrez.esummary(db="nucleotide", id=acc, rettype="gb", retmode="text", retmax=1)
+            record = next(Entrez.parse(handle))
+        tax_id = record["TaxId"]
+        lineage = ncbi.get_lineage(tax_id)
+        names = ncbi.get_taxid_translator(lineage)
+        leaf = match_transcript_to_tree(tree_newick, acc.replace(".", "_"))
+        data_dict[str(idx)] = {
+            "ACCESSION": acc,
+            "TAXON_ID": tax_id,
+            "LINEAGE": [names[t] for t in lineage],
+            "TITLE": record["Title"],
+            "LEAFNAME": leaf
+        }
+    return data_dict
+
+def get_lineage_column(lineages, loc):
+    return [lineage[loc] for lineage in lineages if len(lineage) > loc]
+
+def gard_parser(label, best_gard_file, msa_file):
+    data = [line.strip() for line in open(best_gard_file) if "CHARSET" in line]
+    coords = []
+    for line in data:
+        start, stop = [int(x) - 1 for x in line.split()[-1].split(";")[0].split("-")]
+        coords.append((start, stop))
+    index_data = {}
+    n = 3
+    records = list(SeqIO.parse(msa_file, "fasta"))
+    codon_indices = [list(range(len(records[0].seq)))[i*n:(i+1)*n] for i in range((len(records[0].seq) + n - 1) // n)]
+    log_path = os.path.join(BASEDIR, "results", label, f"{label}.gard.log")
+    with open(log_path, "w") as log_file:
+        for pos, (old_start, old_stop) in enumerate(coords):
+            new_start = next((i[0] for i in codon_indices if old_start in i), old_start)
+            new_stop = next((i[0] for i in codon_indices if old_stop in i), old_stop)
+            out_path = os.path.join(BASEDIR, "results", label, f"{label}.{pos+1}.codon.fas")
+            with open(out_path, "w") as out_f:
+                for record in records:
+                    partition = record[new_start:new_stop]
+                    out_f.write(f">{partition.id}\n{partition.seq}\n")
+            partition_len = new_stop - new_start
+            is_multiple_of_3 = (partition_len % 3 == 0)
+            status = "PASS" if is_multiple_of_3 else "FAIL"
+            log_file.write(f"Partition {pos+1}: start={new_start}, stop={new_stop}, length={partition_len}, multiple_of_3={is_multiple_of_3} [{status}]\n")
+            index_data[pos+1] = [i+1 for i in range(new_start, new_stop)]
+
+
+
+def nexus_to_fasta_and_newick(nexus_file, output_prefix="output"):
+    try:
+        alignments = list(AlignIO.parse(nexus_file, "nexus"))
+        for i, alignment in enumerate(alignments, 1):
+            fasta_out = os.path.join(OUTDIR, f"{output_prefix}.{i}.codon.fas")
+            with open(fasta_out, "w") as f:
+                AlignIO.write(alignment, f, "fasta")
+
+        with open(nexus_file) as f:
+            trees = list(Phylo.parse(f, "nexus"))
+        for i, tree in enumerate(trees, 1):
+            newick_out = os.path.join(OUTDIR, f"{output_prefix}.{i}.codon.nwk")
+            with open(newick_out, "w") as f:
+                Phylo.write(tree, f, "newick")
+    except Exception as e:
+        print(f"[ERROR] Failed processing {nexus_file}: {e}")
+        
+        
+
+
+# =============================================================================
+# Rules
+# =============================================================================
+
+rule all:
+    input:
+        CODON_OUTPUT,
+        expand(os.path.join(OUTDIR, "{GENE}.codons.fa"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.aa.fa"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.codons.cln.fa"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.SA.codons.cln.fa"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.treefile"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.json"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.GARD.json"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.best-gard"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.1.codon.fas"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.gard.log"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.1.codon.alt.fas"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}.gard.alt.log"), GENE=Label),
+        expand(os.path.join(OUTDIR, "{GENE}_Annotated.csv"), GENE=Label)
+
+ruleorder: get_codons > macse > cln > strike_ambigs_msa > remove_duplicates_msa
+
+wildcard_constraints:
+    GENE=Label
+
+rule get_codons:
+    input:
+        input=Nucleotide_file
+    output:
+        output=CODON_OUTPUT
+    params:
+        Nuc=Nucleotide_file,
+        Prot=Protein_file,
+        Out=CODON_OUTPUT
+    script:
+        "../scripts/codons.py"
+
+rule macse:
+    input:
+        input=rules.get_codons.output.output
+    output:
+        codons=os.path.join(OUTDIR, "{GENE}.codons.fa"),
+        aa=os.path.join(OUTDIR, "{GENE}.aa.fa")
+    shell:
+        "macse -prog alignSequences -seq {input.input} -out_NT {output.codons} -out_AA {output.aa} -max_refine_iter 3 -local_realign_init 0.3 -local_realign_dec 0.2"
+
+rule cln:
+    input:
+        input=rules.macse.output.codons
+    output:
+        output=os.path.join(OUTDIR, "{GENE}.codons.cln.fa")
+    shell:
+        "{HYPHY} CLN Universal {input.input} 'No/No' {output.output}"
+
+rule strike_ambigs_msa:
+    input:
+        input_msa=rules.cln.output.output
+    output:
+        output=os.path.join(OUTDIR, "{GENE}.SA.codons.cln.fa")
+    shell:
+        "{HYPHY} {STRIKE_AMBIGS_BF} --alignment {input.input_msa} --output {output.output}"
+
+rule remove_duplicates_msa:
+    input:
+        input_msa=rules.strike_ambigs_msa.output.output
+    output:
+        output=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa")
+    shell:
+        "{HYPHY} {REMOVE_DUPS_BF} --msa {input.input_msa} --output {output.output} ENV='DATA_FILE_PRINT_FORMAT=9'"
+
+rule iqtree:
+    input:
+        codons_fas=rules.remove_duplicates_msa.output.output
+    output:
+        tree=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.treefile")
+    shell:
+        "iqtree -s {input.codons_fas} -T AUTO -B 1000 --redo-tree"
+
+rule tn93_cluster:
+    params:
+        threshold=0.01,
+        max_seqs=20
+    input:
+        input=rules.remove_duplicates_msa.output.output
+    output:
+        output_json=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.json"),
+        output_fasta=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta")
+    shell:
+        "python3 scripts/tn93_cluster.py --input {input.input} --output_fasta {output.output_fasta} --output_json {output.output_json} --threshold {params.threshold} --max_retain {params.max_seqs}"
+
+rule recombination:
+    input:
+        input=rules.tn93_cluster.output.output_fasta
+    output:
+        output=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.GARD.json"),
+        bestgard=os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.best-gard")
+    shell:
+        "mpirun --use-hwthread-cpus {HYPHYMPI} GARD --alignment {input.input} --rv GDD --output {output.output} --mode Faster ENV=TOLERATE_NUMERICAL_ERRORS=1;"
+
+rule parse_gard:
+    input:
+        bestgard = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.best-gard"),
+        msa = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa")
+    output:
+        codon_partition = os.path.join(OUTDIR, "{GENE}.1.codon.fas"),
+        log = os.path.join(OUTDIR, "{GENE}.gard.log")
+    run:
+        gard_parser(Label, input.bestgard, input.msa)
+
+rule parse_gard_alternative:
+    input:
+        bestgard = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.cluster.fasta.best-gard"),
+        msa = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa")
+    output:
+        codon_partition = os.path.join(OUTDIR, "{GENE}.1.codon.alt.fas"),
+        log = os.path.join(OUTDIR, "{GENE}.gard.alt.log")
+    run:
+        def parse_gard_results(base_dir, label, best_gard_path, codon_msa_input, log_path):
+            if not os.path.exists(best_gard_path):
+                print(f"[ERROR] GARD results file does not exist: {best_gard_path}")
+                return -1
+
+            data = [line.strip() for line in open(best_gard_path) if "CHARSET" in line]
+            if not data:
+                print("[ERROR] GARD results file is empty or improperly formatted.")
+                return -1
+            # end if
+            
+            print(data)
+            # ['CHARSET span_1 = 1-262;', 'CHARSET span_2 = 263-462;', 'CHARSET span_3 = 463-665;', 'CHARSET span_4 = 666-1518;', 'CHARSET span_5 = 1519-1773;']
+            
+            data_parsed = [[int(x) for x in line.split('=')[1].strip(' ;').split('-')] for line in data]
+            print(data_parsed)
+            
+            data_adjusted = [[start - 1, end] for start, end in data_parsed]
+            print("adjusted:", data_adjusted)
+            
+            records = list(SeqIO.parse(codon_msa_input, "fasta"))
+            
+            # First sequence
+            first_seq = str(records[0].seq)
+            data_adjusted_coords = []
+            
+            #for pair in data_adjusted:
+            #    x = len(first_seq[pair[0], pair[1]])
+            #    print(x)
+                
+                
+            # end for
+            
+            carryOver = 0
+            
+            for start, end in data_adjusted:
+                start = start - carryOver
+                
+                print("Examining partition:", start, end)
+                _ = len(first_seq[int(start): int(end)])
+                print("Length:", _)
+                
+                remainder = _ % 3
+                print("Remainder:", remainder)
+                
+                data_adjusted_coords += [[start, end - remainder]]
+                carryOver = remainder
+                
+                print()
+                
+            # end for
+            
+            
+            print("Adjusted coords:", data_adjusted_coords)
+            
+            
+            
+            output_dir = os.path.join(base_dir, "results", label)
+            os.makedirs(output_dir, exist_ok=True)
+
+            with open(log_path, "w") as log_file:
+                carryover = 0
+                #for i, entry in enumerate(data):
+                for i, entry in enumerate(data_adjusted_coords):
+                    #start = int(entry.split()[-1].split(";")[0].split("-")[0]) - 1
+                    #stop  = int(entry.split()[-1].split(";")[0].split("-")[1])
+                    start = entry[0]
+                    stop = entry[1]
+
+                    print(i, start, stop)
+
+
+
+                    output_path = os.path.join(output_dir, f"{label}.{i + 1}.codon.alt.fas")
+                    
+                    with open(output_path, "w") as out_f:
+                        for record in records:
+                            start_py = start
+                            stop_py = stop
+                            #remainder = (stop_py - start_py + 1) % 3
+                            
+                            #if remainder == 1:
+                            #    stop_py -= 1
+                            #elif remainder == 2:
+                            #    stop_py += 1
+                            # end if
+                            
+                            partition = record[start_py:stop_py]
+
+                            # Adjust coordinates so partition ends between codons
+                            #partition = record[start_py:stop_py]
+                            
+                            out_f.write(f">{record.id}\n{partition.seq}\n")
+                    # end with
+                    
+                    partition_len = stop - start
+                    adjusted_len = len(records[0][start:stop].seq)
+                    log_file.write(f"Partition {i + 1}: start={start}, stop={stop}, length={adjusted_len}, remainder={adjusted_len % 3}\n")
+
+        parse_gard_results(BASEDIR, Label, input.bestgard, input.msa, output.log)
+# end with
+
+
+# ['CHARSET span_1 = 1-262;', 'CHARSET span_2 = 263-462;', 'CHARSET span_3 = 463-665;', 'CHARSET span_4 = 666-1518;', 'CHARSET span_5 = 1519-1773;']
+
+# becomes
+# # ['CHARSET span_1 = 0-262;', 'CHARSET span_2 = 262-462;', 'CHARSET span_3 = 462-665;', 'CHARSET span_4 = 665-1518;', 'CHARSET span_5 = 1518-1773;']
+
+# [[1, 262], [263, 462], [463, 665], [666, 1518], [1519, 1773]]
+
+## hyphy coordinates are 1 indexed and INCLUSIVE ##
+## so to get to "true" python coords you need to -1 to start and -1 to stop ##
+## then you need to +1 to python "stop" coord to get the actual length ##
+
+# - AGL - so -1 to start and leave stop unchanged?
+
+"""
+BEGIN ASSUMPTIONS;
+    CHARSET span_1 = 1-262;
+    CHARSET span_2 = 263-462;
+    CHARSET span_3 = 463-665;
+    CHARSET span_4 = 666-1518;
+    CHARSET span_5 = 1519-1773;
+END;
+
+0 0 262
+1 262 462
+2 462 665
+3 665 1518
+4 1518 1773
+
+"""
+
+
+
+
+rule annotate_lineages:
+    input:
+        input_csv = CSV,
+        tree = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.treefile")
+    output:
+        annotated_csv = os.path.join(OUTDIR, "{GENE}_Annotated.csv")
+    params:
+        email = Email
+    run:
+        Entrez.email = params.email
+        df = pd.read_csv(input.input_csv)
+        df.index += 1
+        data_dict = {}
+        accessions = df['RefSeq Transcript accessions'].tolist()
+        with open(input.tree) as fh:
+            tree_newick = fh.read()
+        data_dict = process_lineages(accessions, data_dict, tree_newick)
+        df_annotated = pd.DataFrame.from_dict(data_dict, orient="index")
+        lineages = df_annotated['LINEAGE'].tolist()
+
+        lineage_set = set()
+        count = 0
+        while True:
+            lineage_column = get_lineage_column(lineages, count)
+            lineage_counts = [lineage_column.count(item) for item in set(lineage_column)]
+            if min(lineage_counts) <= 5:
+                break
+            lineage_set = set(lineage_column)
+            count += 1
+
+        df_annotated["CladeLabel"] = ""
+        for idx, row in df_annotated.iterrows():
+            for item in row['LINEAGE']:
+                if item in lineage_set:
+                    df_annotated.at[idx, "CladeLabel"] = item
+
+        df_annotated.to_csv(output.annotated_csv)
+        for _, row in df_annotated.iterrows():
+            clade_file = os.path.join(OUTDIR, f"{row['CladeLabel']}.clade")
+            with open(clade_file, "a") as fh:
+                fh.write(f"{row['LEAFNAME']}\n")

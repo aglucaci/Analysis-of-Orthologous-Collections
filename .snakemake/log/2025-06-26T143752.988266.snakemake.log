@@ -1,0 +1,167 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+CFEL         4
+RELAX        4
+all          1
+total        9
+
+Select jobs to execute...
+
+[Thu Jun 26 14:37:53 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.RELAX.json
+    jobid: 49
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.RELAX.json
+    wildcards: sample=Primate_ACE2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.RELAX.json
+    jobid: 45
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.RELAX.json
+    wildcards: sample=Primate_ACE2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.CFEL.json
+    jobid: 55
+    reason: Params have changed since last execution
+    wildcards: sample=Primate_ACE2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.RELAX.json
+    jobid: 51
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.RELAX.json
+    wildcards: sample=Primate_ACE2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.CFEL.json
+    jobid: 53
+    reason: Params have changed since last execution
+    wildcards: sample=Primate_ACE2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.RELAX.json
+    jobid: 47
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.RELAX.json
+    wildcards: sample=Primate_ACE2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.CFEL.json
+    jobid: 54
+    reason: Params have changed since last execution
+    wildcards: sample=Primate_ACE2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 14:37:53 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.CFEL.json
+    jobid: 56
+    reason: Params have changed since last execution
+    wildcards: sample=Primate_ACE2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule RELAX:
+    jobid: 49
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.RELAX.json --reference-group Haplorrhini --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule RELAX:
+    jobid: 45
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.RELAX.json --reference-group Haplorrhini --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule CFEL:
+    jobid: 55
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.CFEL.json
+    shell:
+        hyphy contrast-fel --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.CFEL.json --branch-set Haplorrhini
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule RELAX:
+    jobid: 51
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.RELAX.json --reference-group Haplorrhini --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule CFEL:
+    jobid: 53
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.CFEL.json
+    shell:
+        hyphy contrast-fel --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.CFEL.json --branch-set Haplorrhini
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule RELAX:
+    jobid: 47
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.RELAX.json --reference-group Haplorrhini --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule CFEL:
+    jobid: 54
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.CFEL.json
+    shell:
+        hyphy contrast-fel --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.CFEL.json --branch-set Haplorrhini
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 26 14:37:53 2025]
+Error in rule CFEL:
+    jobid: 56
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.CFEL.json
+    shell:
+        hyphy contrast-fel --alignment /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.CFEL.json --branch-set Haplorrhini
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-06-26T143752.988266.snakemake.log

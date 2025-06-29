@@ -1,0 +1,387 @@
+
+# Average sequence length is (PROTEIN AA ungapped): 663.515625
+# Average sequence length is (NUCLEOTIDE NUC): 1990.546875
+
+
+# Processing: NP_001018857.2 zinc finger protein 805 isoform 1 [Homo sapiens]
+# Species: Homo sapiens
+# Match: NM_001023563.4 Homo sapiens zinc finger protein 805 (ZNF805), transcript variant 1, mRNA 
+
+
+
+# Processing: XP_003316751.1 zinc finger protein 805 isoform X1 [Pan troglodytes]
+# Species: Pan troglodytes
+# Match: XM_003316703.6 PREDICTED: Pan troglodytes zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_024835186.2 zinc finger protein 805 isoform X1 [Bos taurus]
+# Species: Bos taurus
+# Match: XM_024979418.2 PREDICTED: Bos taurus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_005596635.2 zinc finger protein 805 isoform X4 [Equus caballus]
+# Species: Equus caballus
+# Match: XM_005596578.4 PREDICTED: Equus caballus zinc finger protein 805 (ZNF805), transcript variant X4, mRNA 
+
+
+
+# Processing: NP_001257834.1 zinc finger protein 805 [Callithrix jacchus]
+# Species: Callithrix jacchus
+# Match: NM_001270905.1 Callithrix jacchus zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_004061584.1 zinc finger protein 805 [Gorilla gorilla gorilla]
+# Species: Gorilla gorilla gorilla
+# Match: XM_004061536.3 PREDICTED: Gorilla gorilla gorilla zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_004089165.1 zinc finger protein 805 [Nomascus leucogenys]
+# Species: Nomascus leucogenys
+# Match: XM_004089117.3 PREDICTED: Nomascus leucogenys zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_073652418.1 zinc finger protein 805 isoform X8 [Tursiops truncatus]
+# Species: Tursiops truncatus
+# Match: XM_073796317.1 PREDICTED: Tursiops truncatus zinc finger protein 805 (ZNF805), transcript variant X13, mRNA 
+
+
+
+# Processing: XP_055001316.1 zinc finger protein 805 isoform X1 [Sorex araneus]
+# Species: Sorex araneus
+# Match: XM_055145341.1 PREDICTED: Sorex araneus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_012921726.1 zinc finger protein 805 isoform X1 [Heterocephalus glaber]
+# Species: Heterocephalus glaber
+# Match: XM_013066272.2 PREDICTED: Heterocephalus glaber zinc finger protein 805 (Znf805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_005590557.3 zinc finger protein 805 isoform X1 [Macaca fascicularis]
+# Species: Macaca fascicularis
+# Match: XM_005590500.5 PREDICTED: Macaca fascicularis zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_005861762.1 PREDICTED: zinc finger protein 805 [Myotis brandtii]
+# Species: Myotis brandtii
+# Match: XM_005861700.2 PREDICTED: Myotis brandtii zinc finger protein 805 (ZNF805), transcript variant X2, mRNA 
+
+
+
+# Processing: XP_072824461.1 zinc finger protein 805 [Vicugna pacos]
+# Species: Vicugna pacos
+# Match: XM_072968360.1 PREDICTED: Vicugna pacos zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_015417267.1 PREDICTED: zinc finger protein 805 isoform X4 [Myotis davidii]
+# Species: Myotis davidii
+# Match: XM_015561781.1 PREDICTED: Myotis davidii zinc finger protein 805 (ZNF805), transcript variant X4, mRNA 
+
+
+
+# Processing: XP_006868322.1 PREDICTED: zinc finger protein 805 [Chrysochloris asiatica]
+# Species: Chrysochloris asiatica
+# Match: XM_006868260.1 PREDICTED: Chrysochloris asiatica zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_006903018.1 PREDICTED: zinc finger protein 805 [Elephantulus edwardii]
+# Species: Elephantulus edwardii
+# Match: XM_006902956.1 PREDICTED: Elephantulus edwardii zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_006915980.2 zinc finger protein 805 isoform X3 [Pteropus alecto]
+# Species: Pteropus alecto
+# Match: XM_006915918.3 PREDICTED: Pteropus alecto zinc finger protein 805 (ZNF805), transcript variant X3, mRNA 
+
+
+
+# Processing: XP_007127497.1 zinc finger protein 805 [Physeter macrocephalus]
+# Species: Physeter macrocephalus
+# Match: XM_007127435.4 PREDICTED: Physeter macrocephalus zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_054566384.1 zinc finger protein 805 [Eptesicus fuscus]
+# Species: Eptesicus fuscus
+# Match: XM_054710409.1 PREDICTED: Eptesicus fuscus zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_070489608.1 zinc finger protein 805 isoform X4 [Equus przewalskii]
+# Species: Equus przewalskii
+# Match: XM_070633507.1 PREDICTED: Equus przewalskii zinc finger protein 805 (ZNF805), transcript variant X4, mRNA 
+
+
+
+# Processing: XP_030797556.1 zinc finger protein 805 isoform X1 [Rhinopithecus roxellana]
+# Species: Rhinopithecus roxellana
+# Match: XM_030941696.1 PREDICTED: Rhinopithecus roxellana zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_010855997.1 PREDICTED: zinc finger protein 805 [Bison bison bison]
+# Species: Bison bison bison
+# Match: XM_010857695.1 PREDICTED: Bison bison bison zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_010960271.2 zinc finger protein 805 isoform X1 [Camelus bactrianus]
+# Species: Camelus bactrianus
+# Match: XM_010961969.3 PREDICTED: Camelus bactrianus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_034495425.1 zinc finger protein 805 [Ailuropoda melanoleuca]
+# Species: Ailuropoda melanoleuca
+# Match: XM_034639534.1 PREDICTED: Ailuropoda melanoleuca zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_011835039.1 PREDICTED: zinc finger protein 805 [Mandrillus leucophaeus]
+# Species: Mandrillus leucophaeus
+# Match: XM_011979649.1 PREDICTED: Mandrillus leucophaeus zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_012320774.1 zinc finger protein 805 [Aotus nancymaae]
+# Species: Aotus nancymaae
+# Match: XM_012465351.3 PREDICTED: Aotus nancymaae zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_012590161.1 PREDICTED: zinc finger protein 805 [Condylura cristata]
+# Species: Condylura cristata
+# Match: XM_012734707.1 PREDICTED: Condylura cristata zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_012664121.1 zinc finger protein 805 [Otolemur garnettii]
+# Species: Otolemur garnettii
+# Match: XM_012808667.2 PREDICTED: Otolemur garnettii zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_012903513.1 zinc finger protein 805 isoform X1 [Mustela putorius furo]
+# Species: Mustela putorius furo
+# Match: XM_013048059.2 PREDICTED: Mustela putorius furo zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_017365061.1 zinc finger protein 805 isoform X1 [Cebus imitator]
+# Species: Cebus imitator
+# Match: XM_017509572.2 PREDICTED: Cebus imitator zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_017740940.1 PREDICTED: zinc finger protein 805 isoform X1 [Rhinopithecus bieti]
+# Species: Rhinopithecus bieti
+# Match: XM_017885451.1 PREDICTED: Rhinopithecus bieti zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_020025724.1 zinc finger protein 805 isoform X1 [Castor canadensis]
+# Species: Castor canadensis
+# Match: XM_020170135.2 PREDICTED: Castor canadensis zinc finger protein 805 (Znf805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_070307769.1 zinc finger protein 805 [Odocoileus virginianus]
+# Species: Odocoileus virginianus
+# Match: XM_070451668.1 PREDICTED: Odocoileus virginianus zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_022420610.2 zinc finger protein 805 isoform X2 [Delphinapterus leucas]
+# Species: Delphinapterus leucas
+# Match: XM_022564902.2 PREDICTED: Delphinapterus leucas zinc finger protein 805 (ZNF805), transcript variant X2, mRNA 
+
+
+
+# Processing: XP_025224615.1 zinc finger protein 805 [Theropithecus gelada]
+# Species: Theropithecus gelada
+# Match: XM_025368830.1 PREDICTED: Theropithecus gelada zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_072619951.1 zinc finger protein 805 isoform X1 [Vulpes vulpes]
+# Species: Vulpes vulpes
+# Match: XM_072763850.1 PREDICTED: Vulpes vulpes zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_035580856.1 zinc finger protein 805 isoform X1 [Zalophus californianus]
+# Species: Zalophus californianus
+# Match: XM_035724963.1 PREDICTED: Zalophus californianus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_029780644.1 zinc finger protein 805 [Suricata suricatta]
+# Species: Suricata suricatta
+# Match: XM_029924784.1 PREDICTED: Suricata suricatta zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_032119119.1 zinc finger protein 805 isoform X1 [Sapajus apella]
+# Species: Sapajus apella
+# Match: XM_032263228.1 PREDICTED: Sapajus apella zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_032180551.1 zinc finger protein 805 isoform X1 [Mustela erminea]
+# Species: Mustela erminea
+# Match: XM_032324660.1 PREDICTED: Mustela erminea zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_035947793.1 zinc finger protein 805 isoform X1 [Halichoerus grypus]
+# Species: Halichoerus grypus
+# Match: XM_036091900.1 PREDICTED: Halichoerus grypus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_040107676.1 zinc finger protein 805 isoform X1 [Oryx dammah]
+# Species: Oryx dammah
+# Match: XM_040251742.1 PREDICTED: Oryx dammah zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_042773649.1 zinc finger protein 805 isoform X1 [Panthera leo]
+# Species: Panthera leo
+# Match: XM_042917715.1 PREDICTED: Panthera leo zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_046537637.1 zinc finger protein 805 [Equus quagga]
+# Species: Equus quagga
+# Match: XM_046681681.1 PREDICTED: Equus quagga zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_047566635.1 zinc finger protein 805 isoform X1 [Lutra lutra]
+# Species: Lutra lutra
+# Match: XM_047710679.1 PREDICTED: Lutra lutra zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_050627995.1 zinc finger protein 805 isoform X1 [Macaca thibetana thibetana]
+# Species: Macaca thibetana thibetana
+# Match: XM_050772038.1 PREDICTED: Macaca thibetana thibetana zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_053460380.1 zinc finger protein 805 [Nycticebus coucang]
+# Species: Nycticebus coucang
+# Match: XM_053604405.1 PREDICTED: Nycticebus coucang zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_054318851.1 zinc finger protein 805 isoform X1 [Pongo pygmaeus]
+# Species: Pongo pygmaeus
+# Match: XM_054462876.2 PREDICTED: Pongo pygmaeus zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_055266563.1 zinc finger protein 805 [Moschus berezovskii]
+# Species: Moschus berezovskii
+# Match: XM_055410588.1 PREDICTED: Moschus berezovskii zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_055409673.1 zinc finger protein 805 isoform X6 [Bubalus kerabau]
+# Species: Bubalus kerabau
+# Match: XM_055553698.1 PREDICTED: Bubalus kerabau zinc finger protein 805 (ZNF805), transcript variant X7, mRNA 
+
+
+
+# Processing: XP_057390211.1 LOW QUALITY PROTEIN: zinc finger protein 805 [Balaenoptera acutorostrata]
+# Skipping this sequence due to quality issues XP_057390211.1 LOW QUALITY PROTEIN: zinc finger protein 805 [Balaenoptera acutorostrata]
+
+
+# Processing: XP_057575644.1 zinc finger protein 805 isoform X1 [Hippopotamus amphibius kiboko]
+# Species: Hippopotamus amphibius kiboko
+# Match: XM_057719661.1 PREDICTED: Hippopotamus amphibius kiboko zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_058386431.1 zinc finger protein 805 isoform X1 [Diceros bicornis minor]
+# Species: Diceros bicornis minor
+# Match: XM_058530448.1 PREDICTED: Diceros bicornis minor zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_058563070.1 zinc finger protein 805 isoform X1 [Neofelis nebulosa]
+# Species: Neofelis nebulosa
+# Match: XM_058707087.1 PREDICTED: Neofelis nebulosa zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_059008325.1 zinc finger protein 805 isoform X1 [Mustela lutreola]
+# Species: Mustela lutreola
+# Match: XM_059152342.1 PREDICTED: Mustela lutreola zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_059239166.1 zinc finger protein 805 isoform X1 [Mustela nigripes]
+# Species: Mustela nigripes
+# Match: XM_059383183.1 PREDICTED: Mustela nigripes zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_059520975.1 zinc finger protein 805 isoform X1 [Myotis daubentonii]
+# Species: Myotis daubentonii
+# Match: XM_059664992.1 PREDICTED: Myotis daubentonii zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_060508487.1 zinc finger protein 805 [Panthera onca]
+# Species: Panthera onca
+# Match: XM_060652504.1 PREDICTED: Panthera onca zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_064436374.1 zinc finger protein 805 isoform X1 [Mirounga angustirostris]
+# Species: Mirounga angustirostris
+# Match: XM_064580304.1 PREDICTED: Mirounga angustirostris zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_065754313.1 zinc finger protein 805 [Phocoena phocoena]
+# Species: Phocoena phocoena
+# Match: XM_065898241.1 PREDICTED: Phocoena phocoena zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_067576623.1 zinc finger protein 805 isoform X1 [Pseudorca crassidens]
+# Species: Pseudorca crassidens
+# Match: XM_067720522.1 PREDICTED: Pseudorca crassidens zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+
+
+# Processing: XP_069408213.1 zinc finger protein 805 isoform X2 [Ovis canadensis]
+# Species: Ovis canadensis
+# Match: XM_069552112.2 PREDICTED: Ovis canadensis zinc finger protein 805 (ZNF805), transcript variant X2, mRNA 
+
+
+
+# Processing: XP_070257777.1 zinc finger protein 805 [Myotis yumanensis]
+# Species: Myotis yumanensis
+# Match: XM_070401676.1 PREDICTED: Myotis yumanensis zinc finger protein 805 (ZNF805), mRNA 
+
+
+
+# Processing: XP_072678998.1 zinc finger protein 805 isoform X1 [Canis lupus baileyi]
+# Species: Canis lupus baileyi
+# Match: XM_072822897.1 PREDICTED: Canis lupus baileyi zinc finger protein 805 (ZNF805), transcript variant X1, mRNA 
+
+# Writing data to: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805
+--- The following had no matches

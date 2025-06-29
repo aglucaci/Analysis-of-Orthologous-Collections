@@ -1,0 +1,1231 @@
+{
+ "Evidence Ratios":{
+  },
+ "Site Log Likelihood":{
+   "unconstrained":    [
+[-34.86245550581813, -38.21427657049338, -26.53154328430824, -34.67644368930593, -97.69544495014907, -24.57337571503766, -25.37606307152822, -27.52046236239049, -19.67241189776104, -18.97368235226035, -26.53596758866526, -18.77422798868135, -7.777363577767464, -30.67684425116012, -28.64559069470523, -26.76082354858617, -23.75681922258437, -20.40668227734475, -43.25267628377814, -23.86165584316215, -22.20353494969187, -30.62357940531793, -26.01487476680348, -12.89961291926662, -37.50166864918539, -23.79804918396744, -24.48817511701027, -23.36386948980296, -29.54351120956525, -32.49096025903247, -24.88420105824977, -12.50094215771358, -23.49283039255812, -20.81680869079117, -12.31239273594794, -21.96030339005353, -8.862744785048498, -21.10160059485679, -21.88611462520375] 
+    ]
+  },
+ "Synonymous site-posteriors":  [
+[0.9999973945056028, 0.996954815073244, 0.9999999264419089, 0.9752088905420915, 1.168784289257452e-07, 0.9998670811136269, 0.9999626825454168, 0.9999999628411756, 0.9999952560951669, 0.9999764696743284, 0.9992639063306632, 0.9999717526357718, 0.1907207140359133, 0.9999234332755299, 0.9999955234652321, 0.9999999975542135, 0.9999964570037942, 0.9999998839838942, 0.9999989636080171, 0.999987756757124, 0.9999939596879436, 0.9999988369979605, 0.9999999954119503, 0.9736370751001877, 0.9999998991691637, 0.9999999230784827, 0.9999747673687402, 0.9998917915739799, 0.9999999140368959, 0.9999624705200074, 0.9999906251099394, 0.9999972946428027, 0.9999797325487142, 0.9999182724474919, 0.9997972346469395, 0.9999997640978069, 0.9813591688469293, 0.9999999504518972, 0.9999552320362901],
+  [4.718709757803779e-14, 9.932243353633621e-19, 7.347299088283281e-08, 3.393036726140338e-17, 7.135153515891129e-56, 6.4157927260111e-11, 2.513615705208999e-14, 8.062881619820524e-12, 4.707884639930418e-06, 2.353026777965288e-05, 1.733377073941431e-14, 2.824731368231355e-05, 0.8092792833732797, 9.614876536435523e-15, 1.680803137623167e-12, 3.376089719351994e-13, 9.635360604403852e-14, 1.073856631794805e-07, 6.441459833222179e-20, 9.212879716132587e-13, 1.387769320938608e-10, 2.588277872769541e-14, 1.835869514237088e-09, 0.02636278755367057, 2.508270546994762e-14, 7.250375141043537e-08, 1.120930884625835e-10, 2.253085836519997e-12, 5.804373426516433e-14, 3.006116196789265e-15, 8.819639326884447e-15, 1.879172327648696e-06, 4.82364879701648e-15, 4.542147544480747e-09, 0.0002027571495777487, 2.352914829194285e-07, 0.0186408062357316, 4.675083318311706e-08, 6.686169543463352e-13],
+  [2.605494350029549e-06, 0.003045184926756052, 8.510015088532624e-11, 0.02479110945790846, 0.9999998831215711, 0.0001329188222152713, 3.731745455805201e-05, 3.715076158528161e-08, 3.602019303587219e-08, 5.789193798115074e-11, 0.0007360936693194811, 5.054594453799413e-11, 2.590806822559898e-09, 7.656672446062862e-05, 4.476533087119578e-06, 2.445448891457151e-09, 3.542996109488311e-06, 8.630442700239387e-09, 1.036391982871561e-06, 1.224324195482255e-05, 6.04017327946306e-06, 1.163002013378429e-06, 2.7521801717869e-09, 1.373461416152616e-07, 1.008308112754968e-07, 4.41776579897056e-09, 2.523251916658086e-05, 0.0001082084237671946, 8.596304599372173e-08, 3.752947998957544e-05, 9.374890051777325e-06, 8.261848696832561e-07, 2.026745128115627e-05, 8.172301036050961e-05, 8.20348279843503e-09, 6.107102732847155e-10, 2.491733896721858e-08, 2.797269771120174e-09, 4.476796304117751e-05] 
+  ],
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond",
+   "citation":"*Gene-wide identification of episodic selection*, Mol Biol Evol. 32(5):1365-71, *Synonymous Site-to-Site Substitution Rate Variation Dramatically Inflates False Positive Rates of Selection Analyses: Ignore at Your Own Peril*, Mol Biol Evol. 37(8):2430-2439",
+   "contact":"spond@temple.edu",
+   "info":"BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted  jointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. Assuming there is evidence of positive selection (i.e. there is an omega > 1),  BUSTED will also perform a quick evidence-ratio style analysis to explore which individual sites may have been subject to selection. v2.0 adds support for synonymous rate variation, and relaxes the test statistic to 0.5 (chi^2_0 + chi^2_2).\n                               \nVersion 2.1 adds a grid search for the initial starting point.\n\nVersion 2.2 changes the grid search to LHC, and adds an initial search phase to use adaptive Nedler-Mead. \n\nVersion 3.0 implements the option for branch-site variation in synonymous substitution rates. \n\nVersion 3.1 adds HMM auto-correlation option for SRV, and binds SRV distributions for multiple branch sets.\n\nVersion 4.0 adds support for multiple hits (MH), ancestral state reconstruction saved to JSON, and profiling of branch-site level support for selection / multiple hits.\n\nVersion 4.2 adds calculation of MH-attributable fractions of substitutions.\n\nVersion 4.5 adds an 'error absorption' component \n\nVersion 4.6 adds support for MSS-type models\n",
+   "requirements":"in-frame codon alignment and a phylogenetic tree (optionally annotated with {})",
+   "settings":{
+     "error-sink":0,
+     "mss":"No",
+     "multiple-hit":"None",
+     "srv":"Yes"
+    },
+   "version":"4.6"
+  },
+ "background":0,
+ "branch attributes":{
+   "0":{
+     "NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.009264093752960556,
+       "Nucleotide GTR":0.008827563243351952,
+       "original name":"NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA",
+       "unconstrained":0.009252948049108905
+      },
+     "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01873114521411748,
+       "Nucleotide GTR":0.01765555783576149,
+       "original name":"NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.01925537133196772
+      },
+     "Node102":{
+       "MG94xREV with separate rates for branch sets":0.008743476808019027,
+       "Nucleotide GTR":0.008651918361000018,
+       "unconstrained":0.008749914524204034
+      },
+     "Node103":{
+       "MG94xREV with separate rates for branch sets":0.02677242349901297,
+       "Nucleotide GTR":0.0263112683650555,
+       "unconstrained":0.02564965106799939
+      },
+     "Node107":{
+       "MG94xREV with separate rates for branch sets":0.008664478481644861,
+       "Nucleotide GTR":0.008657824816468694,
+       "unconstrained":0.008708051773057232
+      },
+     "Node11":{
+       "MG94xREV with separate rates for branch sets":0.008528669140171573,
+       "Nucleotide GTR":0.008589959092393488,
+       "unconstrained":0.008638642740974461
+      },
+     "Node113":{
+       "MG94xREV with separate rates for branch sets":0.008752012570908593,
+       "Nucleotide GTR":0.008651620074106921,
+       "unconstrained":0.008799684915454161
+      },
+     "Node116":{
+       "MG94xREV with separate rates for branch sets":0.02684604354590733,
+       "Nucleotide GTR":0.02637197594145104,
+       "unconstrained":0.02536549268165041
+      },
+     "Node14":{
+       "MG94xREV with separate rates for branch sets":0.008352005238700447,
+       "Nucleotide GTR":0.008549133024635745,
+       "unconstrained":0.008546427271361672
+      },
+     "Node15":{
+       "MG94xREV with separate rates for branch sets":0.01863602164543353,
+       "Nucleotide GTR":0.01761490027233649,
+       "unconstrained":0.01915110708580387
+      },
+     "Node16":{
+       "MG94xREV with separate rates for branch sets":0.008619609013919949,
+       "Nucleotide GTR":0.008627170992408891,
+       "unconstrained":0.008781853974373931
+      },
+     "Node17":{
+       "MG94xREV with separate rates for branch sets":0.0285526325286459,
+       "Nucleotide GTR":0.02674231998214346,
+       "unconstrained":0.02804859436826779
+      },
+     "Node19":{
+       "MG94xREV with separate rates for branch sets":0.01826286320667403,
+       "Nucleotide GTR":0.01739075885663381,
+       "unconstrained":0.01961364828492271
+      },
+     "Node2":{
+       "MG94xREV with separate rates for branch sets":0.01872610140818148,
+       "Nucleotide GTR":0.01765670547773841,
+       "unconstrained":0.019274425345854
+      },
+     "Node22":{
+       "MG94xREV with separate rates for branch sets":0.01180371974373584,
+       "Nucleotide GTR":0.01026712605799298,
+       "unconstrained":0.01205730984875319
+      },
+     "Node24":{
+       "MG94xREV with separate rates for branch sets":0.0205349431533694,
+       "Nucleotide GTR":0.0243495536637338,
+       "unconstrained":0.02304304845188471
+      },
+     "Node25":{
+       "MG94xREV with separate rates for branch sets":0.02086740864149503,
+       "Nucleotide GTR":0.01463831650992396,
+       "unconstrained":0.01870278751202464
+      },
+     "Node26":{
+       "MG94xREV with separate rates for branch sets":0.04988905073911316,
+       "Nucleotide GTR":0.04375517418509392,
+       "unconstrained":0.05635792861390868
+      },
+     "Node27":{
+       "MG94xREV with separate rates for branch sets":0.01689928236991587,
+       "Nucleotide GTR":0.01691334751180347,
+       "unconstrained":0.01729491483509626
+      },
+     "Node28":{
+       "MG94xREV with separate rates for branch sets":0.008709674822178886,
+       "Nucleotide GTR":0.008559411944576852,
+       "unconstrained":0.008729210492950477
+      },
+     "Node3":{
+       "MG94xREV with separate rates for branch sets":0.00879231895868848,
+       "Nucleotide GTR":0.008627584053970624,
+       "unconstrained":0.008805807054815481
+      },
+     "Node35":{
+       "MG94xREV with separate rates for branch sets":0.01561691407932132,
+       "Nucleotide GTR":0.01511845365801247,
+       "unconstrained":0.01977938785227999
+      },
+     "Node37":{
+       "MG94xREV with separate rates for branch sets":1.30256786624364e-10,
+       "Nucleotide GTR":0.05763794683932397,
+       "unconstrained":7.15462434420343e-15
+      },
+     "Node39":{
+       "MG94xREV with separate rates for branch sets":0.3294439424420978,
+       "Nucleotide GTR":0.1539002832010004,
+       "unconstrained":0.5180906123389606
+      },
+     "Node41":{
+       "MG94xREV with separate rates for branch sets":0.02521577449121398,
+       "Nucleotide GTR":0.1269970379014098,
+       "unconstrained":0.00924911208757577
+      },
+     "Node44":{
+       "MG94xREV with separate rates for branch sets":0.01963767571542389,
+       "Nucleotide GTR":0.0188992635771849,
+       "unconstrained":0.0211779602278187
+      },
+     "Node46":{
+       "MG94xREV with separate rates for branch sets":0.04736089885426171,
+       "Nucleotide GTR":0.04350072464192208,
+       "unconstrained":0.05413748067958783
+      },
+     "Node5":{
+       "MG94xREV with separate rates for branch sets":0.00863066041416583,
+       "Nucleotide GTR":0.008570121706484465,
+       "unconstrained":0.008667732669399178
+      },
+     "Node52":{
+       "MG94xREV with separate rates for branch sets":0.008844298801817316,
+       "Nucleotide GTR":0.008619290434405477,
+       "unconstrained":0.008892523979422719
+      },
+     "Node58":{
+       "MG94xREV with separate rates for branch sets":0.02746621884166173,
+       "Nucleotide GTR":0.02610485010988867,
+       "unconstrained":0.02638069696467206
+      },
+     "Node59":{
+       "MG94xREV with separate rates for branch sets":0.008940739543421504,
+       "Nucleotide GTR":0.008589066818033396,
+       "unconstrained":0.008835057142872384
+      },
+     "Node66":{
+       "MG94xREV with separate rates for branch sets":0.01765718672233027,
+       "Nucleotide GTR":0.01733907962830876,
+       "unconstrained":0.01805139571675318
+      },
+     "Node69":{
+       "MG94xREV with separate rates for branch sets":0.02141641492984487,
+       "Nucleotide GTR":0.01939849597797819,
+       "unconstrained":0.02067022657403531
+      },
+     "Node71":{
+       "MG94xREV with separate rates for branch sets":0.007684598820786293,
+       "Nucleotide GTR":0.008335832080053712,
+       "unconstrained":0.007663695041860211
+      },
+     "Node72":{
+       "MG94xREV with separate rates for branch sets":0.04661540546111886,
+       "Nucleotide GTR":0.0431385029023249,
+       "unconstrained":0.0498588729977677
+      },
+     "Node73":{
+       "MG94xREV with separate rates for branch sets":0.00872105281985096,
+       "Nucleotide GTR":0.008584728940735588,
+       "unconstrained":0.008482407061052169
+      },
+     "Node79":{
+       "MG94xREV with separate rates for branch sets":0.01086614658189495,
+       "Nucleotide GTR":0.01010358505883517,
+       "unconstrained":0.01064905177512053
+      },
+     "Node81":{
+       "MG94xREV with separate rates for branch sets":0.02665178978139765,
+       "Nucleotide GTR":0.0263053645909072,
+       "unconstrained":0.02663339829127805
+      },
+     "Node86":{
+       "MG94xREV with separate rates for branch sets":0.05806269790083466,
+       "Nucleotide GTR":0.05377399129080314,
+       "unconstrained":0.06968077898150789
+      },
+     "Node88":{
+       "MG94xREV with separate rates for branch sets":0.009668546285218111,
+       "Nucleotide GTR":0.009041259081205394,
+       "unconstrained":0.01764227753277474
+      },
+     "Node96":{
+       "MG94xREV with separate rates for branch sets":0.00895856363705066,
+       "Nucleotide GTR":0.008802502746590656,
+       "unconstrained":0.008986800176009757
+      },
+     "Node98":{
+       "MG94xREV with separate rates for branch sets":0.02794722953468634,
+       "Nucleotide GTR":0.02653976665517114,
+       "unconstrained":0.02935744182858351
+      },
+     "XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.009118340375040253,
+       "Nucleotide GTR":0.008773587770484339,
+       "original name":"XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.009055205012001142
+      },
+     "XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":1.194407667905031e-16
+      },
+     "XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008817169430735051,
+       "Nucleotide GTR":0.008622404938193159,
+       "original name":"XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.008853650116385671
+      },
+     "XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.114835988009142e-20
+      },
+     "XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA",
+       "unconstrained":1.001072972099074e-16
+      },
+     "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.030777322617504,
+       "Nucleotide GTR":0.0008936022946666722,
+       "original name":"XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.03387870582083264
+      },
+     "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.2851541763674553,
+       "Nucleotide GTR":0.1186210180290606,
+       "original name":"XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.3762284527017455
+      },
+     "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01640721532310011,
+       "Nucleotide GTR":0.01603372609228084,
+       "original name":"XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA",
+       "unconstrained":0.01703001675533376
+      },
+     "XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008676068478853374,
+       "Nucleotide GTR":0.008555586006370153,
+       "original name":"XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.008484645846133081
+      },
+     "XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":1.885245828570558e-16
+      },
+     "XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01418190540338122,
+       "Nucleotide GTR":0.01538850736563316,
+       "original name":"XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.01225679440806166
+      },
+     "XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008969716289330864,
+       "Nucleotide GTR":0.008640255912000124,
+       "original name":"XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.009041708296317027
+      },
+     "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.03748034043975903,
+       "Nucleotide GTR":0.02967678187361372,
+       "original name":"XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.03908930312211061
+      },
+     "XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008569423733176732,
+       "Nucleotide GTR":0.008626035175179467,
+       "original name":"XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.00832523849517168
+      },
+     "XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.274827829124241e-16
+      },
+     "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.08144649599895801,
+       "Nucleotide GTR":0.01073764437698611,
+       "original name":"XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA",
+       "unconstrained":0.08227442011115634
+      },
+     "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.09297526149816082,
+       "Nucleotide GTR":0.08316650839468641,
+       "original name":"XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA",
+       "unconstrained":0.09585806412536436
+      },
+     "XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.114835988009142e-20
+      },
+     "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.1323752217276491,
+       "Nucleotide GTR":0.1141140093148008,
+       "original name":"XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA",
+       "unconstrained":0.1493533849360591
+      },
+     "XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA",
+       "unconstrained":1.162492827684047e-16
+      },
+     "XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008688258691029594,
+       "Nucleotide GTR":0.008573970374186815,
+       "original name":"XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.008453049851515982
+      },
+     "XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.0409923727669961,
+       "Nucleotide GTR":0.03115164670121461,
+       "original name":"XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.04814564876161199
+      },
+     "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01788563697785763,
+       "Nucleotide GTR":0.01750848318390026,
+       "original name":"XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.0183119468073651
+      },
+     "XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":2.060084282022952e-16
+      },
+     "XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":8.355180093681495e-17
+      },
+     "XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.489377086465198e-16
+      },
+     "XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.651041376542208e-16
+      },
+     "XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008154655765551671,
+       "Nucleotide GTR":0.008169899361725033,
+       "original name":"XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0
+      },
+     "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01809424763948226,
+       "Nucleotide GTR":0.01728656699011945,
+       "original name":"XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.01784128751945162
+      },
+     "XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":2.060084282022952e-16
+      },
+     "XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008841346027780436,
+       "Nucleotide GTR":0.008628850405769046,
+       "original name":"XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.008876479486827063
+      },
+     "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.0297107592407998,
+       "Nucleotide GTR":0.026741135759231,
+       "original name":"XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.03114952389643352
+      },
+     "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.5882356877631135,
+       "Nucleotide GTR":0.322948069675667,
+       "original name":"XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.21427116062442
+      },
+     "XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":8.912616585818285e-18
+      },
+     "XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.00872105089036272,
+       "Nucleotide GTR":0.008584734473809792,
+       "original name":"XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA",
+       "unconstrained":0.008543372633346594
+      },
+     "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.02728494750173668,
+       "Nucleotide GTR":0.02561685206263604,
+       "original name":"XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.02781101414949802
+      },
+     "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.02683631260698226,
+       "Nucleotide GTR":0.02625549201313666,
+       "original name":"XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.02811854231402577
+      },
+     "XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":9.748365576490314e-17
+      },
+     "XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":2.060084282022952e-16
+      },
+     "XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":2.640985416758626e-17
+      },
+     "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.04748999121725542,
+       "Nucleotide GTR":0.04397187313066333,
+       "original name":"XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.0480704983634276
+      },
+     "XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":2.640985416758626e-17
+      },
+     "XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008843890657425168,
+       "Nucleotide GTR":0.008619286489201849,
+       "original name":"XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":0.009126790637510018
+      },
+     "XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008613170205413674,
+       "Nucleotide GTR":0.008571209767168124,
+       "original name":"XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.008380905302473334
+      },
+     "XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.114835988009142e-20
+      },
+     "XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA",
+       "unconstrained":2.458481118025063e-18
+      },
+     "XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.008696669712274424,
+       "Nucleotide GTR":0.008558883705588775,
+       "original name":"XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.008562544092721853
+      },
+     "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.02706725702268569,
+       "Nucleotide GTR":0.02600485905792114,
+       "original name":"XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.02689431766041657
+      },
+     "XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA",
+       "unconstrained":5.959422833149534e-17
+      },
+     "XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":8.912616585818285e-18
+      },
+     "XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA",
+       "unconstrained":1.934278001332672e-17
+      },
+     "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":{
+       "MG94xREV with separate rates for branch sets":0.01261512865732213,
+       "Nucleotide GTR":0.01063130749644368,
+       "original name":"XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA",
+       "unconstrained":0.01402339930582934
+      },
+     "XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA":{
+       "MG94xREV with separate rates for branch sets":0,
+       "Nucleotide GTR":1e-06,
+       "original name":"XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA",
+       "unconstrained":1.162492827684047e-16
+      }
+    },
+   "attributes":{
+     "MG94xREV with separate rates for branch sets":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "unconstrained":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38] 
+      ],
+     "name":"busted.filter.default"
+    }
+  },
+ "fits":{
+   "MG94xREV with separate rates for branch sets":{
+     "AIC-c":2347.200829822139,
+     "Equilibrium frequencies":      [
+[0.02265733950157607],
+      [0.03213295310834163],
+      [0.01977507267842298],
+      [0.02434536304600655],
+      [0.01374344047959324],
+      [0.01949113789142518],
+      [0.01199512124168999],
+      [0.01476735818667524],
+      [0.01584784916042554],
+      [0.02247563946793497],
+      [0.01383182561757967],
+      [0.01702855012090328],
+      [0.01053656758551809],
+      [0.01494310627797998],
+      [0.009196198422601299],
+      [0.01132156593718247],
+      [0.01139692471786871],
+      [0.01616327669509037],
+      [0.009947108511601363],
+      [0.01224602164103243],
+      [0.006913122191576733],
+      [0.009804285767917231],
+      [0.006033695781613686],
+      [0.007428165585091431],
+      [0.00797166603823652],
+      [0.01130552733184738],
+      [0.006957581019752021],
+      [0.008565573366144283],
+      [0.005300025077901673],
+      [0.007516569069788733],
+      [0.004625802650204337],
+      [0.005694889051977167],
+      [0.02368885854105408],
+      [0.03359586771592842],
+      [0.02067537096690632],
+      [0.02545373261001531],
+      [0.01436913708980854],
+      [0.02037850950161348],
+      [0.01254122224974478],
+      [0.01543967062350339],
+      [0.01656935303084322],
+      [0.02349888626326175],
+      [0.01446154613151206],
+      [0.01780380767765197],
+      [0.01101626512787308],
+      [0.01562341998531564],
+      [0.009614873076042895],
+      [0.01183700204211867],
+      [0.04488798184498495],
+      [0.03400914353355895],
+      [0.01919883630538343],
+      [0.02722805591065532],
+      [0.01675652974408993],
+      [0.0206291934621405],
+      [0.03139724173465986],
+      [0.01932230551955507],
+      [0.02378795519030874],
+      [0.01471900988659559],
+      [0.02087470395428788],
+      [0.01284658731629135],
+      [0.0158156097427945] 
+      ],
+     "Log Likelihood":-1050.597806215417,
+     "Rate Distributions":{
+       "non-synonymous/synonymous rate ratio for *test*":        [
+[0.07819414356687425, 1] 
+        ]
+      },
+     "display order":1,
+     "estimated parameters":117
+    },
+   "Nucleotide GTR":{
+     "AIC-c":2620.915620487515,
+     "Equilibrium frequencies":      [
+[0.2663344407530454],
+      [0.2419712070874862],
+      [0.2419712070874862],
+      [0.2497231450719823] 
+      ],
+     "Log Likelihood":-1182.212545756596,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.2329742764534097,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.1087530072661819,
+       "Substitution rate from nucleotide C to nucleotide G":0.1886271593692496,
+       "Substitution rate from nucleotide C to nucleotide T":1.616507556161068,
+       "Substitution rate from nucleotide G to nucleotide T":0.1914672745277665
+      },
+     "display order":0,
+     "estimated parameters":126
+    },
+   "Unconstrained model":{
+     "AIC-c":2324.550615768027,
+     "Log Likelihood":-1029.290585055554,
+     "Rate Distributions":{
+       "Synonymous site-to-site rates":{
+         "0":{
+           "proportion":0.02213778721410996,
+           "rate":0.00577669317333549
+          },
+         "1":{
+           "proportion":0.9517552332466803,
+           "rate":0.8746224572341679
+          },
+         "2":{
+           "proportion":0.02610697953920972,
+           "rate":6.413825688128843
+          }
+        },
+       "Test":{
+         "0":{
+           "omega":0,
+           "proportion":0.7236620332821406
+          },
+         "1":{
+           "omega":0.251527665582101,
+           "proportion":0.2763379667178594
+          },
+         "2":{
+           "omega":1.262699105028354,
+           "proportion":0
+          }
+        }
+      },
+     "display order":2,
+     "estimated parameters":126
+    }
+  },
+ "input":{
+   "file name":"/Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas",
+   "number of sequences":62,
+   "number of sites":39,
+   "partition count":1,
+   "trees":{
+     "0":"(NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA,((XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA,(NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA,XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node5)Node3,XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA,XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node2,(XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA,((((XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA,XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node19)Node17,(XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA,(((((XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA,XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA,XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node28,XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA)Node27,XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA)Node26,(XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA,(XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA,(XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA,(XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA,XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node41)Node39)Node37)Node35)Node25,(XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA,(XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA,XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node46)Node44)Node24)Node22)Node16,XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA,(XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,((XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node59,XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node58)Node52,(XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node66)Node15,(XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(((XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA,XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA)Node73,XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA,XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA)Node72,(XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA,((XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA)Node88)Node86,XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA,XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA)Node81,XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA)Node79)Node71)Node69)Node14,(((XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node107,XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA,XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA)Node103,(XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA)Node113,(XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA,XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA)Node116)Node102,XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA,(XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA,(XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA,XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA,XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA)Node98)Node96)Node11)"
+    }
+  },
+ "runtime":"2.5.74",
+ "substitutions":{
+   "0":{
+     "0":{
+       "NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA":"CCA",
+       "Node14":"CCC",
+       "Node26":"CCG",
+       "Node81":"CCT",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"CCT",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"CCT",
+       "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"CCA",
+       "root":"CCT"
+      },
+     "1":{
+       "Node25":"TAC",
+       "Node41":"TAT",
+       "Node46":"TAC",
+       "Node81":"TTT",
+       "XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA":"TAC",
+       "XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA":"TAC",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"TTT",
+       "root":"TAT"
+      },
+     "10":{
+       "Node103":"TTT",
+       "Node41":"TTT",
+       "Node98":"TTT",
+       "XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA":"TTT",
+       "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTC",
+       "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTT",
+       "root":"TTC"
+      },
+     "11":{
+       "Node39":"GCC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGC",
+       "root":"ACC"
+      },
+     "12":{
+       "root":"CAC"
+      },
+     "13":{
+       "Node17":"TGT",
+       "Node39":"CTC",
+       "Node72":"TGT",
+       "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGC",
+       "root":"TGC"
+      },
+     "14":{
+       "Node16":"TCC",
+       "Node69":"TCC",
+       "Node86":"TCT",
+       "Node98":"TCC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TCA",
+       "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":"TCT",
+       "root":"TCT"
+      },
+     "15":{
+       "Node113":"ACC",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"ACC",
+       "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":"ACG",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"ACC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"ACC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AAC",
+       "root":"ACT"
+      },
+     "16":{
+       "Node15":"TTC",
+       "Node2":"TTC",
+       "Node41":"TTT",
+       "Node86":"TTC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TTC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"CTT",
+       "root":"TTT"
+      },
+     "17":{
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GTC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"ATT",
+       "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"ATA",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"ATT",
+       "root":"ATC"
+      },
+     "18":{
+       "Node116":"CTT",
+       "Node27":"CTG",
+       "Node46":"CTG",
+       "Node66":"CTG",
+       "Node72":"TTA",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"CTG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GTA",
+       "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTA",
+       "root":"TTG"
+      },
+     "19":{
+       "Node17":"CAC",
+       "Node28":"CAC",
+       "Node39":"CAC",
+       "Node58":"CAC",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"CAC",
+       "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":"CAC",
+       "root":"CAT"
+      },
+     "2":{
+       "Node39":"GAG",
+       "Node96":"GTA",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GCC",
+       "root":"GTG"
+      },
+     "20":{
+       "Node26":"AAG",
+       "Node39":"AAG",
+       "Node46":"AAG",
+       "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":"AAG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"CAG",
+       "root":"AAA"
+      },
+     "21":{
+       "Node72":"AGA",
+       "Node79":"CGG",
+       "Node86":"AGG",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"CGG",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"AGA",
+       "XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGA",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGA",
+       "root":"AGG"
+      },
+     "22":{
+       "Node39":"AGC",
+       "Node88":"GCA",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"ATT",
+       "root":"GCC"
+      },
+     "23":{
+       "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":"CAT",
+       "root":"CAC"
+      },
+     "24":{
+       "Node19":"ACC",
+       "Node39":"ACA",
+       "Node59":"ACC",
+       "XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGT",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"ACG",
+       "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":"ACG",
+       "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"ACG",
+       "root":"ACT"
+      },
+     "25":{
+       "Node72":"GGC",
+       "Node73":"GGT",
+       "Node86":"GGC",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GGC",
+       "root":"GGA"
+      },
+     "26":{
+       "Node44":"GAG",
+       "Node71":"GAG",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GAG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GCA",
+       "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GAG",
+       "root":"GAA"
+      },
+     "27":{
+       "Node103":"AAG",
+       "Node24":"AAG",
+       "Node39":"AAA",
+       "XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA":"AAG",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"AAG",
+       "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":"AAA",
+       "root":"AAA"
+      },
+     "28":{
+       "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":"CCC",
+       "Node58":"CCC",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"CCC",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"CCC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"CCC",
+       "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":"CCG",
+       "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"CCC",
+       "root":"CCT"
+      },
+     "29":{
+       "Node107":"TTC",
+       "Node11":"TTT",
+       "Node39":"TAT",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"TAC",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TTC",
+       "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TAT",
+       "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTC",
+       "root":"TTC"
+      },
+     "3":{
+       "Node102":"TGT",
+       "Node3":"TGT",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TGT",
+       "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":"TGT",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGT",
+       "XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGT",
+       "XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA":"TGT",
+       "XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA":"TGT",
+       "root":"TGC"
+      },
+     "30":{
+       "Node27":"GAA",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GCC",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"GAA",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AAA",
+       "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GAG",
+       "root":"GAG"
+      },
+     "31":{
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":"TGT",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TGT",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGT",
+       "root":"TGC"
+      },
+     "32":{
+       "Node24":"AAG",
+       "Node39":"AGC",
+       "Node46":"AAA",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GGC",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"AAA",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AGT",
+       "root":"AAA"
+      },
+     "33":{
+       "Node2":"GAG",
+       "Node35":"GAG",
+       "Node66":"GAG",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"GAG",
+       "root":"GAA"
+      },
+     "34":{
+       "Node39":"TGC",
+       "Node44":"TGC",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGT",
+       "root":"TGT"
+      },
+     "35":{
+       "Node26":"GGC",
+       "Node86":"GGA",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GGG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GGA",
+       "root":"GGG"
+      },
+     "36":{
+       "Node39":"AAG",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "root":"AAA"
+      },
+     "37":{
+       "Node39":"ACC",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"GCG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGC",
+       "root":"GCC"
+      },
+     "38":{
+       "Node22":"TTC",
+       "Node46":"TTT",
+       "Node98":"TTC",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"---",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"TTC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTT",
+       "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":"TTC",
+       "root":"TTT"
+      },
+     "4":{
+       "Node103":"AAT",
+       "Node116":"GGT",
+       "Node17":"ACT",
+       "Node19":"ACG",
+       "Node25":"GGT",
+       "Node52":"AGC",
+       "Node58":"GGC",
+       "Node69":"ACT",
+       "Node86":"ACC",
+       "Node88":"ACT",
+       "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"AGT",
+       "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"GGC",
+       "XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GGT",
+       "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":"GCT",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"GGC",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"ACG",
+       "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"CAT",
+       "XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA":"ACC",
+       "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GGC",
+       "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":"ACC",
+       "root":"AGT"
+      },
+     "5":{
+       "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":"GAG",
+       "Node15":"GAG",
+       "Node72":"GAG",
+       "Node86":"GAG",
+       "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":"GAA",
+       "root":"GAA"
+      },
+     "6":{
+       "Node35":"TGC",
+       "Node41":"TGT",
+       "Node5":"TGC",
+       "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":"TGC",
+       "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TGC",
+       "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":"TGC",
+       "root":"TGT"
+      },
+     "7":{
+       "Node26":"GGC",
+       "Node39":"GGG",
+       "Node46":"GGG",
+       "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"GGG",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"GAC",
+       "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"GGG",
+       "root":"GGA"
+      },
+     "8":{
+       "Node81":"AGG",
+       "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"AGG",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"AAA",
+       "root":"AAG"
+      },
+     "9":{
+       "Node39":"ACC",
+       "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"TTC",
+       "root":"GCC"
+      }
+    }
+  },
+ "test results":{
+   "LRT":0,
+   "p-value":0.5
+  },
+ "tested":{
+   "0":{
+     "NM_001023563_4_Homo_sapiens_zinc_finger_protein_805_ZNF805_transcript_variant_1_mRNA":"test",
+     "NM_001270905_1_Callithrix_jacchus_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "Node102":"test",
+     "Node103":"test",
+     "Node107":"test",
+     "Node11":"test",
+     "Node113":"test",
+     "Node116":"test",
+     "Node14":"test",
+     "Node15":"test",
+     "Node16":"test",
+     "Node17":"test",
+     "Node19":"test",
+     "Node2":"test",
+     "Node22":"test",
+     "Node24":"test",
+     "Node25":"test",
+     "Node26":"test",
+     "Node27":"test",
+     "Node28":"test",
+     "Node3":"test",
+     "Node35":"test",
+     "Node37":"test",
+     "Node39":"test",
+     "Node41":"test",
+     "Node44":"test",
+     "Node46":"test",
+     "Node5":"test",
+     "Node52":"test",
+     "Node58":"test",
+     "Node59":"test",
+     "Node66":"test",
+     "Node69":"test",
+     "Node71":"test",
+     "Node72":"test",
+     "Node73":"test",
+     "Node79":"test",
+     "Node81":"test",
+     "Node86":"test",
+     "Node88":"test",
+     "Node96":"test",
+     "Node98":"test",
+     "XM_003316703_6_PREDICTED_Pan_troglodytes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_004061536_3_PREDICTED_Gorilla_gorilla_gorilla_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_004089117_3_PREDICTED_Nomascus_leucogenys_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_005590500_5_PREDICTED_Macaca_fascicularis_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_005596578_4_PREDICTED_Equus_caballus_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"test",
+     "XM_005861700_2_PREDICTED_Myotis_brandtii_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"test",
+     "XM_006868260_1_PREDICTED_Chrysochloris_asiatica_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_006902956_1_PREDICTED_Elephantulus_edwardii_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_006915918_3_PREDICTED_Pteropus_alecto_zinc_finger_protein_805_ZNF805_transcript_variant_X3_mRNA":"test",
+     "XM_007127435_4_PREDICTED_Physeter_macrocephalus_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_010857695_1_PREDICTED_Bison_bison_bison_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_010961969_3_PREDICTED_Camelus_bactrianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_011979649_1_PREDICTED_Mandrillus_leucophaeus_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_012465351_3_PREDICTED_Aotus_nancymaae_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_012734707_1_PREDICTED_Condylura_cristata_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_012808667_2_PREDICTED_Otolemur_garnettii_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_013048059_2_PREDICTED_Mustela_putorius_furo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_013066272_2_PREDICTED_Heterocephalus_glaber_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"test",
+     "XM_015561781_1_PREDICTED_Myotis_davidii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"test",
+     "XM_017509572_2_PREDICTED_Cebus_imitator_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_020170135_2_PREDICTED_Castor_canadensis_zinc_finger_protein_805_Znf805_transcript_variant_X1_mRNA":"test",
+     "XM_022564902_2_PREDICTED_Delphinapterus_leucas_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"test",
+     "XM_024979418_2_PREDICTED_Bos_taurus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_025368830_1_PREDICTED_Theropithecus_gelada_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_029924784_1_PREDICTED_Suricata_suricatta_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_030941696_1_PREDICTED_Rhinopithecus_roxellana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_032263228_1_PREDICTED_Sapajus_apella_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_032324660_1_PREDICTED_Mustela_erminea_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_034639534_1_PREDICTED_Ailuropoda_melanoleuca_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_035724963_1_PREDICTED_Zalophus_californianus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_036091900_1_PREDICTED_Halichoerus_grypus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_040251742_1_PREDICTED_Oryx_dammah_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_042917715_1_PREDICTED_Panthera_leo_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_046681681_1_PREDICTED_Equus_quagga_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_047710679_1_PREDICTED_Lutra_lutra_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_050772038_1_PREDICTED_Macaca_thibetana_thibetana_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_053604405_1_PREDICTED_Nycticebus_coucang_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_054462876_2_PREDICTED_Pongo_pygmaeus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_054710409_1_PREDICTED_Eptesicus_fuscus_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_055145341_1_PREDICTED_Sorex_araneus_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_055410588_1_PREDICTED_Moschus_berezovskii_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_055553698_1_PREDICTED_Bubalus_kerabau_zinc_finger_protein_805_ZNF805_transcript_variant_X7_mRNA":"test",
+     "XM_057719661_1_PREDICTED_Hippopotamus_amphibius_kiboko_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_058530448_1_PREDICTED_Diceros_bicornis_minor_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_058707087_1_PREDICTED_Neofelis_nebulosa_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_059152342_1_PREDICTED_Mustela_lutreola_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_059383183_1_PREDICTED_Mustela_nigripes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_059664992_1_PREDICTED_Myotis_daubentonii_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_060652504_1_PREDICTED_Panthera_onca_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_064580304_1_PREDICTED_Mirounga_angustirostris_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_065898241_1_PREDICTED_Phocoena_phocoena_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_067720522_1_PREDICTED_Pseudorca_crassidens_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_069552112_2_PREDICTED_Ovis_canadensis_zinc_finger_protein_805_ZNF805_transcript_variant_X2_mRNA":"test",
+     "XM_070401676_1_PREDICTED_Myotis_yumanensis_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_070451668_1_PREDICTED_Odocoileus_virginianus_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_070633507_1_PREDICTED_Equus_przewalskii_zinc_finger_protein_805_ZNF805_transcript_variant_X4_mRNA":"test",
+     "XM_072763850_1_PREDICTED_Vulpes_vulpes_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_072822897_1_PREDICTED_Canis_lupus_baileyi_zinc_finger_protein_805_ZNF805_transcript_variant_X1_mRNA":"test",
+     "XM_072968360_1_PREDICTED_Vicugna_pacos_zinc_finger_protein_805_ZNF805_mRNA":"test",
+     "XM_073796317_1_PREDICTED_Tursiops_truncatus_zinc_finger_protein_805_ZNF805_transcript_variant_X13_mRNA":"test"
+    }
+  },
+ "timers":{
+   "Overall":{
+     "order":0,
+     "timer":1021
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":32
+    },
+   "Unconstrained BUSTED model fitting":{
+     "order":2,
+     "timer":987
+    }
+  }
+}

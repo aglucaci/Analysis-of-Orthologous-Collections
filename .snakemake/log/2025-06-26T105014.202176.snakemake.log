@@ -1,0 +1,998 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+ABSREL                5
+AssignLineages        5
+BGM                   5
+BUSTEDS               5
+BUSTEDSMH             5
+CFEL                  5
+FEL                   5
+FMM                   5
+FUBAR                 5
+MEME                  5
+RELAX                 5
+SLAC                  5
+all                   1
+fasttree              5
+tn93                  5
+total                71
+
+Select jobs to execute...
+
+[Thu Jun 26 10:50:14 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    jobid: 6
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.dst
+    jobid: 2
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.dst
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    jobid: 7
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    jobid: 8
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.dst
+    jobid: 4
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.dst
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    jobid: 10
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.dst
+    jobid: 1
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.dst
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.dst
+    jobid: 3
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.dst
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    jobid: 9
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.dst
+    jobid: 5
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.dst
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:14 2025]
+Finished job 2.
+1 of 71 steps (1%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 4.
+2 of 71 steps (3%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 6.
+3 of 71 steps (4%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:14 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.ABSREL.json
+    jobid: 31
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled
+    jobid: 57
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:14 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FMM.json
+    jobid: 51
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.MEME.json
+    jobid: 26
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS-MH.json
+    jobid: 46
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:14 2025]
+Finished job 1.
+4 of 71 steps (6%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 3.
+5 of 71 steps (7%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 8.
+6 of 71 steps (8%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 9.
+7 of 71 steps (10%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 5.
+8 of 71 steps (11%) done
+[Thu Jun 26 10:50:14 2025]
+Finished job 10.
+9 of 71 steps (13%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:14 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FEL.json
+    jobid: 15
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FMM.json
+    jobid: 53
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FEL.json
+    jobid: 14
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FMM.json
+    jobid: 55
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS-MH.json
+    jobid: 48
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Thu Jun 26 10:50:14 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BGM.json
+    jobid: 41
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:14 2025]
+Finished job 7.
+10 of 71 steps (14%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:15 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS.json
+    jobid: 24
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+Select jobs to execute...
+[Thu Jun 26 10:50:17 2025]
+Finished job 57.
+11 of 71 steps (15%) done
+
+[Thu Jun 26 10:50:17 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.SLAC.json
+    jobid: 37
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:44 2025]
+Finished job 41.
+12 of 71 steps (17%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:44 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FUBAR.json
+    jobid: 17
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:48 2025]
+Finished job 37.
+13 of 71 steps (18%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:48 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled
+    jobid: 59
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:50 2025]
+Finished job 59.
+14 of 71 steps (20%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:50 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS-MH.json
+    jobid: 47
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:55 2025]
+Finished job 17.
+15 of 71 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:55 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.CFEL.json
+    jobid: 67
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:50:57 2025]
+Finished job 14.
+16 of 71 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:50:57 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.ABSREL.json
+    jobid: 32
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:51:17 2025]
+Finished job 26.
+17 of 71 steps (24%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:51:18 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS.json
+    jobid: 25
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:51:24 2025]
+Finished job 15.
+18 of 71 steps (25%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:51:24 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FUBAR.json
+    jobid: 18
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:51:29 2025]
+Finished job 18.
+19 of 71 steps (27%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:51:29 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.RELAX.json
+    jobid: 56
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:52:16 2025]
+Finished job 31.
+20 of 71 steps (28%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:52:16 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS-MH.json
+    jobid: 49
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:52:57 2025]
+Finished job 32.
+21 of 71 steps (30%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:52:58 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BGM.json
+    jobid: 42
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:05 2025]
+Finished job 67.
+22 of 71 steps (31%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:05 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.SLAC.json
+    jobid: 38
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:07 2025]
+Finished job 51.
+23 of 71 steps (32%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:07 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.ABSREL.json
+    jobid: 33
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:14 2025]
+Finished job 38.
+24 of 71 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:14 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FUBAR.json
+    jobid: 19
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:18 2025]
+Finished job 42.
+25 of 71 steps (35%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:18 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled
+    jobid: 61
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:18 2025]
+Finished job 19.
+26 of 71 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:18 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FEL.json
+    jobid: 11
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:19 2025]
+Finished job 61.
+27 of 71 steps (38%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:20 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FMM.json
+    jobid: 54
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:45 2025]
+Finished job 11.
+28 of 71 steps (39%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:45 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.CFEL.json
+    jobid: 68
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:53:49 2025]
+Finished job 33.
+29 of 71 steps (41%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:53:49 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS-MH.json
+    jobid: 50
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:54:25 2025]
+Finished job 53.
+30 of 71 steps (42%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:54:25 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BGM.json
+    jobid: 43
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:54:37 2025]
+Finished job 68.
+31 of 71 steps (44%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:54:37 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS.json
+    jobid: 22
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:54:38 2025]
+Finished job 43.
+32 of 71 steps (45%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:54:38 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.CFEL.json
+    jobid: 66
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:55:29 2025]
+Finished job 66.
+33 of 71 steps (46%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:55:29 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.MEME.json
+    jobid: 27
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:55:59 2025]
+Finished job 24.
+34 of 71 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:55:59 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FUBAR.json
+    jobid: 20
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:56:06 2025]
+Finished job 20.
+35 of 71 steps (49%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:56:06 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FEL.json
+    jobid: 12
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:56:49 2025]
+Finished job 27.
+36 of 71 steps (51%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:56:49 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BGM.json
+    jobid: 44
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:57:03 2025]
+Finished job 12.
+37 of 71 steps (52%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:57:03 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS.json
+    jobid: 23
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:57:08 2025]
+Finished job 44.
+38 of 71 steps (54%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:57:08 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.RELAX.json
+    jobid: 60
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:57:40 2025]
+Finished job 55.
+39 of 71 steps (55%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:57:40 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled
+    jobid: 65
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:57:41 2025]
+Finished job 65.
+40 of 71 steps (56%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:57:41 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.MEME.json
+    jobid: 30
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:58:49 2025]
+Finished job 30.
+41 of 71 steps (58%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:58:49 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled
+    jobid: 63
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:58:51 2025]
+Finished job 63.
+42 of 71 steps (59%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:58:51 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FMM.json
+    jobid: 52
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:59:02 2025]
+Finished job 25.
+43 of 71 steps (61%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:59:02 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FUBAR.json
+    jobid: 16
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:59:08 2025]
+Finished job 16.
+44 of 71 steps (62%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:59:08 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BGM.json
+    jobid: 45
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:59:57 2025]
+Finished job 45.
+45 of 71 steps (63%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:59:57 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FEL.json
+    jobid: 13
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:00:24 2025]
+Finished job 13.
+46 of 71 steps (65%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:00:24 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.ABSREL.json
+    jobid: 34
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:01:17 2025]
+Finished job 34.
+47 of 71 steps (66%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:01:17 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.RELAX.json
+    jobid: 62
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:01:33 2025]
+Finished job 52.
+48 of 71 steps (68%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:01:33 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.CFEL.json
+    jobid: 70
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:02:17 2025]
+Finished job 23.
+49 of 71 steps (69%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:02:17 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.RELAX.json
+    jobid: 64
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:03:04 2025]
+Finished job 70.
+50 of 71 steps (70%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:03:04 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.MEME.json
+    jobid: 29
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:03:34 2025]
+Finished job 29.
+51 of 71 steps (72%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:03:35 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.SLAC.json
+    jobid: 36
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:03:44 2025]
+Finished job 36.
+52 of 71 steps (73%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:03:44 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS.json
+    jobid: 21
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:04:33 2025]
+Finished job 54.
+53 of 71 steps (75%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:04:33 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.MEME.json
+    jobid: 28
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:05:10 2025]
+Finished job 28.
+54 of 71 steps (76%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:05:10 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.SLAC.json
+    jobid: 40
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:05:18 2025]
+Finished job 49.
+55 of 71 steps (77%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:05:18 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.ABSREL.json
+    jobid: 35
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:05:23 2025]
+Finished job 40.
+56 of 71 steps (79%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:05:23 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.RELAX.json
+    jobid: 58
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:05:41 2025]
+Finished job 48.
+57 of 71 steps (80%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:05:41 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.SLAC.json
+    jobid: 39
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:05:49 2025]
+Finished job 39.
+58 of 71 steps (82%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:05:49 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.CFEL.json
+    jobid: 69
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Primate_REM2.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:06:26 2025]
+Finished job 69.
+59 of 71 steps (83%) done
+[Thu Jun 26 11:06:31 2025]
+Finished job 56.
+60 of 71 steps (85%) done
+[Thu Jun 26 11:06:57 2025]
+Finished job 35.
+61 of 71 steps (86%) done
+[Thu Jun 26 11:08:46 2025]
+Finished job 21.
+62 of 71 steps (87%) done
+[Thu Jun 26 11:09:02 2025]
+Finished job 60.
+63 of 71 steps (89%) done
+[Thu Jun 26 11:09:08 2025]
+Finished job 46.
+64 of 71 steps (90%) done
+[Thu Jun 26 11:09:18 2025]
+Finished job 22.
+65 of 71 steps (92%) done
+[Thu Jun 26 11:14:34 2025]
+Finished job 50.
+66 of 71 steps (93%) done
+[Thu Jun 26 11:15:02 2025]
+Finished job 62.
+67 of 71 steps (94%) done
+[Thu Jun 26 11:15:39 2025]
+Finished job 58.
+68 of 71 steps (96%) done
+[Thu Jun 26 11:19:48 2025]
+Finished job 64.
+69 of 71 steps (97%) done
+[Thu Jun 26 11:20:00 2025]
+Finished job 47.
+70 of 71 steps (99%) done
+Select jobs to execute...
+
+[Thu Jun 26 11:20:00 2025]
+localrule all:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.CFEL.json
+    jobid: 0
+    reason: Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.dst, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.ABSREL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.FastTree.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.FUBAR.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.4.codon.fas.BGM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.BUSTEDS-MH.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.3.codon.fas.MEME.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.1.codon.fas.RELAX.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.SLAC.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.5.codon.fas.CFEL.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.FMM.json, /Users/agl4001/Documents/AOC-develop/results/Primate_REM2/Primate_REM2.2.codon.fas.RELAX.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 11:20:00 2025]
+Finished job 0.
+71 of 71 steps (100%) done
+Complete log: .snakemake/log/2025-06-26T105014.202176.snakemake.log

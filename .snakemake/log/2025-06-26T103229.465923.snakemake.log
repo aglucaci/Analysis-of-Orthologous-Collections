@@ -1,0 +1,167 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+MergeFELCSVs            1
+MergeMEMECSVs           1
+PlotFEL                 4
+PlotFELMerge            1
+PlotMEME                4
+all                     1
+executiveSummary        1
+total                  13
+
+Select jobs to execute...
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.FEL.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.figureLegend
+    jobid: 2
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.figureLegend, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.FEL.json.FEL.png
+    wildcards: sample=Primate_ACE2.2.codon.fas.FEL.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotMEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.MEME.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.figureLegend
+    jobid: 8
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.figureLegend, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.MEME.json.MEME.png
+    wildcards: sample=Primate_ACE2.4.codon.fas.MEME.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.FEL.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.figureLegend
+    jobid: 3
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.FEL.json.FEL.figureLegend
+    wildcards: sample=Primate_ACE2.3.codon.fas.FEL.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotMEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.2.codon.fas.MEME.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.figureLegend
+    jobid: 6
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.figureLegend, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.2.codon.fas.MEME.json.MEME.svg
+    wildcards: sample=Primate_ACE2.2.codon.fas.MEME.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotMEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.3.codon.fas.MEME.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.figureLegend
+    jobid: 7
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.figureLegend, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.3.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.MEME.json.MEME.csv
+    wildcards: sample=Primate_ACE2.3.codon.fas.MEME.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.4.codon.fas.FEL.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.figureLegend
+    jobid: 4
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.4.codon.fas.FEL.json.FEL.figureLegend
+    wildcards: sample=Primate_ACE2.4.codon.fas.FEL.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule executiveSummary:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.executiveSummary.csv
+    jobid: 9
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.executiveSummary.csv
+    wildcards: sample=Primate_ACE2
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotMEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.MEME.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.figureLegend
+    jobid: 5
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.MEME.json.MEME.figureLegend
+    wildcards: sample=Primate_ACE2.1.codon.fas.MEME.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:31 2025]
+rule PlotFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas.FEL.json
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.figureLegend
+    jobid: 1
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.figureLegend, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.1.codon.fas.FEL.json.FEL.svg
+    wildcards: sample=Primate_ACE2.1.codon.fas.FEL.json
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:35 2025]
+Finished job 3.
+1 of 13 steps (8%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 7.
+2 of 13 steps (15%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 4.
+3 of 13 steps (23%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 8.
+4 of 13 steps (31%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 6.
+5 of 13 steps (38%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 5.
+6 of 13 steps (46%) done
+[Thu Jun 26 10:32:35 2025]
+Finished job 2.
+7 of 13 steps (54%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:32:35 2025]
+rule MergeMEMECSVs:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.MEME.json.MEME.csv
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_MEME_Results.csv
+    jobid: 11
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_MEME_Results.csv; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.MEME.json.MEME.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.MEME.json.MEME.csv
+    wildcards: sample=Primate_ACE2
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:35 2025]
+Finished job 1.
+8 of 13 steps (62%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:32:35 2025]
+rule MergeFELCSVs:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.FEL.json.FEL.csv
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_FEL_Results.csv
+    jobid: 10
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_FEL_Results.csv; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.1.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.2.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.4.codon.fas.FEL.json.FEL.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.3.codon.fas.FEL.json.FEL.csv
+    wildcards: sample=Primate_ACE2
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:37 2025]
+Finished job 11.
+9 of 13 steps (69%) done
+[Thu Jun 26 10:32:37 2025]
+Finished job 10.
+10 of 13 steps (77%) done
+Select jobs to execute...
+
+[Thu Jun 26 10:32:37 2025]
+rule PlotFELMerge:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_FEL_Results.csv
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.FEL.merged.png, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.FEL.merged.svg
+    jobid: 12
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.FEL.merged.svg, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Visualizations/Primate_ACE2.FEL.merged.png; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Tables/Primate_ACE2.AOC.merged_FEL_Results.csv
+    wildcards: sample=Primate_ACE2
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 10:32:40 2025]
+Finished job 12.
+11 of 13 steps (85%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-06-26T103229.465923.snakemake.log
