@@ -1,0 +1,1825 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+ABSREL                9
+AssignLineages        9
+BGM                   9
+BUSTEDS               9
+BUSTEDSMH             9
+CFEL                  9
+FEL                   9
+FMM                   9
+FUBAR                 9
+MEME                  9
+RELAX                 9
+SLAC                  9
+all                   1
+fasttree              9
+tn93                  9
+total               127
+
+Select jobs to execute...
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    jobid: 10
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.dst
+    jobid: 6
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    jobid: 12
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    jobid: 16
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.dst
+    jobid: 5
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.dst
+    jobid: 1
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    jobid: 11
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    jobid: 15
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    jobid: 13
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    jobid: 17
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.dst
+    jobid: 3
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:34 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.dst
+    jobid: 8
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 6.
+1 of 127 steps (1%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    jobid: 14
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 1.
+2 of 127 steps (2%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 5.
+3 of 127 steps (2%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 3.
+4 of 127 steps (3%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 8.
+5 of 127 steps (4%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 15.
+6 of 127 steps (5%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BGM.json
+    jobid: 78
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:35 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    jobid: 111
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.dst
+    jobid: 2
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:35 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FMM.json
+    jobid: 96
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:35 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.ABSREL.json
+    jobid: 60
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 10.
+7 of 127 steps (6%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 11.
+8 of 127 steps (6%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.ABSREL.json
+    jobid: 56
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 08:06:35 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BUSTEDS.json
+    jobid: 42
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 2.
+9 of 127 steps (7%) done
+[Fri Jun 27 08:06:35 2025]
+Finished job 14.
+10 of 127 steps (8%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    jobid: 109
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BUSTEDS-MH.json
+    jobid: 82
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+Select jobs to execute...
+[Fri Jun 27 08:06:35 2025]
+Finished job 16.
+11 of 127 steps (9%) done
+
+[Fri Jun 27 08:06:35 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.dst
+    jobid: 4
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 12.
+12 of 127 steps (9%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FUBAR.json
+    jobid: 29
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:35 2025]
+Finished job 4.
+13 of 127 steps (10%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:35 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FEL.json
+    jobid: 23
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:36 2025]
+Finished job 111.
+14 of 127 steps (11%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:36 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.SLAC.json
+    jobid: 64
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:37 2025]
+Finished job 13.
+15 of 127 steps (12%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:37 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.MEME.json
+    jobid: 50
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:37 2025]
+Finished job 109.
+16 of 127 steps (13%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:37 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BUSTEDS.json
+    jobid: 43
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:37 2025]
+Finished job 17.
+17 of 127 steps (13%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:38 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    jobid: 103
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:39 2025]
+Finished job 103.
+18 of 127 steps (14%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:39 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.ABSREL.json
+    jobid: 57
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:06:50 2025]
+Finished job 29.
+19 of 127 steps (15%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:06:50 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FMM.json
+    jobid: 97
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:07:14 2025]
+Finished job 64.
+20 of 127 steps (16%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:07:14 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BUSTEDS-MH.json
+    jobid: 83
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:07:33 2025]
+Finished job 78.
+21 of 127 steps (17%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:07:33 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BGM.json
+    jobid: 76
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:09:30 2025]
+Finished job 76.
+22 of 127 steps (17%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:09:30 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.SLAC.json
+    jobid: 71
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:09:36 2025]
+Finished job 23.
+23 of 127 steps (18%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:09:36 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.CFEL.json
+    jobid: 119
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:10:21 2025]
+Finished job 60.
+24 of 127 steps (19%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:10:22 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    jobid: 105
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:10:23 2025]
+Finished job 105.
+25 of 127 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:10:23 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.ABSREL.json
+    jobid: 58
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:11:00 2025]
+Finished job 50.
+26 of 127 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:11:00 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.MEME.json
+    jobid: 51
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:11:31 2025]
+Finished job 71.
+27 of 127 steps (21%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:11:32 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FMM.json
+    jobid: 98
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:12:36 2025]
+Finished job 119.
+28 of 127 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:12:36 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FMM.json
+    jobid: 91
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:12:41 2025]
+Finished job 51.
+29 of 127 steps (23%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:12:41 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BUSTEDS.json
+    jobid: 44
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:15:38 2025]
+Finished job 56.
+30 of 127 steps (24%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:15:38 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BUSTEDS-MH.json
+    jobid: 84
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:21:06 2025]
+Finished job 58.
+31 of 127 steps (24%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:21:07 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BUSTEDS.json
+    jobid: 37
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:21:15 2025]
+Finished job 91.
+32 of 127 steps (25%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:21:15 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BGM.json
+    jobid: 77
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:22:18 2025]
+Finished job 77.
+33 of 127 steps (26%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:22:18 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FUBAR.json
+    jobid: 30
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:22:31 2025]
+Finished job 30.
+34 of 127 steps (27%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:22:31 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FEL.json
+    jobid: 24
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:23:06 2025]
+Finished job 97.
+35 of 127 steps (28%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:23:06 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.SLAC.json
+    jobid: 68
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:23:22 2025]
+Finished job 24.
+36 of 127 steps (28%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:23:22 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.CFEL.json
+    jobid: 120
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:23:29 2025]
+Finished job 68.
+37 of 127 steps (29%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:23:29 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.ABSREL.json
+    jobid: 59
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:23:37 2025]
+Finished job 42.
+38 of 127 steps (30%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:23:37 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json
+    jobid: 108
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:23:37 2025]
+Error in rule RELAX:
+    jobid: 108
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:23:37 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.MEME.json
+    jobid: 52
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:27:04 2025]
+Finished job 52.
+39 of 127 steps (31%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:27:04 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FMM.json
+    jobid: 92
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:27:27 2025]
+Finished job 59.
+40 of 127 steps (31%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:27:27 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BUSTEDS-MH.json
+    jobid: 85
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:27:31 2025]
+Finished job 96.
+41 of 127 steps (32%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:27:31 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BUSTEDS.json
+    jobid: 38
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:28:15 2025]
+Finished job 57.
+42 of 127 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:28:15 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FUBAR.json
+    jobid: 31
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:28:27 2025]
+Finished job 31.
+43 of 127 steps (34%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:28:27 2025]
+rule fasttree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    jobid: 18
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:28:28 2025]
+Finished job 18.
+44 of 127 steps (35%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:28:28 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    jobid: 117
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:28:29 2025]
+Finished job 117.
+45 of 127 steps (35%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:28:29 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.ABSREL.json
+    jobid: 63
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:28:56 2025]
+Finished job 120.
+46 of 127 steps (36%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:28:56 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BUSTEDS-MH.json
+    jobid: 90
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:31:51 2025]
+Finished job 63.
+47 of 127 steps (37%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:31:52 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FUBAR.json
+    jobid: 36
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:31:59 2025]
+Finished job 36.
+48 of 127 steps (38%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:32:00 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.CFEL.json
+    jobid: 126
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:32:05 2025]
+Finished job 98.
+49 of 127 steps (39%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:32:05 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FMM.json
+    jobid: 99
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:32:38 2025]
+Finished job 126.
+50 of 127 steps (39%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:32:38 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BUSTEDS.json
+    jobid: 45
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:33:05 2025]
+Finished job 37.
+51 of 127 steps (40%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:33:05 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.SLAC.json
+    jobid: 72
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:33:15 2025]
+Finished job 72.
+52 of 127 steps (41%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:33:15 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    jobid: 113
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:33:16 2025]
+Finished job 113.
+53 of 127 steps (42%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:33:16 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.SLAC.json
+    jobid: 67
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:23 2025]
+Finished job 67.
+54 of 127 steps (43%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:34:23 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json
+    jobid: 112
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:23 2025]
+Error in rule RELAX:
+    jobid: 112
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:34:23 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.SLAC.json
+    jobid: 65
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:37 2025]
+Finished job 99.
+55 of 127 steps (43%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:34:37 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.dst
+    jobid: 7
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:37 2025]
+Finished job 7.
+56 of 127 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:34:37 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.ABSREL.json
+    jobid: 55
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:43 2025]
+Finished job 65.
+57 of 127 steps (45%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:34:43 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    jobid: 107
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:34:44 2025]
+Finished job 107.
+58 of 127 steps (46%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:34:45 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FEL.json
+    jobid: 22
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:38:36 2025]
+Finished job 92.
+59 of 127 steps (46%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:38:37 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.CFEL.json
+    jobid: 121
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:39:36 2025]
+Finished job 22.
+60 of 127 steps (47%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:39:36 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.MEME.json
+    jobid: 53
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:42:52 2025]
+Finished job 55.
+61 of 127 steps (48%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:42:52 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FMM.json
+    jobid: 93
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:44:22 2025]
+Finished job 38.
+62 of 127 steps (49%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:44:22 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.MEME.json
+    jobid: 46
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:44:47 2025]
+Finished job 53.
+63 of 127 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:44:47 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BUSTEDS-MH.json
+    jobid: 86
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:44:53 2025]
+Finished job 45.
+64 of 127 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:44:53 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BUSTEDS.json
+    jobid: 39
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:46:08 2025]
+Finished job 46.
+65 of 127 steps (51%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:46:08 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FUBAR.json
+    jobid: 32
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:46:18 2025]
+Finished job 32.
+66 of 127 steps (52%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:46:18 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BGM.json
+    jobid: 79
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:46:43 2025]
+Finished job 121.
+67 of 127 steps (53%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:46:43 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FEL.json
+    jobid: 25
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:47:24 2025]
+Finished job 79.
+68 of 127 steps (54%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:47:24 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json
+    jobid: 104
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:47:24 2025]
+Error in rule RELAX:
+    jobid: 104
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:47:24 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BUSTEDS-MH.json
+    jobid: 88
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:48:43 2025]
+Finished job 25.
+69 of 127 steps (54%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:48:43 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.CFEL.json
+    jobid: 122
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:49:13 2025]
+Finished job 44.
+70 of 127 steps (55%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:49:13 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.MEME.json
+    jobid: 48
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:52:02 2025]
+Finished job 122.
+71 of 127 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:52:02 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.SLAC.json
+    jobid: 69
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:52:39 2025]
+Finished job 69.
+72 of 127 steps (57%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:52:39 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FEL.json
+    jobid: 19
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:10 2025]
+Finished job 93.
+73 of 127 steps (57%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:54:15 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json
+    jobid: 116
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:17 2025]
+Finished job 19.
+74 of 127 steps (58%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:54:17 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FUBAR.json
+    jobid: 34
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:17 2025]
+Error in rule RELAX:
+    jobid: 116
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:54:19 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.ABSREL.json
+    jobid: 61
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:38 2025]
+Finished job 34.
+75 of 127 steps (59%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:54:43 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json
+    jobid: 110
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:48 2025]
+Error in rule RELAX:
+    jobid: 110
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:54:49 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json
+    jobid: 102
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:54:51 2025]
+Error in rule RELAX:
+    jobid: 102
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 08:54:53 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.MEME.json
+    jobid: 54
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:55:56 2025]
+Finished job 54.
+76 of 127 steps (60%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:55:58 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.MEME.json
+    jobid: 47
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:56:44 2025]
+Finished job 48.
+77 of 127 steps (61%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:56:44 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FMM.json
+    jobid: 94
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:58:31 2025]
+Finished job 47.
+78 of 127 steps (61%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:58:31 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FEL.json
+    jobid: 27
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 08:59:01 2025]
+Finished job 27.
+79 of 127 steps (62%) done
+Select jobs to execute...
+
+[Fri Jun 27 08:59:02 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BUSTEDS-MH.json
+    jobid: 87
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:00:37 2025]
+Finished job 61.
+80 of 127 steps (63%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:00:37 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BUSTEDS.json
+    jobid: 40
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:04:43 2025]
+Finished job 90.
+81 of 127 steps (64%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:04:43 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.SLAC.json
+    jobid: 70
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:05:20 2025]
+Finished job 70.
+82 of 127 steps (65%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:05:20 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FEL.json
+    jobid: 21
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:08:14 2025]
+Finished job 94.
+83 of 127 steps (65%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:08:14 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BGM.json
+    jobid: 80
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:08:15 2025]
+Finished job 21.
+84 of 127 steps (66%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:08:15 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BGM.json
+    jobid: 73
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:08:49 2025]
+Finished job 73.
+85 of 127 steps (67%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:08:49 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FEL.json
+    jobid: 26
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:09:29 2025]
+Finished job 80.
+86 of 127 steps (68%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:09:29 2025]
+rule FEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FEL.json
+    jobid: 20
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:11:15 2025]
+Finished job 20.
+87 of 127 steps (69%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:11:15 2025]
+rule SLAC:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.SLAC.json
+    jobid: 66
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.SLAC.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:11:50 2025]
+Finished job 66.
+88 of 127 steps (69%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:11:51 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    jobid: 115
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:11:53 2025]
+Finished job 115.
+89 of 127 steps (70%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:11:54 2025]
+rule tn93:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.dst
+    jobid: 9
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.dst
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:11:54 2025]
+Finished job 9.
+90 of 127 steps (71%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:11:55 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FUBAR.json
+    jobid: 28
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:07 2025]
+Finished job 28.
+91 of 127 steps (72%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:12:07 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BGM.json
+    jobid: 75
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:12 2025]
+Finished job 26.
+92 of 127 steps (72%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:12:12 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.CFEL.json
+    jobid: 125
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:31 2025]
+Finished job 83.
+93 of 127 steps (73%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:12:31 2025]
+rule AssignLineages:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    jobid: 101
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:32 2025]
+Finished job 101.
+94 of 127 steps (74%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:12:32 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.CFEL.json
+    jobid: 123
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:47 2025]
+Finished job 82.
+95 of 127 steps (75%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:12:47 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json
+    jobid: 100
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:12:48 2025]
+Error in rule RELAX:
+    jobid: 100
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 09:12:48 2025]
+rule FMM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FMM.json
+    jobid: 95
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FMM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:13:37 2025]
+Finished job 123.
+96 of 127 steps (76%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:13:37 2025]
+rule BUSTEDS:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BUSTEDS.json
+    jobid: 41
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.BUSTEDS.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:13:59 2025]
+Finished job 75.
+97 of 127 steps (76%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:13:59 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BGM.json
+    jobid: 81
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:14:09 2025]
+Finished job 81.
+98 of 127 steps (77%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:14:09 2025]
+rule BGM:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BGM.json
+    jobid: 74
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.BGM.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:14:50 2025]
+Finished job 74.
+99 of 127 steps (78%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:14:50 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json
+    jobid: 114
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:14:50 2025]
+Error in rule RELAX:
+    jobid: 114
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Jun 27 09:14:50 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FUBAR.json
+    jobid: 35
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:15:02 2025]
+Finished job 35.
+100 of 127 steps (79%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:15:02 2025]
+rule BUSTEDSMH:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BUSTEDS-MH.json
+    jobid: 89
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.BUSTEDS-MH.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:16:29 2025]
+Finished job 125.
+101 of 127 steps (80%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:16:29 2025]
+rule FUBAR:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FUBAR.json
+    jobid: 33
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FUBAR.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:16:38 2025]
+Finished job 33.
+102 of 127 steps (80%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:16:38 2025]
+rule MEME:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.MEME.json
+    jobid: 49
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.MEME.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:24:30 2025]
+Finished job 49.
+103 of 127 steps (81%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:24:30 2025]
+rule ABSREL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.ABSREL.json
+    jobid: 62
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.ABSREL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:24:51 2025]
+Finished job 95.
+104 of 127 steps (82%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:24:51 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.CFEL.json
+    jobid: 118
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:25:59 2025]
+Finished job 39.
+105 of 127 steps (83%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:25:59 2025]
+rule CFEL:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.CFEL.json
+    jobid: 124
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.CFEL.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:26:24 2025]
+Finished job 118.
+106 of 127 steps (83%) done
+Select jobs to execute...
+
+[Fri Jun 27 09:26:24 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json
+    jobid: 106
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 09:26:24 2025]
+Error in rule RELAX:
+    jobid: 106
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 09:28:33 2025]
+Finished job 40.
+107 of 127 steps (84%) done
+[Fri Jun 27 09:28:56 2025]
+Finished job 124.
+108 of 127 steps (85%) done
+[Fri Jun 27 09:29:29 2025]
+Finished job 41.
+109 of 127 steps (86%) done
+[Fri Jun 27 09:32:29 2025]
+Finished job 62.
+110 of 127 steps (87%) done
+[Fri Jun 27 09:38:38 2025]
+Finished job 43.
+111 of 127 steps (87%) done
+[Fri Jun 27 09:39:07 2025]
+Finished job 85.
+112 of 127 steps (88%) done
+[Fri Jun 27 09:43:20 2025]
+Finished job 86.
+113 of 127 steps (89%) done
+[Fri Jun 27 09:46:30 2025]
+Finished job 88.
+114 of 127 steps (90%) done
+[Fri Jun 27 09:50:45 2025]
+Finished job 87.
+115 of 127 steps (91%) done
+[Fri Jun 27 10:16:37 2025]
+Finished job 84.
+116 of 127 steps (91%) done
+[Fri Jun 27 10:40:53 2025]
+Finished job 89.
+117 of 127 steps (92%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-06-27T080634.239015.snakemake.log

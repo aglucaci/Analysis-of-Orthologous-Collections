@@ -1,0 +1,171 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+GatherLineages               1
+ParseGARD                    1
+all                          1
+cln                          1
+get_codons                   1
+iqtree                       1
+macse                        1
+recombination                1
+remove_duplicates_msa        1
+strike_ambigs_msa            1
+tn93_cluster                 1
+total                       11
+
+Select jobs to execute...
+
+[Wed Jun 25 14:04:40 2025]
+rule get_codons:
+    input: /Users/agl4001/Documents/AOC-develop/data/Primate_TP53/TP53_refseq_transcript.fasta
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53
+    jobid: 1
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:04:41 2025]
+Finished job 1.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:04:41 2025]
+rule macse:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.aa.fa
+    jobid: 2
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.aa.fa; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:05:03 2025]
+Finished job 2.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:05:03 2025]
+rule cln:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa
+    jobid: 3
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:05:03 2025]
+Finished job 3.
+3 of 11 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:05:03 2025]
+rule strike_ambigs_msa:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa
+    jobid: 4
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:05:04 2025]
+Finished job 4.
+4 of 11 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:05:04 2025]
+rule remove_duplicates_msa:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    jobid: 5
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:05:04 2025]
+Finished job 5.
+5 of 11 steps (45%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:05:04 2025]
+rule tn93_cluster:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta
+    jobid: 7
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Wed Jun 25 14:05:04 2025]
+rule iqtree:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile
+    jobid: 6
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:05:04 2025]
+Finished job 7.
+6 of 11 steps (55%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:05:04 2025]
+rule recombination:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.GARD.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard
+    jobid: 8
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.GARD.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:06:02 2025]
+Finished job 6.
+7 of 11 steps (64%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:06:02 2025]
+rule GatherLineages:
+    input: /Users/agl4001/Documents/AOC-develop/data/Primate_TP53/TP53_orthologs.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53_Annotated.csv
+    jobid: 10
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53_Annotated.csv; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:06:17 2025]
+Finished job 10.
+8 of 11 steps (73%) done
+[Wed Jun 25 14:27:27 2025]
+Finished job 8.
+9 of 11 steps (82%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:27:27 2025]
+rule ParseGARD:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.fas
+    jobid: 9
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.fas; Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard
+    wildcards: GENE=Primate_TP53
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:27:29 2025]
+Finished job 9.
+10 of 11 steps (91%) done
+Select jobs to execute...
+
+[Wed Jun 25 14:27:29 2025]
+localrule all:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.aa.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.GARD.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53_Annotated.csv
+    jobid: 0
+    reason: Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.aa.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.best-gard, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.RD.SA.codons.cln.fa.cluster.fasta.GARD.json, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53_Annotated.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Primate_TP53.SA.codons.cln.fa
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Wed Jun 25 14:27:29 2025]
+Finished job 0.
+11 of 11 steps (100%) done
+Complete log: .snakemake/log/2025-06-25T140439.053603.snakemake.log

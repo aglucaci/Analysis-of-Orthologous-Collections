@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in rule all in file /Users/agl4001/Documents/AOC-develop/workflow/Snakefile_SummarizeResults, line 334:
+Wildcards in input files cannot be determined from output files:
+'sample'

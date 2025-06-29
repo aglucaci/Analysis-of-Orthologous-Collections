@@ -4,6 +4,8 @@ Snakemakefile that runs the AOC application - Summarize results...
 
 Written by Alexander G Lucaci 
 
+# AOC ---
+
 """
 
 # =============================================================================
@@ -286,7 +288,7 @@ def get_RELAX_results(json_file):
     #end if
     pval = data["test results"]["p-value"]
     k = data["test results"]["relaxation or intensification parameter"]
-    return pval
+    return k, pval
 #end method
 
 def get_FMM_results(json_file):
@@ -334,33 +336,146 @@ def get_FitMG94_results(json_file):
 rule all:
     input:
         # FEL
-        expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.csv"), sample=felJsons),
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.FEL.csv"), sample=felJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.png"), sample=felJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.svg"), sample=felJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.figureLegend"), sample=felJsons),
         # MEME
-        expand(os.path.join(OUTDIR_Viz, "{sample}.MEME.csv"), sample=memeJsons),
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.MEME.csv"), sample=memeJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.MEME.png"), sample=memeJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.MEME.svg"), sample=memeJsons),
         expand(os.path.join(OUTDIR_Viz, "{sample}.MEME.figureLegend"), sample=memeJsons),
         # BGM
-        expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.csv"), sample=bgmJsons),
-        expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.png"), sample=bgmJsons),
-        expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.svg"), sample=bgmJsons),
-        #expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.figureLegend"), sample=bgmJsons)
+        #expand(os.path.join(OUTDIR, "Tables", "{sample}.BGM.csv"), sample=bgmJsons),
+        #expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.png"), sample=bgmJsons),
+        #expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.svg"), sample=bgmJsons),
+        ##expand(os.path.join(OUTDIR_Viz, "{sample}.BGM.figureLegend"), sample=bgmJsons),
         # Executive Summary
-        expand(os.path.join(OUTDIR, "{sample}.aoc.executiveSummary.csv"), sample = Label)
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.AOC.executiveSummary.csv"), sample = Label),
+        # Merge CSVs
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.AOC.merged_FEL_Results.csv"), sample = Label),
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.AOC.merged_MEME_Results.csv"), sample = Label),
+        # Merged Visualization
+        expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.merged.png"), sample = Label),
+        expand(os.path.join(OUTDIR_Viz, "{sample}.FEL.merged.svg"), sample = Label)
 # end rule all
 
 # =============================================================================
 # Rules
 # =============================================================================
 
+# Tables for aBSREL, BGM, BUSTED+S+MH, CFEL, FEL, FMM, FUBAR, MEME, RELAX, SLAC
+
+# Plots for FEL, MEME
+
+rule MergeFELCSVs:
+    input:
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.FEL.csv"), sample=felJsons)
+    output:
+        merged_csv = os.path.join(OUTDIR, "Tables", "{sample}.AOC.merged_FEL_Results.csv")
+    run:
+        import pandas as pd
+        all_dfs = []
+
+        for file in input:
+            df = pd.read_csv(file)
+            sample_name = os.path.basename(file).replace(".FEL.csv", "")
+            df.insert(0, "Sample", sample_name)  # Add a column to track which sample the row came from
+            all_dfs.append(df)
+
+        merged_df = pd.concat(all_dfs, ignore_index=True)
+        merged_df.to_csv(output.merged_csv, index=False)
+# end rule
+
+rule MergeMEMECSVs:
+    input:
+        expand(os.path.join(OUTDIR, "Tables", "{sample}.MEME.csv"), sample=memeJsons)
+    output:
+        merged_csv = os.path.join(OUTDIR, "Tables", "{sample}.AOC.merged_MEME_Results.csv")
+    run:
+        import pandas as pd
+        all_dfs = []
+
+        for file in input:
+            df = pd.read_csv(file)
+            sample_name = os.path.basename(file).replace(".MEME.csv", "")
+            df.insert(0, "Sample", sample_name)  # Add a column to track which sample the row came from
+            all_dfs.append(df)
+        # end if
+        merged_df = pd.concat(all_dfs, ignore_index=True)
+        merged_df.to_csv(output.merged_csv, index=False)
+# end rule
+
+rule PlotFELMerge:
+    input:
+        input = rules.MergeFELCSVs.output.merged_csv
+    output:
+        output_png = os.path.join(OUTDIR_Viz, "{sample}.FEL.merged.png"),
+        output_svg = os.path.join(OUTDIR_Viz, "{sample}.FEL.merged.svg"),
+        #output_figureLegend = os.path.join(OUTDIR_Viz, "{sample}.FEL.figureLegend")
+    run:
+        df = pd.read_csv(input.input)
+        unadjusted_pvalues = df["p-value"].tolist()
+        adjusted_pvalues =  df["adjusted_p-value"]
+        
+        df_results = df[df["adjusted_p-value"] <= pvalueThreshold]
+        positive_sites = df_results[df_results["dN/dS MLE"] > 1.0]
+        positive_sites = positive_sites.reset_index()
+        positive_sites.index += 1
+        positive_sites.drop('index', axis=1, inplace=True)
+        
+        negative_sites = df_results[df_results["dN/dS MLE"] < 1.0]
+        negative_sites = negative_sites.reset_index()
+        negative_sites.index += 1
+        negative_sites.drop('index', axis=1, inplace=True)
+        
+        source = df.copy()
+        source = source.dropna()
+        source = source.rename(columns={"p-value": "p_value"})
+        source = source.rename(columns={"adjusted_p-value": "adjusted_p_value"})
+
+        line = alt.Chart(source).mark_circle(clip=True,
+                                             opacity=1,
+                                             size = 60
+                                            ).encode(x= alt.X('CodonSite', title = "Codon Site"),
+                                                     y = alt.Y('dN/dS MLE', title = "dN/dS estimate",
+                                                               scale=alt.Scale(domain=(0, 5),
+                                                                               type="sqrt",
+                                                                               clamp=True,
+                                                                               nice=False,
+                                                                               )),
+            color = alt.condition(alt.datum.adjusted_p_value <= "0.1",
+                                  alt.value("red"),
+                                  alt.value("lightgray"))
+        ).properties(width=800,
+                     height=600)
+                     
+        band = alt.Chart(source).mark_area(opacity=0.7).encode(x='CodonSite',
+                                                               y='dN/dS LB',
+                                                               y2='dN/dS UB')
+        chart = (line + band)
+        chart.save(output.output_svg)
+        chart.save(output.output_png)
+        
+        # Figure legend
+        #numSites = len(df["dN/dS MLE"])
+        #numNegSites = len(negative_sites["dN/dS MLE"])
+        #numNegPerc = round((numNegSites/numSites) * 100, 3)
+        """
+        with open(output.output_figureLegend, 'w') as file_h:
+            print("The FEL analysis of your gene of interest found " + str(numNegSites) + " of " + str(numSites) + " (" + str(numNegPerc)+"%" + ") sites to be statistically significant (LRT p-value <= " + str(pvalueThreshold) + ") for pervasive negative selection", file=file_h)
+            #print()
+            #print(str(c)+"%" )
+        # end with
+        """
+    # end run
+# end rule
+
 rule PlotFEL:
     input:
         input = os.path.join(OUTDIR, "{sample}")
     output:
-        output_csv = os.path.join(OUTDIR_Viz, "{sample}.FEL.csv"),
+        output_csv = os.path.join(OUTDIR, "Tables", "{sample}.FEL.csv"),
         output_png = os.path.join(OUTDIR_Viz, "{sample}.FEL.png"),
         output_svg = os.path.join(OUTDIR_Viz, "{sample}.FEL.svg"),
         output_figureLegend = os.path.join(OUTDIR_Viz, "{sample}.FEL.figureLegend")
@@ -435,7 +550,7 @@ rule PlotMEME:
     input:
         input = os.path.join(OUTDIR, "{sample}")
     output:
-        output_csv = os.path.join(OUTDIR_Viz, "{sample}.MEME.csv"),
+        output_csv = os.path.join(OUTDIR, "Tables", "{sample}.MEME.csv"),
         output_png = os.path.join(OUTDIR_Viz, "{sample}.MEME.png"),
         output_svg = os.path.join(OUTDIR_Viz, "{sample}.MEME.svg"),
         output_figureLegend = os.path.join(OUTDIR_Viz, "{sample}.MEME.figureLegend")
@@ -482,7 +597,7 @@ rule PlotBGM:
     input:
         input = os.path.join(OUTDIR, "{sample}")
     output:
-        output_csv = os.path.join(OUTDIR_Viz, "{sample}.BGM.csv"),
+        output_csv = os.path.join(OUTDIR, "Tables", "{sample}.BGM.csv"),
         output_png = os.path.join(OUTDIR_Viz, "{sample}.BGM.png"),
         output_svg = os.path.join(OUTDIR_Viz, "{sample}.BGM.svg"),
         #output_figureLegend = os.path.join(OUTDIR_Viz, "{sample}.BGM.figureLegend")
@@ -578,7 +693,7 @@ rule executiveSummary:
         input = os.path.join(OUTDIR, "{sample}")
     output:
         #output_html = os.path.join(OUTDIR_Viz, "{sample}.results.html")
-        output_csv = os.path.join(OUTDIR, "{sample}.aoc.executiveSummary.csv")
+        output_csv = os.path.join(OUTDIR, "Tables", "{sample}.AOC.executiveSummary.csv")
     params:
         analysis_tag = Label,
         recombinant_files = Recombinants,
@@ -643,7 +758,7 @@ rule executiveSummary:
             
             # RELAX results
             print ("\t# Processing:", RELAX_JSON)
-            RELAX_results = get_RELAX_results(os.path.join(params.working_dir, RELAX_JSON))
+            k, RELAX_results = get_RELAX_results(os.path.join(params.working_dir, RELAX_JSON))
             
             # CFEL results
             print ("\t# Processing:", CFEL_JSON)
@@ -671,24 +786,25 @@ rule executiveSummary:
             # Report --------------------------------------------------------
             results_dict[count] = {
                 "Filename": basename,
-                "Seqs": int(S),
-                "Sites": int(N),
-                "FitMG94": mg94_results,
-                "BUSTED[S]": BUSTEDS_pvalue,
-                "BUSTED[S]+MH": BUSTEDSMH_pvalue,
-                "FEL[+]": positive_sites.shape[0],
-                "FEL[-]": negative_sites.shape[0],
-                "FUBAR[+]": FUBAR_positive,
-                "FUBAR[-]": FUBAR_negative,
-                "SLAC[+]": SLAC_positive,
-                "SLAC[-]": SLAC_negative,
-                "MEME": MEME_results,
-                "BGM": BGM_results,
-                "aBSREL": aBSREL_results,
-                "FMM[TH]": TH_pval,
-                "FMM[DH]": DH_pval,
-                "RELAX": RELAX_results,
-                "CFEL": CFEL_results
+                "Sequences": int(S),
+                "CodonSites": int(N),
+                "FitMG94(dNdS)": mg94_results,
+                "BUSTED[S](PValue)": BUSTEDS_pvalue,
+                "BUSTED[S]+MH(PValue)": BUSTEDSMH_pvalue,
+                "FEL[+](Sites)": positive_sites.shape[0],
+                "FEL[-](Sites)": negative_sites.shape[0],
+                "FUBAR[+](Sites)": FUBAR_positive,
+                "FUBAR[-](Sites)": FUBAR_negative,
+                "SLAC[+](Sites)": SLAC_positive,
+                "SLAC[-](Sites)": SLAC_negative,
+                "MEME(Sites)": MEME_results,
+                "BGM(Sites)": BGM_results,
+                "aBSREL(Branches)": aBSREL_results,
+                "FMM[TH](PValue)": TH_pval,
+                "FMM[DH](PValue)": DH_pval,
+                "RELAX(PValue)": RELAX_results,
+                "RELAX(KValue)": k,
+                "CFEL(Sites)": CFEL_results
             }
             
             count += 1

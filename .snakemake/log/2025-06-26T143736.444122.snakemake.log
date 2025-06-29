@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+all                      1
+annotate_lineages        1
+total                    2
+
+Select jobs to execute...
+
+[Thu Jun 26 14:37:37 2025]
+rule annotate_lineages:
+    input: /Users/agl4001/Documents/AOC-develop/data/Primate_ACE2/ACE2_orthologs.csv, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.treefile
+    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2_Annotated.csv
+    jobid: 10
+    reason: Code has changed since last execution
+    wildcards: GENE=Primate_ACE2
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 14:37:52 2025]
+Finished job 10.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Jun 26 14:37:52 2025]
+localrule all:
+    input: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.codons.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.aa.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.treefile, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.cluster.json, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.cluster.fasta, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.cluster.fasta.GARD.json, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.RD.SA.codons.cln.fa.cluster.fasta.best-gard, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2.gard.log, /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2_Annotated.csv
+    jobid: 0
+    reason: Input files updated by another job: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2_Annotated.csv
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Thu Jun 26 14:37:52 2025]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2025-06-26T143736.444122.snakemake.log

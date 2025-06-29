@@ -1,0 +1,185 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+RELAX        9
+all          1
+total       10
+
+Select jobs to execute...
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json
+    jobid: 110
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.6.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json
+    jobid: 102
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.2.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json
+    jobid: 106
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.4.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json
+    jobid: 104
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.3.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json
+    jobid: 100
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.1.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json
+    jobid: 112
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.7.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json
+    jobid: 108
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.5.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json
+    jobid: 114
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.8.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+
+[Fri Jun 27 11:09:12 2025]
+rule RELAX:
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json
+    jobid: 116
+    reason: Missing output files: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json
+    wildcards: sample=Placentals_ZNF805.9.codon.fas
+    resources: tmpdir=/var/folders/h_/ggxlxnd12j36cf3lfm_8hx4c0000gr/T
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 102
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.2.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 110
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.6.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 108
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.5.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 100
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.1.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 104
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.3.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 106
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.4.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 112
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.7.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:12 2025]
+Error in rule RELAX:
+    jobid: 114
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.8.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Jun 27 11:09:13 2025]
+Error in rule RELAX:
+    jobid: 116
+    input: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas, /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled
+    output: /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json
+    shell:
+        hyphy RELAX --alignment /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas --tree /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.FastTree.treefile.labelled --output /Users/agl4001/Documents/AOC-develop/results/Placentals_ZNF805/Placentals_ZNF805.9.codon.fas.RELAX.json --reference-group Eutheria --models All --mode 'Group mode' --starting-points 25 --srv Yes
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-06-27T110912.173306.snakemake.log

@@ -1,9 +1,6 @@
 """
-
 Snakemakefile that runs the AOC application - Selection analysis
-
 Written by Alexander G Lucaci
-
 """
 
 # =============================================================================
@@ -30,20 +27,13 @@ with open(os.path.join("config", "cluster.json"), "r") as fh:
 #end with
 
 Label = config["Label"]
-
 BASEDIR = os.getcwd()
 
-# Set output directory --------------------------------------------------------
+# Set output directory
 OUTDIR = os.path.join(BASEDIR, "results", Label)
-
-print("# Selection Analysis! We are operating out of base directory:", BASEDIR)
-
-
-print("# Output directory:", OUTDIR)
 
 Recombinants       = sorted([os.path.basename(x) for x in glob.glob(os.path.join(OUTDIR,
                                                                                  '*.codon.fas'))])
-
 Recombinants_Trees = sorted([os.path.basename(x) for x in glob.glob(os.path.join(OUTDIR,
                                                                                  '*.tree.nwk'))])
 
@@ -52,16 +42,18 @@ DATADIR = os.path.join(BASEDIR,
                        Label)
                        
 CladeLabels = sorted([x for x in glob.glob(os.path.join(OUTDIR, '*.clade'))])
-
 ReferenceClade = os.path.basename(CladeLabels[0]).split(".")[0]
 
+# Report to user
+print("# Selection Analysis! We are operating out of base directory:", BASEDIR)
+print("# Output directory:", OUTDIR)
 print("# We will process selection analyses in", len(Recombinants), "files")
 print("# We will use the following clade labels:", CladeLabels)
 
-# Set PPN ---------------------------------------------------------------------
+# Set PPN
 PPN = cluster["__default__"]["ppn"]
 
-# HyPhy settings --------------------------------------------------------------
+# HyPhy settings
 HYPHY = "hyphy"
 HYPHYMPI = "HYPHYMPI"
 FITMG94 = os.path.join(BASEDIR, "software", "hyphy-analyses", "FitMG94", "FitMG94.bf")
@@ -315,7 +307,7 @@ rule RELAX:
     params:
         RefClade = ReferenceClade
     shell:
-        "{HYPHY} RELAX --alignment {input.codon_aln} --tree {input.tree} --output {output.output} --reference-group {params.RefClade} --models All --mode 'Group mode' --starting-points 10 --srv Yes"
+        "{HYPHY} RELAX --alignment {input.codon_aln} --tree {input.tree} --output {output.output} --reference-group {params.RefClade} --models All --mode 'Group mode' --starting-points 25 --srv Yes"
 #end rule
 
 rule CFEL:
