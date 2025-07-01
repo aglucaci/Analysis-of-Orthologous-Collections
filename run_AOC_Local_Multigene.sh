@@ -53,6 +53,23 @@ parse_yaml() {
    }'
 }
 
+spinner() {
+    local pid=$!
+    local delay=0.1
+    local spinstr='|/-\'
+    tput civis  # Hide cursor
+
+    while kill -0 $pid 2>/dev/null; do
+        for ((i=0; i<${#spinstr}; i++)); do
+            printf "\r[%c] Working..." "${spinstr:$i:1}"
+            sleep $delay
+        done
+    done
+
+    printf "\r[✓] Done!        \n"
+    tput cnorm  # Show cursor
+}
+
 ###############################################################################
 # Main
 ###############################################################################
@@ -70,7 +87,7 @@ echo "[INFO] Examining the following genes: $GENES"
 echo ""
 IFS=',' read -ra parts <<< "$GENES"
 
-echo "===================================="
+echo "# ----------------------------------------------------------------------------- #"
 
 # Loop over the parts
 for part in "${parts[@]}"; do
@@ -96,7 +113,9 @@ for part in "${parts[@]}"; do
     echo "       $label"
     
     echo ""
-    echo "===================================="
+    #echo "# ############################################################################# #"
+    echo "# ----------------------------------------------------------------------------- #"
+
     
     
     # Update values using yq
@@ -108,11 +127,17 @@ for part in "${parts[@]}"; do
     yq -i -y ".CSV = \"$csv\"" $configYAML
     yq -i -y ".Label = \"$label\"" $configYAML
     
+    echo ""
     echo "[INFO] Config YAML updated..."
     echo ""
     
     echo "[INFO] Launching AOC..."
-    sleep 5
+    
+
+    # Simulate long process in background
+    (sleep 5) & spinner
+    #exit 0
+    #sleep 5
     
     cmd="bash run_AOC_Local.sh"
     echo $cmd
@@ -137,3 +162,4 @@ done
 ###############################################################################
 # End of file
 ###############################################################################
+

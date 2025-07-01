@@ -278,34 +278,20 @@ rule parse_gard_alternative:
             #for pair in data_adjusted:
             #    x = len(first_seq[pair[0], pair[1]])
             #    print(x)
-                
-                
             # end for
-            
             carryOver = 0
-            
             for start, end in data_adjusted:
                 start = start - carryOver
-                
                 print("Examining partition:", start, end)
                 _ = len(first_seq[int(start): int(end)])
                 print("Length:", _)
-                
                 remainder = _ % 3
                 print("Remainder:", remainder)
-                
                 data_adjusted_coords += [[start, end - remainder]]
                 carryOver = remainder
-                
                 print()
-                
             # end for
-            
-            
             print("Adjusted coords:", data_adjusted_coords)
-            
-            
-            
             output_dir = os.path.join(base_dir, "results", label)
             os.makedirs(output_dir, exist_ok=True)
 
@@ -353,16 +339,12 @@ rule parse_gard_alternative:
 
 
 # ['CHARSET span_1 = 1-262;', 'CHARSET span_2 = 263-462;', 'CHARSET span_3 = 463-665;', 'CHARSET span_4 = 666-1518;', 'CHARSET span_5 = 1519-1773;']
-
 # becomes
 # # ['CHARSET span_1 = 0-262;', 'CHARSET span_2 = 262-462;', 'CHARSET span_3 = 462-665;', 'CHARSET span_4 = 665-1518;', 'CHARSET span_5 = 1518-1773;']
-
 # [[1, 262], [263, 462], [463, 665], [666, 1518], [1519, 1773]]
-
 ## hyphy coordinates are 1 indexed and INCLUSIVE ##
 ## so to get to "true" python coords you need to -1 to start and -1 to stop ##
 ## then you need to +1 to python "stop" coord to get the actual length ##
-
 # - AGL - so -1 to start and leave stop unchanged?
 
 """
@@ -383,7 +365,7 @@ END;
 """
 
 
-
+"""
 
 rule annotate_lineages:
     input:
@@ -401,6 +383,7 @@ rule annotate_lineages:
         accessions = df['RefSeq Transcript accessions'].tolist()
         with open(input.tree) as fh:
             tree_newick = fh.read()
+        # end with
         data_dict = process_lineages(accessions, data_dict, tree_newick)
         df_annotated = pd.DataFrame.from_dict(data_dict, orient="index")
         lineages = df_annotated['LINEAGE'].tolist()
@@ -409,13 +392,12 @@ rule annotate_lineages:
         while True:
             lineage_column = get_lineage_column(lineages, count)
             lineage_counts = [lineage_column.count(item) for item in set(lineage_column)]
-            if min(lineage_counts) <= 3:
+            if min(lineage_counts) <= 5:
                 break
             # end if
             lineage_set = set(lineage_column)
             count += 1
         # end while
-
         df_annotated["CladeLabel"] = ""
         for idx, row in df_annotated.iterrows():
             for item in row['LINEAGE']:
@@ -424,7 +406,6 @@ rule annotate_lineages:
                 # end if
             # end for
         # end for
-        
         df_annotated.to_csv(output.annotated_csv)
         for _, row in df_annotated.iterrows():
             clade_file = os.path.join(OUTDIR, f"{row['CladeLabel']}.clade")
@@ -432,3 +413,82 @@ rule annotate_lineages:
                 fh.write(f"{row['LEAFNAME']}\n")
             # end with
         # end for
+# end rule
+"""
+
+
+rule annotate_lineages:
+    input:
+        input_csv = CSV,
+        tree = os.path.join(OUTDIR, "{GENE}.RD.SA.codons.cln.fa.treefile")
+    output:
+        annotated_csv = os.path.join(OUTDIR, "{GENE}_Annotated.csv")
+    params:
+        email = Email
+    run:
+        import os
+        import pandas as pd
+        from Bio import Entrez
+
+        Entrez.email = params.email
+
+        # Read input
+        df = pd.read_csv(input.input_csv)
+        df.index += 1
+        accessions = df['RefSeq Transcript accessions'].tolist()
+
+        with open(input.tree) as fh:
+            tree_newick = fh.read()
+
+        # Process tree and accessions
+        data_dict = process_lineages(accessions, {}, tree_newick)
+        df_annotated = pd.DataFrame.from_dict(data_dict, orient="index")
+
+        # Determine best lineage depth
+        max_depth = max(len(x) for x in df_annotated["LINEAGE"] if isinstance(x, list))
+        best_depth = None
+        best_lineages = None
+
+        for depth in range(max_depth):
+            lineage_column = [
+                x[depth] if isinstance(x, list) and len(x) > depth else "Unknown"
+                for x in df_annotated["LINEAGE"]
+            ]
+            lineage_counts = pd.Series(lineage_column).value_counts()
+            valid_lineages = lineage_counts[lineage_counts >= 3]
+
+            if len(valid_lineages) >= 2:
+                best_depth = depth
+                best_lineages = set(valid_lineages.index)
+                print(f"[INFO] Selected lineage depth {depth} with clades: {valid_lineages.to_dict()}")
+                break
+
+        if best_lineages is None:
+            raise ValueError("Failed to identify two or more distinct clades with ≥2 members each.")
+
+        # Assign clade labels
+        def assign_clade(lineage):
+            if not isinstance(lineage, list) or len(lineage) <= best_depth:
+                return "Unknown"
+            candidate = lineage[best_depth]
+            return candidate if candidate in best_lineages else "Unknown"
+
+        df_annotated["CladeLabel"] = df_annotated["LINEAGE"].apply(assign_clade)
+
+        # Save annotated CSV
+        df_annotated.to_csv(output.annotated_csv)
+
+        # Write .clade files
+        written_clades = set()
+        for _, row in df_annotated.iterrows():
+            label = row["CladeLabel"]
+            if label != "Unknown":
+                clade_file = os.path.join(OUTDIR, f"{label}.clade")
+                with open(clade_file, "a") as fh:
+                    fh.write(f"{row['LEAFNAME']}\n")
+                written_clades.add(label)
+
+        if len(written_clades) < 2:
+            raise ValueError(f"Only {len(written_clades)} clade file(s) written. Expected ≥2.")
+# end rule
+

@@ -4,14 +4,11 @@
 # Multiple Genes
 # =============================================================================
 
-#GENES: Primate_ACE2,Primate_TP53,Primate_BTG1,Primate_REM2
+# Edit the 'GENES' variable below,
+#     these should be the names of folders in the 'data' directory
 
-GENES: Placentals_ZNF805
-
-#GENES: Mammalia_C11orf54,Mammalia_C18orf63,Mammalia_ERICH3,Mammalia_SMIM20,Mammalia_TMEM161B
+GENES: Primate_ACE2,Primate_TP53,Primate_BTG1,Primate_REM2
 
 
-# DEBUG
-#GENES: Primate_ACE2,Primate_TP53
-#GENES: Primate_ACE2
 
+# End of file
