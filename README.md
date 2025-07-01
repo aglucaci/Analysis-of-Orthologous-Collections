@@ -1,6 +1,11 @@
 
+<p align="center">
+  <img src="logo/AOC_Logo_3.png" alt="AOC Logo" width="400"/>
+</p>
+
 # Analysis of Orthologous Collections (AOC)
 
+[![AOC CI](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/actions/workflows/test.yml/badge.svg)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/actions/workflows/test.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/blob/main/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/commits/main)
 [![GitHub issues](https://img.shields.io/github/issues/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/issues)
