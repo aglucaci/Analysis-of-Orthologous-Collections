@@ -1,3 +1,0 @@
-IndexError in file /Users/agl4001/Documents/AOC-develop/workflow/Snakefile_SummarizeResults, line 70:
-list index out of range
-  File "/Users/agl4001/Documents/AOC-develop/workflow/Snakefile_SummarizeResults", line 70, in <module>

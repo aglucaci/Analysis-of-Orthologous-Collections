@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule all in file /Users/agl4001/Documents/AOC-develop/workflow/Snakefile_SummarizeResults, line 334:
-Missing input files for rule all:
-    affected files:
-        /Users/agl4001/Documents/AOC-develop/results/Primate_TP53/Tables/Primate_TP53.aoc.executiveSummary.csv
