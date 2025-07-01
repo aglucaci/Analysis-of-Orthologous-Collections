@@ -1,6 +1,13 @@
 
 # Analysis of Orthologous Collections (AOC)
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/issues)
+[![Snakemake](https://img.shields.io/badge/Snakemake-pipeline-brightgreen)](https://snakemake.readthedocs.io/)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+
+
 **AOC** is a reproducible, Snakemake-based pipeline for the automated investigation of molecular evolution across orthologous protein-coding genes. It integrates high-throughput alignment, recombination detection, phylogenetic reconstruction, and a comprehensive suite of HyPhy-based selection analyses.
 
 ---
@@ -43,7 +50,7 @@ We recommend using **conda** for environment management.
 
 ```bash
 conda env create -f config/environment.yml
-conda activate aoc
+conda activate AOC
 ```
 
 ---
