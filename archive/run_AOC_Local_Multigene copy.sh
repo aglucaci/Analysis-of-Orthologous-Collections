@@ -53,23 +53,6 @@ parse_yaml() {
    }'
 }
 
-spinner() {
-    local pid=$!
-    local delay=0.1
-    local spinstr='|/-\'
-    tput civis  # Hide cursor
-
-    while kill -0 $pid 2>/dev/null; do
-        for ((i=0; i<${#spinstr}; i++)); do
-            printf "\r[%c] Working..." "${spinstr:$i:1}"
-            sleep $delay
-        done
-    done
-
-    printf "\r[✓] Done!        \n"
-    tput cnorm  # Show cursor
-}
-
 ###############################################################################
 # Main
 ###############################################################################
@@ -132,12 +115,7 @@ for part in "${parts[@]}"; do
     echo ""
     
     echo "[INFO] Launching AOC..."
-    
-
-    # Simulate long process in background
-    (sleep 5) & spinner
-    #exit 0
-    #sleep 5
+    sleep 5
     
     cmd="bash run_AOC_Local.sh"
     echo $cmd
@@ -162,4 +140,3 @@ done
 ###############################################################################
 # End of file
 ###############################################################################
-
