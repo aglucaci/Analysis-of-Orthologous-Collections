@@ -1,6 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule get_codons in file /Users/agl4001/Documents/AOC-develop/workflow/Snakefile, line 159:
-Missing input files for rule get_codons:
-    output: /Users/agl4001/Documents/AOC-develop/results/Primate_ACE2/Primate_ACE2
-    affected files:
-        /Users/agl4001/Documents/AOC-develop/data/Primate_ACE2/ACE2_refseq_transcript.fasta

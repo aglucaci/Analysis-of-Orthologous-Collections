@@ -1,9 +1,0 @@
-Partition 1: start=0, stop=387, length=387, remainder=0
-Partition 2: start=387, stop=693, length=306, remainder=0
-Partition 3: start=693, stop=1344, length=651, remainder=0
-Partition 4: start=1344, stop=3006, length=1662, remainder=0
-Partition 5: start=3006, stop=3258, length=252, remainder=0
-Partition 6: start=3258, stop=3375, length=117, remainder=0
-Partition 7: start=3375, stop=4248, length=873, remainder=0
-Partition 8: start=4248, stop=7326, length=3078, remainder=0
-Partition 9: start=7326, stop=7407, length=81, remainder=0
