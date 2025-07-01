@@ -1,201 +1,240 @@
+
+<p align="center">
+  <img src="logo/AOC_Logo_3.png" alt="AOC Logo" width="400"/>
+</p>
+
 # Analysis of Orthologous Collections (AOC)
 
-# About this repository
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/aglucaci/Analysis-of-Orthologous-Collections)](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/issues)
+[![Snakemake](https://img.shields.io/badge/Snakemake-pipeline-brightgreen)](https://snakemake.readthedocs.io/)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 
-This repository provides an enhanced software application for investigating the molecular evolution of individual protein-coding genes. AOC extends its functionality by incorporating HyPhy analyses and supports taxonomic assignment (through NCBI) and annotation of the phylogenetic tree. This enables comparative analyses of selective pressures between distinct groups.
 
-## Installation and dependencies
-This application is currently designed to run in an HPC environment due to the computational cost of selection analyse.
+**AOC** is a reproducible, Snakemake-based pipeline for the automated investigation of molecular evolution across orthologous protein-coding genes. It integrates high-throughput alignment, recombination detection, phylogenetic reconstruction, and a comprehensive suite of HyPhy-based selection analyses.
 
-There is an assumption that the freely available Anaconda software is installed on your machine.
+---
 
-You will also need to download the standalone hyphy-analyses repository (https://github.com/veg/hyphy-analyses). Make sure to modify the config.yml file to point to the correct directory on your system
+## Features
 
-### To install -- Steps necessary to complete before running
-1. `git clone https://github.com/aglucaci/Analysis-of-Orthologous-Collections.git AOC`
-2. `cd AOC`
-3. `conda env create -f config/environment.yml`. This will create a virtual environment called (AOC) with the necessary dependencies.
-    *NOTE* For those with arm64 CPU architecures (Apple M1/M2), compatibility errors may arise during installation with conda, in order to circumvent this issue try this command before creating the conda environment `conda config --env --set subdir osx-64`
-4. At this point, run `conda activate AOC` and your environment will be ready to go.
+- Codon-aware multiple sequence alignment using **MACSE2**
+- Recombination detection with **HyPhy GARD**
+- Phylogenetic tree inference using **IQ-TREE**
+- Comprehensive molecular evolution analysis via **HyPhy**:
+  - Site-level: MEME, FEL, SLAC, FUBAR
+  - Branch-level: aBSREL, BUSTED
+  - Gene-wide: Model testing, RELAX
+  - Co-evolution and heterogeneity: BGM, FMM
+- Lineage assignment and tree annotation via **NCBI Taxonomy + ete3**
+- Automated result summarization and visualization
+- Compatible with local or HPC environments
 
-## Data retrieval via NCBI Orthologs
-Here, we rely on the NCBI Ortholog database. For example, if we are interested in the TP53 gene: https://www.ncbi.nlm.nih.gov/gene/7157/ortholog/?scope=117570&term=TP53
+---
 
-Download all information: Tabular data, RefSeq Transcripts, and RefSeq Protein. 
-
-This is typically done as one gene per species, but all transcripts per species is also available.
-
-## Pipeline
-
-**Step 1.** Codon-aware alignment (MACSE2) from protein and gene transcript files \
-**Step 2.** Recombination detection (via HyPhy GARD) \
-**Step 3.** Tree inference (ML Tree inference: IQ-TREE). \
-**Step 4.** Selection analysis including (MEME, FEL, FUBAR, BUSTED Model testing, MEME, aBSREL, SLAC, BGM, FMM, etc) \
-**Step 4.** Lineage assignment (NCBI via ete3) and phylogenetic tree annotation (custom script) \
-**Step 5.** Selection analyses on lineages (RELAX, CFEL)
-**Step 6.** Summarize results
-
-## Example dataset and results
-
-### Preparation
-As an example of the AOC pipeline, we explore the evolutionary history of the primate ACE2 protein. Data was accessed from NCBI via the Ortholog data base at https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=9443&term=ACE2. Where, we downloaded FASTA files with RefSeq Transcripts and RefSeq Proteins (one sequence per specices) and metadata in tabular form (CSV))
-
-This data was placed in the `data` folder using the `PrimateACE2` tag to create a `PrimateACE2` folder.  
-Our data folder structure should look like this:
+## Directory Structure
 
 ```
-── data
-│   ├── PrimateACE2
-│   |   ├── ACE2_refseq_transcript.fasta
-│   |   ├── ACE2_refseq_protein.fasta
-│   |   ├── ACE2_orthologs.csv
+AOC/
+├── config/             # Configuration YAMLs and environment files
+├── data/               # Example input datasets (e.g., Primate_ACE2/)
+├── results/            # Output directory for all results
+├── scripts/            # Custom helper scripts (taxonomy, annotation, summaries)
+├── workflow/           # Snakemake rules and pipeline logic
+├── run_AOC_Local.sh    # Run script for local machines
+├── run_AOC_HPC.sh      # Run script for SLURM clusters
+└── README.md
 ```
 
-We will ammend YAML formatted configuration file called `config.yml` file where the `Label` variable will also be `PrimateACE2`. We will also modify the `Nucleotide`, `Protein`, and `CSV` variables with the names of our downloaded data files.
+---
 
-Our `config.yml` file should look like this:
+## Installation
 
-```
-# User settings for data files and gene label
+We recommend using **conda** for environment management.
 
-# Settings for ... Primate ACE2
-Nucleotide: ACE2_refseq_transcript.fasta
-Protein: ACE2_refseq_protein.fasta
-CSV: ACE2_orthologs.csv
-Label: PrimateACE2
-
-# User settings for NCBI Entrez
-EMAIL: "aoc-user@example.com"
+```bash
+conda env create -f config/environment.yml
+conda activate AOC
 ```
 
-We will ammend our cluster.json file to correspond to the number of available compute power for our system.
+---
+
+## Input Requirements
+
+Each dataset should include:
+- A protein FASTA file of orthologs
+- A matching transcript FASTA file
+- A metadata CSV file with RefSeq accessions
+
+These files are downloaded from the NCBI Orthologs Database, which provides curated orthologous gene information across species. For example, orthologs of the human ACE2 gene (Gene ID: 59272) within vertebrates (TaxID: 7742) can be retrieved via this interface.
+
+Full search link for **Primate ACE2** example: [https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=9443&term=ACE2](https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=9443&term=ACE2)
+
+
+Example:
 
 ```
-{"__default__": 
-  {
-  "cluster" : "qsub",
-  "nodes": 1,
-  "ppn": 8,
-  "name": "cpu"
-}}
+data/Primate_ACE2/
+├── ACE2_orthologs.csv
+├── ACE2_refseq_protein.fasta
+└── ACE2_refseq_transcript.fasta
 ```
 
-Most important, if you are running locally, modify the `ppn` variable, otherwise for HPC deployment check with your system administration for requirements or use your best judgement.
+---
 
-We can now execute our program with `bash run_AOC_Local.sh`
 
-This command performs the entire analysis.
+## Configuring Your Analysis: Editing the YAML File
+Before running the workflow, you must specify the genes you want to analyze by editing the YAML configuration file (`user/genes.yml`).
 
-### Results
-The following are JSON files produced by HyPhy analyses. These can be visualized by the appropriate module from HyPhy Vision (http://vision.hyphy.org/). Analysis file names contain the method used (SLAC, FEL, PRIME, FADE, MEME, CFEL, etc), and if appropriate -- the set of branches to which the analysis was applied.
+Navigate to the section labeled:
 
 ```
-── results/PrimateACE2
-│   ├── PrimateACE2_codons.SA.fasta.FEL.json
-│   ├── PrimateACE2_codons.SA.fasta.FUBAR.json
-│   ├── PrimateACE2_codons.SA.fasta.MEME.json
-│   ├── PrimateACE2_codons.SA.fasta.ABSREL.json
-│   ├── PrimateACE2_codons.SA.fasta.SLAC.json
-│   ├── PrimateACE2_codons.SA.fasta.BGM.json
-│   ├── PrimateACE2_codons.SA.fasta.PRIME.json
-│   ├── PrimateACE2_codons.SA.fasta.FMM.json
-│   ├── PrimateACE2_codons.SA.fasta.ABSREL.json
-|   ├── PrimateACE2_codons.SA.fasta.ABSRELS.json
-│   ├── PrimateACE2_codons.SA.fasta.BUSTEDSMH.json
-│   ├── PrimateACE2_codons.SA.fasta.BUSTED.json
-│   ├── PrimateACE2_codons.SA.fasta.BUSTEDMH.json
-│   ├── PrimateACE2_codons.SA.fasta.BUSTEDS.json
-│   ├── PrimateACE2.aoc.executiveSummary.csv
-│   ├── Visualizations/
-│   ├── │   ├── PrimateACE2.1.codon.fas.FEL.json.FEL.png
-│   ├── │   ├── PrimateACE2.1.codon.fas.FEL.json.FEL.svg
-│   ├── │   ├── PrimateACE2.1.codon.fas.FEL.json.FEL.figureLegend
-│   ├── │   ├── PrimateACE2.1.codon.fas.FEL.json.FEL.csv
-│   ├── │   ├── ... these continue for MEME and BGM
-│   ├── │   ├── ... other visualizations are available on HyPhy Vision.
+# =============================================================================
+# Multiple Genes
+# =============================================================================
+
+# Edit the 'GENES' variable below,
+#     these should be the names of folders in the 'data' directory
+
+# -----------------------------------------------------------------------------
+# For multiple GENES: use a comma-delimited list
+# GENES: Primate_ACE2,Primate_TP53,Primate_BTG1,Primate_REM2
+
+# If you only want to run one gene.
+#
+GENES: Primate_ACE2
 ```
 
-### Executive summary 
+### Instructions:
+Each entry in the `GENES:` line should match the name of a folder inside the (`data/ directory`).
 
-In order to make results easily interpretable - we provide a summary spreadsheet for each analysis (Rows), and for each recombination-free file (columns).
+These folders must contain:
 
-|FIELD1      |1                      |2                      |3                      |4                      |
-|------------|-----------------------|-----------------------|-----------------------|-----------------------|
-|Filename    |PrimateACE2.1.codon.fas|PrimateACE2.2.codon.fas|PrimateACE2.3.codon.fas|PrimateACE2.4.codon.fas|
-|Seqs        |31                     |31                     |31                     |31                     |
-|Sites       |419                    |234                    |44                     |300                    |
-|FitMG94     |N/A                    |N/A                    |N/A                    |N/A                    |
-|BUSTED[S]   |0.04772686506595974    |0.5                    |0.498342357346389      |0.2872065056121928     |
-|BUSTED[S]+MH|0.05354633995163294    |0.5                    |0.5                    |0.4492374314471226     |
-|FEL[+]      |6                      |1                      |0                      |3                      |
-|FEL[-]      |66                     |44                     |4                      |36                     |
-|FUBAR[+]    |5                      |1                      |1                      |2                      |
-|FUBAR[-]    |35                     |29                     |2                      |15                     |
-|SLAC[+]     |0                      |0                      |0                      |0                      |
-|SLAC[-]     |0                      |0                      |0                      |0                      |
-|MEME        |11                     |1                      |1                      |11                     |
-|BGM         |10                     |5                      |1                      |5                      |
-|aBSREL      |1                      |0                      |1                      |0                      |
-|FMM[TH]     |0.4091059976738896     |0.5938634883238164     |0.6307068479526645     |0.3115028373429701     |
-|FMM[DH]     |0.7218940918363086     |0.6477264324528813     |0.9861745455939988     |0.05874773670413536    |
-|RELAX       |0.3694805831206783     |0.5508425231243457     |0.04165610895306981    |0.2446019676208168     |
-|CFEL        |0                      |0                      |0                      |0                      |
+* A protein FASTA file
+* A transcript FASTA file
+* A metadata CSV file
 
-<ol>
-  <li>We report omega values for each recombination-free segments for FitMG94.</li>
-  <li>LRT p-values are reported for BUSTED[S], FMM[TH], FMM[DH], and RELAX. </li>
-  <li>aBSREL reports the number of branches under selection. </li>
-  <li>The rest of the columns report the number of statistically significant codon sites under selection.</li>
-</ol>
+To analyze multiple genes, provide a comma-separated list:
 
-### Visualizations 
+`GENES: Primate_ACE2,Primate_TP53,Primate_BTG1`
 
-For FEL, which reports codon-site specific dN/dS values.
-<table>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.1.codon.fas.FEL.json.FEL.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.2.codon.fas.FEL.json.FEL.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.3.codon.fas.FEL.json.FEL.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.4.codon.fas.FEL.json.FEL.png" width="300" height="200"></td>
-  </tr>
-</table>
+To analyze only one gene:
 
-For MEME, which reports adaptively evolving codon-site specific dN/dS values, and is a more sensensitive method.
-<table>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.1.codon.fas.MEME.json.MEME.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.2.codon.fas.MEME.json.MEME.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.3.codon.fas.MEME.json.MEME.png" width="300" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.4.codon.fas.MEME.json.MEME.png" width="300" height="200"></td>
-  </tr>
-</table>
+`GENES: Primate_ACE2`
 
-For BGM, which detects co-evolving codon sites.
-<table>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.1.codon.fas.BGM.json.BGM.png" width="600" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.2.codon.fas.BGM.json.BGM.png" width="600" height="200"></td>
-  </tr>
-</table>
+**Reminder!** Each gene folder should correspond to ortholog datasets downloaded from the [NCBI Orthologs Database](https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=7742&term=ACE2).
 
-<table>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.3.codon.fas.BGM.json.BGM.png" width="600" height="200"></td>
-    <td><img src="https://raw.githubusercontent.com/aglucaci/Analysis-of-Orthologous-Collections/refs/heads/main/results/PrimateACE2/Visualizations/PrimateACE2.4.codon.fas.BGM.json.BGM.png" width="600" height="200"></td>
-  </tr>
-</table>
+## Running the Pipeline
 
-Note: Additional visualizations and statistics are available for each HyPhy JSON file at http://vision.hyphy.org/
+Before running any scripts, ensure you are in the root directory of the repository.
 
-### Cleanup and miscellaneous ...
+### Local Execution (Multiple genes at a time)
 
-#### Removing the AOC environment from conda
+```
+bash Launch_AOC_Locally.sh
+```
 
-To remove the AOC environment from you system use: 
+### HPC Execution
 
-```conda env remove --name AOC```
+#### HPC Setup – Required (`config/cluster.json` file
+If you're planning to run the pipeline on a high-performance computing (HPC) cluster, you must provide an updated ('config/cluster.json`) file. This file defines the default resource allocation for each job submitted by Snakemake.
 
-#### Starting a tmux session for AOC
+A minimal working example looks like this:
 
-Due to the runtime needs of the workflow it may be useful to use a terminal multiplexer like 'tmux' in order to keep jobs running.
+```
 
-```tmux new -s AOC ```
+{
+  "__default__": {
+    "cluster": "sbatch",
+    "nodes": 1,
+    "ppn": 8,
+    "name": "scu-cpu",
+    "walltime": "72:00:00"
+  }
+}
+```
+
+**What Each Field Means:**
+
+* (`"cluster": "sbatch"`) — Tells Snakemake to use SLURM (sbatch) for job submission.
+* (`"nodes": 1`) — Number of nodes to allocate.
+* (`"ppn": 8`) — Processors per node (can also be cpus-per-task depending on SLURM setup).
+* (`"name": "scu-cpu"`) — Job name prefix; customize it for easier tracking.
+* (`"walltime": "72:00:00"`) — Maximum run time (in HH:MM:SS) for each job.
+
+
+After this is configured Launch the Snakemake via: 
+```
+bash Launch_AOC_HPC.sh
+```
+
+## Checklist Before Running
+*  You’ve edited (`user/genes.yml`) with the correct `GENES:` variable
+*  Each gene listed exists as a folder in the (`data/`) directory
+*  Each folder contains protein FASTA, transcript FASTA, and metadata CSV
+*  You're in the correct working directory
+*  Your environment is activated (conda activate AOC, etc.)
+
+---
+
+## Output
+
+All results are saved to `results/<GENE>/` and include:
+- Codon alignments
+- Phylogenetic trees (`.treefile`)
+- JSON and CSV summaries from each HyPhy method
+- Annotated trees with NCBI taxonomic metadata
+- Visual summaries of sites under selection (`Visualization/`)
+- Summary statistics and results in CSV-Format (`Tables/`)
+
+---
+
+## Methods Summary
+
+| Method   | Purpose                                  | Scale         |
+|----------|------------------------------------------|----------------|
+| FEL      | Pervasive site-level selection (ML)      | Site           |
+| SLAC     | Fast site-level selection (counting)     | Site           |
+| MEME     | Episodic (branch-specific) selection     | Site           |
+| FUBAR    | Bayesian site-level selection            | Site           |
+| aBSREL   | Adaptive branch-level selection          | Branch         |
+| BUSTED   | Gene-wide episodic positive selection    | Gene/Branch    |
+| RELAX    | Tests relaxation/intensification of ω    | Lineage        |
+| BGM      | Detects co-evolving sites                | Site-pair      |
+| FMM      | Finite mixture model of site classes     | Site           |
+
+---
+
+## Example Use Case
+
+We include a case study on **Primate ACE2** evolution:
+
+This generates:
+
+* Site-level selection maps
+* Annotated phylogenetic trees
+* Tables of positively/negatively selected sites across species
+* Lineage-specific selection comparisons
+
+---
+
+## Citation
+
+If you use AOC in your work, please cite:
+
+> Lucaci AG, Pond SLK. AOC: Analysis of Orthologous Collections - an application for the characterization of natural selection in protein-coding sequences. ArXiv [Preprint]. 2024 Jun 13:arXiv:2406.09522v1. PMID: 38947939; PMCID: PMC11213150.
+
+---
+
+## Contact
+
+Created and maintained by **Alexander G. Lucaci**  
+Questions? Feature requests? Open an [issue](https://github.com/aglucaci/Analysis-of-Orthologous-Collections/issues) or contact [agl4001@med.cornell.edu](mailto:agl4001@med.cornell.edu)
+
+---
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+---

@@ -1,12 +1,8 @@
 #!/bin/bash
-
 clear
-
 # Banner
-
 echo ""
 echo ""
-
 cat <<'EOF'
      █████╗   ██████╗   ██████╗
     ██╔══██╗ ██╔═══██╗ ██╔════╝
@@ -15,22 +11,16 @@ cat <<'EOF'
     ██║  ██║ ╚██████╔╝ ╚██████╔╝
     ╚═╝  ╚═╝  ╚═════╝   ╚═════╝
 EOF
-
-
 echo ""
-
 echo ""
-
-
-
 
 ###############################################################################
 # Declares
 ###############################################################################
 
-multigeneYAML="config/config-multigene.yml"
+#multigeneYAML="config/user-config.yml"
+multigeneYAML="user/genes.yml"
 configYAML="config/config.yml"
-
 
 ###############################################################################
 # Helper Functions
@@ -53,13 +43,27 @@ parse_yaml() {
    }'
 }
 
+spinner() {
+    local pid=$!
+    local delay=0.1
+    local spinstr='|/-\'
+    tput civis  # Hide cursor
+
+    while kill -0 $pid 2>/dev/null; do
+        for ((i=0; i<${#spinstr}; i++)); do
+            printf "\r[%c] Working..." "${spinstr:$i:1}"
+            sleep $delay
+        done
+    done
+
+    printf "\r[✓] Done!        \n"
+    tput cnorm  # Show cursor
+}
+
 ###############################################################################
 # Main
 ###############################################################################
-
 eval $(parse_yaml $multigeneYAML)
-
-
 echo "# ############################################################################# #"
 echo ""
 echo "[INFO] Starting..."
@@ -70,7 +74,7 @@ echo "[INFO] Examining the following genes: $GENES"
 echo ""
 IFS=',' read -ra parts <<< "$GENES"
 
-echo "===================================="
+echo "# ----------------------------------------------------------------------------- #"
 
 # Loop over the parts
 for part in "${parts[@]}"; do
@@ -96,7 +100,9 @@ for part in "${parts[@]}"; do
     echo "       $label"
     
     echo ""
-    echo "===================================="
+    #echo "# ############################################################################# #"
+    echo "# ----------------------------------------------------------------------------- #"
+
     
     
     # Update values using yq
@@ -108,13 +114,19 @@ for part in "${parts[@]}"; do
     yq -i -y ".CSV = \"$csv\"" $configYAML
     yq -i -y ".Label = \"$label\"" $configYAML
     
+    echo ""
     echo "[INFO] Config YAML updated..."
     echo ""
     
     echo "[INFO] Launching AOC..."
-    sleep 5
     
-    cmd="bash run_AOC_Local.sh"
+
+    # Simulate long process in background
+    (sleep 5) & spinner
+    #exit 0
+    #sleep 5
+    
+    cmd="bash scripts/run_AOC_HPC.sh"
     echo $cmd
     eval $cmd
 done
@@ -124,16 +136,13 @@ done
 #CSV: TP53_orthologs.csv
 #Label: Primate_TP53
 
-
 #input="Primate_REM2"
 #first="${input%%_*}"  # everything before the first underscore
 #second="${input#*_}"  # everything after the first underscore
 #echo "$first"
 #echo "$second"
 
-
-
-
 ###############################################################################
 # End of file
 ###############################################################################
+

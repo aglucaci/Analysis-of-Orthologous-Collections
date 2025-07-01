@@ -1,5 +1,27 @@
 #!/bin/bash
 
+clear
+
+# Banner
+
+echo ""
+echo ""
+
+cat <<'EOF'
+     █████╗   ██████╗   ██████╗
+    ██╔══██╗ ██╔═══██╗ ██╔════╝
+    ███████║ ██║   ██║ ██║
+    ██╔══██║ ██║   ██║ ██║
+    ██║  ██║ ╚██████╔╝ ╚██████╔╝
+    ╚═╝  ╚═╝  ╚═════╝   ╚═════╝
+EOF
+
+
+echo ""
+
+echo ""
+
+#set -euo pipefail
 
 # Downloading hyphy-analyses.
 FOLDER="software/hyphy-analyses"
@@ -16,6 +38,8 @@ if [ ! -d "$LOGS" ] ; then
     mkdir -p $LOGS
 fi
 
+#VERSION=0.1.0
+
 ###############################################################################
 printf "###############################################################################\n"
 printf "# Running the AOC Snakemake pipeline \n"
@@ -25,31 +49,39 @@ printf "########################################################################
 # Initial phase, quality control, alignment, recombination-detection.
 # Run Selection Analyses on recombination-free files
 snakemake \
-      -s Snakefile \
-      --cluster-config cluster.json \
-      --cluster "qsub -V -l nodes={cluster.nodes}:ppn={cluster.ppn} -q {cluster.name} -l walltime={cluster.walltime} -e logs -o logs" \
+      -s workflow/Snakefile \
+      --cluster-config config/cluster.json \
       --jobs 4 all \
-      --rerun-incomplete \
+      --cores all \
       --keep-going \
       --reason \
-      --latency-wait 300
-    
+      --latency-wait 60 \
+      --rerun-incomplete
+
+echo ""
+
+#exit 0
+
 ###############################################################################
 printf "###############################################################################\n"
 printf "# Running the AOC Snakemake pipeline - Recombination-free analysis \n"
 printf "###############################################################################\n"
 ###############################################################################
-  
+      
 # Run Selection Analyses on recombination-free files
 snakemake \
       -s workflow/Snakefile_SelectionAnalysis \
-      --cluster-config cluster.json \
-      --cluster "qsub -V -l nodes={cluster.nodes}:ppn={cluster.ppn} -q {cluster.name} -l walltime={cluster.walltime} -e logs -o logs" \
+      --cluster-config config/cluster.json \
       --jobs 4 all \
-      --rerun-incomplete \
+      --cores all \
       --keep-going \
       --reason \
-      --latency-wait 300
+      --latency-wait 60 \
+      --rerun-incomplete
+
+echo ""
+
+#exit 0
 
 ###############################################################################
 printf "###############################################################################\n"
@@ -61,7 +93,6 @@ printf "########################################################################
 snakemake \
       -s workflow/Snakefile_SummarizeResults \
       --cluster-config config/cluster.json \
-      --cluster "qsub -V -l nodes={cluster.nodes}:ppn={cluster.ppn} -q {cluster.name} -l walltime={cluster.walltime} -e logs -o logs" \
       --jobs 1 all \
       --cores all \
       --keep-going \
