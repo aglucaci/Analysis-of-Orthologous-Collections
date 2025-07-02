@@ -66,7 +66,7 @@ Each dataset should include:
 - A matching transcript FASTA file
 - A metadata CSV file with RefSeq accessions
 
-These files are downloaded from the NCBI Orthologs Database, which provides curated orthologous gene information across species. For example, orthologs of the human ACE2 gene (Gene ID: 59272) within vertebrates (TaxID: 7742) can be retrieved via this interface.
+These files are downloaded from the NCBI Orthologs Database, which provides curated orthologous gene information across species. For example, orthologs of the human ACE2 gene (Gene ID: 59272) within primates (TaxID: 9443) can be retrieved via this interface.
 
 Full search link for **Primate ACE2** example: [https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=9443&term=ACE2](https://www.ncbi.nlm.nih.gov/gene/59272/ortholog/?scope=9443&term=ACE2)
 
