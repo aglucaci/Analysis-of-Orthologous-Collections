@@ -36,13 +36,13 @@
 
 ```
 AOC/
-├── config/             # Configuration YAMLs and environment files
-├── data/               # Example input datasets (e.g., Primate_ACE2/)
-├── results/            # Output directory for all results
-├── scripts/            # Custom helper scripts (taxonomy, annotation, summaries)
-├── workflow/           # Snakemake rules and pipeline logic
-├── run_AOC_Local.sh    # Run script for local machines
-├── run_AOC_HPC.sh      # Run script for SLURM clusters
+├── config/                # Configuration YAMLs and environment files
+├── data/                  # Example input datasets (e.g., Primate_ACE2/)
+├── results/               # Output directory for all results
+├── scripts/               # Custom helper scripts (taxonomy, annotation, summaries)
+├── workflow/              # Snakemake rules and pipeline logic
+├── Launch_AOC_Locally.sh  # Run script for local machines
+├── Launch_AOC_HPC.sh      # Run script for SLURM clusters
 └── README.md
 ```
 
@@ -134,7 +134,9 @@ Before running any scripts, ensure you are in the root directory of the reposito
 bash Launch_AOC_Locally.sh
 ```
 
-### HPC Execution
+### HPC Execution (SLURM)
+
+The configuration details described are specific for a SLURM-based HPC system. This general framework will need to be modified for other types of schedulers (PBS/Torque, SGE, HTCondor, Kubernetes).
 
 #### HPC Setup – Required (`config/cluster.json` file
 If you're planning to run the pipeline on a high-performance computing (HPC) cluster, you must provide an updated ('config/cluster.json`) file. This file defines the default resource allocation for each job submitted by Snakemake.
@@ -165,7 +167,7 @@ A minimal working example looks like this:
 
 After this is configured Launch the Snakemake via: 
 ```
-bash Launch_AOC_HPC.sh
+sbatch Launch_AOC_HPC.sh
 ```
 
 ## Checklist Before Running
