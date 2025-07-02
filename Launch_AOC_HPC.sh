@@ -1,5 +1,14 @@
 #!/bin/bash
+#SBATCH --job-name=AOC            # Job name
+#SBATCH --output=logs/AOC.out     # Output file (%x=job-name, %j=job ID)
+#SBATCH --error=logs/AOC.err      # Error file
+#SBATCH --time=72:00:00           # Wall time (hh:mm:ss)
+#SBATCH --ntasks=1                # Number of tasks (usually 1 unless MPI)
+#SBATCH --cpus-per-task=8         # Number of CPU cores per task
+#SBATCH --mem=16G                 # Memory per node
+
 clear
+
 # Banner
 echo ""
 echo ""
@@ -63,6 +72,7 @@ spinner() {
 ###############################################################################
 # Main
 ###############################################################################
+
 eval $(parse_yaml $multigeneYAML)
 echo "# ############################################################################# #"
 echo ""
@@ -92,23 +102,16 @@ for part in "${parts[@]}"; do
     label=$part
     
     echo ""
-    
     echo "[INFO] Updating config YAML file..."
     echo "       $nucleotide"
     echo "       $protein"
     echo "       $csv"
     echo "       $label"
-    
     echo ""
     #echo "# ############################################################################# #"
     echo "# ----------------------------------------------------------------------------- #"
 
-    
-    
     # Update values using yq
-    # yq -i -y ".resources.cpu = ${CPU}" config.yaml
-    # yq -i -y '.Nucleotide = "NEW_TRANSCRIPT.fasta"' config.yaml
-    # yq -i -y ".Nucleotide = \"${NUC}\"" config.yaml
     yq -i -y ".Nucleotide = \"$nucleotide\"" $configYAML
     yq -i -y ".Protein = \"$protein\"" $configYAML
     yq -i -y ".CSV = \"$csv\"" $configYAML
@@ -123,24 +126,11 @@ for part in "${parts[@]}"; do
 
     # Simulate long process in background
     (sleep 5) & spinner
-    #exit 0
-    #sleep 5
     
     cmd="bash scripts/run_AOC_HPC.sh"
     echo $cmd
     eval $cmd
 done
-
-#Nucleotide: TP53_refseq_transcript.fasta
-#Protein: TP53_refseq_protein.fasta
-#CSV: TP53_orthologs.csv
-#Label: Primate_TP53
-
-#input="Primate_REM2"
-#first="${input%%_*}"  # everything before the first underscore
-#second="${input#*_}"  # everything after the first underscore
-#echo "$first"
-#echo "$second"
 
 ###############################################################################
 # End of file
