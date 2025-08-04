@@ -21,3 +21,4 @@ dependencies:
   - networkx=3.3
   - matplotlib=3.9.2
   - yq=3.4.3
+  - fasttree=2.1.11

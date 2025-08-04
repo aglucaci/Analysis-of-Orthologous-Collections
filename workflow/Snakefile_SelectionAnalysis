@@ -152,7 +152,8 @@ rule FUBAR:
     output:
         results = os.path.join(OUTDIR, "{sample}.FUBAR.json")
     shell: 
-        "mpirun -np {PPN} {HYPHYMPI} FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        #"mpirun -np {PPN} {HYPHYMPI} FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "{HYPHY} FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule 
 
 rule BUSTEDS:

@@ -2,7 +2,7 @@
   {
   "cluster" : "sbatch",
   "nodes": 1,
-  "ppn": 8,
+  "ppn": 2,
   "name": "scu-cpu",
   "walltime": "72:00:00"
 }}
